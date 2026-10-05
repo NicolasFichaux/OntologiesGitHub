@@ -1,0 +1,117 @@
+collection_id_regex;rationale;earsc_service;link_type;confidence;validated
+ECMWF\.DAT\.CAMS_EUROPE_AIR_QUALITY;CAMS regional air-quality forecasts or reanalyses for Europe (modelled pollutant concentrations);Monitor and forecast air quality & emissions (fluxes);direct;high;no
+ECMWF\.DAT\.CAMS_EUROPE_AIR_QUALITY;CAMS regional air-quality forecasts or reanalyses for Europe (modelled pollutant concentrations);Monitor atmosphere composition;direct;high;no
+ECMWF\.DAT\.CAMS_EUROPE_AIR_QUALITY;CAMS regional air-quality forecasts or reanalyses for Europe (modelled pollutant concentrations);Forecasting epidemics and diseases;enabling;medium;no
+CAMS_GLOBAL_ATMOSHERIC_COMPO|CAMS_GLOBAL_REANALYSIS_EAC4;CAMS global atmospheric composition: aerosols and reactive gases, forecast or reanalysis;Monitor atmosphere composition;direct;high;no
+CAMS_GLOBAL_ATMOSHERIC_COMPO|CAMS_GLOBAL_REANALYSIS_EAC4;CAMS global atmospheric composition: aerosols and reactive gases, forecast or reanalysis;Monitor and forecast air quality & emissions (fluxes);direct;medium;no
+CAMS_GLOBAL_ATMOSHERIC_COMPO|CAMS_GLOBAL_REANALYSIS_EAC4;CAMS global atmospheric composition: aerosols and reactive gases, forecast or reanalysis;Forecasting epidemics and diseases;enabling;medium;no
+CAMS_GLOBAL_EMISSION_INVENTORIES;gridded inventories of anthropogenic and natural emissions;Monitor and forecast air quality & emissions (fluxes);direct;high;no
+CAMS_GLOBAL_FIRE_EMISSIONS;biomass-burning emissions derived from satellite fire radiative power (GFAS);Detect and monitor wildfires;direct;high;no
+CAMS_GLOBAL_FIRE_EMISSIONS;biomass-burning emissions derived from satellite fire radiative power (GFAS);Monitor and forecast air quality & emissions (fluxes);direct;medium;no
+ECMWF\.DAT\.(CAMS_GLOBAL_GREENHOUSE_GAS|CAMS_GREENHOUSE_GAS_FLUXES|CO2_DATA|METHANE_DATA);greenhouse-gas concentrations or fluxes (CAMS reanalysis, inversions or satellite retrievals);Monitor atmosphere composition;direct;high;no
+ECMWF\.DAT\.(CAMS_GLOBAL_GREENHOUSE_GAS|CAMS_GREENHOUSE_GAS_FLUXES|CO2_DATA|METHANE_DATA);greenhouse-gas concentrations or fluxes (CAMS reanalysis, inversions or satellite retrievals);Monitor and forecast air quality & emissions (fluxes);direct;high;no
+ECMWF\.DAT\.(CAMS_GLOBAL_GREENHOUSE_GAS|CAMS_GREENHOUSE_GAS_FLUXES|CO2_DATA|METHANE_DATA);greenhouse-gas concentrations or fluxes (CAMS reanalysis, inversions or satellite retrievals);Assess changes in the carbon balance;enabling;medium;no
+ECMWF\.DAT\.(CAMS_GLOBAL_GREENHOUSE_GAS|CAMS_GREENHOUSE_GAS_FLUXES|CO2_DATA|METHANE_DATA);greenhouse-gas concentrations or fluxes (CAMS reanalysis, inversions or satellite retrievals);Assess climate change risk & climate forcing;enabling;medium;no
+CAMS_GLOBAL_RADIATIVE_FORCING;radiative forcing estimates for greenhouse gases, ozone and aerosols;Assess climate change risk & climate forcing;direct;high;no
+CAMS_SOLAR_RADIATION;CAMS solar radiation time series at a point: global, direct and diffuse irradiation, clear sky and all sky;Map & monitor solar energy (solar farms);direct;high;no
+CAMS_SOLAR_RADIATION;CAMS solar radiation time series at a point: global, direct and diffuse irradiation, clear sky and all sky;Forecasting sunlight exposure;direct;high;no
+SARAH;SARAH climate data record of surface solar radiation from Meteosat;Map & monitor solar energy (solar farms);direct;high;no
+SARAH;SARAH climate data record of surface solar radiation from Meteosat;Forecasting sunlight exposure;direct;high;no
+SARAH;SARAH climate data record of surface solar radiation from Meteosat;Assess climate change risk & climate forcing;enabling;medium;no
+CEMS_FIRE|WILDFIRE_FWI;fire danger indices (Fire Weather Index): fire risk, not observed fires;Detect and monitor wildfires;direct;high;no
+LSA-FRM;fire risk map merging weather forecasts and satellite fire observations: fire risk, not observed fires;Detect and monitor wildfires;direct;high;no
+GLOFAS|EFAS;modelled river discharge and flood forecasts (early warning), not an observed flood extent;Map and assess flooding;direct;high;no
+GLOFAS|EFAS;modelled river discharge and flood forecasts (early warning), not an observed flood extent;Assess ground water and run-off;direct;high;no
+GLOFAS|EFAS;modelled river discharge and flood forecasts (early warning), not an observed flood extent;Map & monitor hydroelectric energy;enabling;medium;no
+HYDROLAND;land-surface hydrology simulations (soil moisture, runoff, discharge) driven by the Climate digital twin;Assess ground water and run-off;direct;high;no
+HYDROLAND;land-surface hydrology simulations (soil moisture, runoff, discharge) driven by the Climate digital twin;Map and assess flooding;enabling;medium;no
+HYDROLAND;land-surface hydrology simulations (soil moisture, runoff, discharge) driven by the Climate digital twin;Monitor water use on crops and horticulture;enabling;medium;no
+HYDROMET_EXTREMES;catalogue of extreme precipitation events;Map and assess flooding;enabling;medium;no
+HYDROMET_EXTREMES;catalogue of extreme precipitation events;Map disaster areas and multi hazard assessment;enabling;medium;no
+HYDROMET_EXTREMES;catalogue of extreme precipitation events;Assess climate change risk & climate forcing;enabling;medium;no
+CMIP6|DT_CLIMATE|ISIMIP\.DAT\.CLIMATE|SIS_HYDROLOGY;climate projections or scenario simulations;Assess climate change risk & climate forcing;direct;high;no
+ISIMIP\.DAT\.SOCIO;socio-economic input data for climate-impact models;Assess climate change risk & climate forcing;enabling;medium;no
+DT_EXTREMES;kilometre-scale forecasts of weather extremes (Extremes digital twin);Forecast weather;direct;high;no
+DT_EXTREMES;kilometre-scale forecasts of weather extremes (Extremes digital twin);Detect & monitor hurricanes and typhoons;enabling;medium;no
+DT_EXTREMES;kilometre-scale forecasts of weather extremes (Extremes digital twin);Map and assess flooding;enabling;medium;no
+DT_EXTREMES;kilometre-scale forecasts of weather extremes (Extremes digital twin);Map disaster areas and multi hazard assessment;enabling;medium;no
+ENERGY_INDICATORS;wind and solar energy indicators computed from Climate digital twin simulations;Map & monitor wind energy (wind farms);direct;medium;no
+ENERGY_INDICATORS;wind and solar energy indicators computed from Climate digital twin simulations;Map & monitor solar energy (solar farms);direct;medium;no
+ENERGY_INDICATORS;wind and solar energy indicators computed from Climate digital twin simulations;Assess climate change risk & climate forcing;enabling;medium;no
+ERA5|UERRA;atmospheric reanalysis: hourly history of weather variables over decades;Forecast weather;direct;medium;no
+ERA5|UERRA;atmospheric reanalysis: hourly history of weather variables over decades;Assess climate change risk & climate forcing;enabling;high;no
+ERA5|UERRA;atmospheric reanalysis: hourly history of weather variables over decades;Map & monitor wind energy (wind farms);enabling;medium;no
+ERA5|UERRA;atmospheric reanalysis: hourly history of weather variables over decades;Map & monitor solar energy (solar farms);enabling;medium;no
+ERA5|UERRA;atmospheric reanalysis: hourly history of weather variables over decades;Monitor and forecast crop yields;enabling;medium;no
+ERA5_LAND;land reanalysis: soil moisture, runoff, snow and surface temperature;Assess ground water and run-off;enabling;medium;no
+ERA5_LAND;land reanalysis: soil moisture, runoff, snow and surface temperature;Monitor water use on crops and horticulture;enabling;medium;no
+SEASONAL_FORECAST;seasonal forecasts, several months ahead;Forecast weather;direct;medium;no
+SEASONAL_FORECAST;seasonal forecasts, several months ahead;Monitor and forecast crop yields;enabling;medium;no
+SEASONAL_FORECAST;seasonal forecasts, several months ahead;Map & monitor hydroelectric energy;enabling;medium;no
+GLACIER;glacier inventory or glacier mass change;Detect changes in glaciers;direct;high;no
+SATELLITE_SEA_ICE|SEAICE_GLO;sea-ice concentration, edge, type, thickness or drift;Detect & monitor ice-risk at sea;direct;high;no
+SEA_LEVEL_DAILY|SEALEVEL_GLO;gridded sea level from satellite altimetry;Monitor ocean level & surface;direct;high;no
+SEA_LEVEL_DAILY|SEALEVEL_GLO;gridded sea level from satellite altimetry;Forecast & monitor ocean currents and drift;enabling;medium;no
+UTH-CM|MHSMWHS|GIRAFE;climate data record of humidity or precipitation;Assess climate change risk & climate forcing;enabling;medium;no
+GOMPMA;climate data record of aerosol optical properties;Monitor atmosphere composition;direct;medium;no
+GOMPMA;climate data record of aerosol optical properties;Assess climate change risk & climate forcing;enabling;medium;no
+IAGOS;in-situ atmospheric composition measured from commercial aircraft;Monitor atmosphere composition;direct;medium;no
+GSW\.;Global Surface Water: where and when surface water was present, from Landsat;Assess and monitor water bodies;direct;high;no
+GSW\.;Global Surface Water: where and when surface water was present, from Landsat;Assess & monitor wetlands;enabling;medium;no
+GSW\.;Global Surface Water: where and when surface water was present, from Landsat;Map and assess flooding;enabling;medium;no
+COP-DEM;Copernicus digital elevation model;Baseline mapping;direct;high;no
+COP-DEM;Copernicus digital elevation model;Map line of sight visibility (land surface);enabling;high;no
+COP-DEM;Copernicus digital elevation model;Map and assess flooding;enabling;medium;no
+COP-DEM;Copernicus digital elevation model;Forecast and assess landslides;enabling;medium;no
+CORINE;CORINE Land Cover inventory for Europe;Monitor land cover and detect change assessment;direct;high;no
+CORINE;CORINE Land Cover inventory for Europe;Monitor land use and land use change;direct;high;no
+CORINE;CORINE Land Cover inventory for Europe;Monitor coastal land cover;direct;medium;no
+CORINE;CORINE Land Cover inventory for Europe;Monitor urban surroundings;enabling;medium;no
+LULC;labelled image patches for training land-cover classifiers (not a map);Monitor land cover and detect change assessment;enabling;medium;no
+CLMS\.DAT\.GLO\.(NDVI|LAI|FAPAR|FCOVER);global vegetation index product, every 10 days;Monitor and forecast crop yields;enabling;high;no
+CLMS\.DAT\.GLO\.(NDVI|LAI|FAPAR|FCOVER);global vegetation index product, every 10 days;Assess and monitor crop disease and stress;enabling;high;no
+CLMS\.DAT\.GLO\.(NDVI|LAI|FAPAR|FCOVER);global vegetation index product, every 10 days;Assess land ecosystems and biodiversity;enabling;medium;no
+CLMS\.DAT\.GLO\.(NDVI|LAI|FAPAR|FCOVER);global vegetation index product, every 10 days;Assess, monitor & manage onitor forest resources;enabling;medium;no
+DMP300;dry matter productivity: vegetation growth rate;Monitor and forecast crop yields;direct;medium;no
+DMP300;dry matter productivity: vegetation growth rate;Assess changes in the carbon balance;enabling;medium;no
+HRVPP;high-resolution vegetation phenology and productivity from Sentinel-2;Monitor and forecast crop yields;enabling;high;no
+HRVPP;high-resolution vegetation phenology and productivity from Sentinel-2;Assess and monitor crop disease and stress;enabling;medium;no
+HRVPP;high-resolution vegetation phenology and productivity from Sentinel-2;Assess land ecosystems and biodiversity;enabling;medium;no
+HRVPP;high-resolution vegetation phenology and productivity from Sentinel-2;Assess, monitor & manage onitor forest resources;enabling;medium;no
+GHSL\.DAT\.(BUILT|ESM|SMOD|DUC|FUA|UCDB|LAND);Global Human Settlement Layer: built-up areas, settlement types or urban centres;Monitor urban areas;direct;high;no
+GHSL\.DAT\.(BUILT|ESM|SMOD|DUC|FUA|UCDB|LAND);Global Human Settlement Layer: built-up areas, settlement types or urban centres;Monitor urban surroundings;direct;medium;no
+GHSL\.DAT\.(BUILT|ESM|SMOD|DUC|FUA|UCDB|LAND);Global Human Settlement Layer: built-up areas, settlement types or urban centres;Monitor land use and land use change;enabling;medium;no
+GHSL\.DAT\.BUILT;built-up surface, height or volume grids;Monitor construction & buildings;direct;high;no
+GHSL\.DAT\.(POP|ENACT)|EUSTAT\.DAT\.POP;population grids or regional population statistics;Assess pressures on populations and monitor humanitarian movement;enabling;medium;no
+GHSL\.DAT\.(POP|ENACT)|EUSTAT\.DAT\.POP;population grids or regional population statistics;Monitor urban areas;enabling;medium;no
+SOIL_SEALING;soil sealing statistics by region (Eurostat);Monitor land use and land use change;direct;medium;no
+SOIL_SEALING;soil sealing statistics by region (Eurostat);Monitor urban areas;enabling;medium;no
+GREENHOUSE_GAS_EMISSION_AGRICULTURE;statistics on greenhouse-gas emissions from agriculture (Eurostat);Assess environmental impact of farming;direct;medium;no
+PROTECTED_AREAS|GBIF;biodiversity records or protected-area statistics;Assess land ecosystems and biodiversity;enabling;medium;no
+SPACENET.*BUILD|ALL_WEATHER_MAPPING;labelled very-high-resolution images of a few cities, for training building detectors;Monitor construction & buildings;enabling;medium;no
+SPACENET.*ROADS;labelled images of a few cities, for training road extraction;Map & monitor transport networks;enabling;medium;no
+MO\.DAT\.GLOBAL_(ANALYSISFORECAST|MULTIYEAR)_PHY;ocean physics model: currents, temperature, salinity, sea level;Forecast & monitor ocean currents and drift;direct;high;no
+MO\.DAT\.GLOBAL_(ANALYSISFORECAST|MULTIYEAR)_PHY;ocean physics model: currents, temperature, salinity, sea level;Monitor ocean level & surface;direct;medium;no
+MO\.DAT\.GLOBAL_(ANALYSISFORECAST|MULTIYEAR)_PHY;ocean physics model: currents, temperature, salinity, sea level;Detect & monitor oil slicks;enabling;medium;no
+MO\.DAT\.GLOBAL_(ANALYSISFORECAST|MULTIYEAR)_PHY;ocean physics model: currents, temperature, salinity, sea level;Monitor invasive species;enabling;medium;no
+MULTIOBS_GLO_PHY_(MYNRT|TSUV|UVW)|INSITU_GLO_PHY_UV;ocean currents derived from observations;Forecast & monitor ocean currents and drift;direct;high;no
+MULTIOBS_GLO_PHY_(MYNRT|TSUV|UVW)|INSITU_GLO_PHY_UV;ocean currents derived from observations;Detect & monitor oil slicks;enabling;medium;no
+INSITU_GLO_PHY_TS_OA|MULTIOBS_GLO_PHY_S_SURFACE;gridded ocean temperature and salinity from observations;Monitor ocean level & surface;direct;medium;no
+INSITU_GLO_PHY_TS_OA|MULTIOBS_GLO_PHY_S_SURFACE;gridded ocean temperature and salinity from observations;Forecast & monitor ocean currents and drift;enabling;medium;no
+MO\.DAT\.GLOBAL_(ANALYSISFORECAST|MULTIYEAR)_WAV|WAVE_GLO;ocean waves: model or satellite observations;Forecast & monitor ocean winds and waves;direct;high;no
+MO\.DAT\.GLOBAL_(ANALYSISFORECAST|MULTIYEAR)_WAV|WAVE_GLO;ocean waves: model or satellite observations;Forecast & map large waves;enabling;medium;no
+GLOBAL_ANALYSISFORECAST_BGC|OCEANCOLOUR|MULTIOBS_GLO_BIO_BGC;ocean biogeochemistry and ocean colour: chlorophyll, plankton;Monitor ocean quality & productivity;direct;high;no
+GLOBAL_ANALYSISFORECAST_BGC|OCEANCOLOUR|MULTIOBS_GLO_BIO_BGC;ocean biogeochemistry and ocean colour: chlorophyll, plankton;Monitor marine habitats;enabling;medium;no
+GLOBAL_ANALYSISFORECAST_BGC|OCEANCOLOUR|MULTIOBS_GLO_BIO_BGC;ocean biogeochemistry and ocean colour: chlorophyll, plankton;Map fish shoals;enabling;medium;no
+GLOBAL_ANALYSISFORECAST_BGC|OCEANCOLOUR|MULTIOBS_GLO_BIO_BGC;ocean biogeochemistry and ocean colour: chlorophyll, plankton;Assess & monitor coastal water quality;enabling;medium;no
+GLOBAL_MULTIYEAR_BGC;modelled biomass of low and mid trophic levels (zooplankton, micronekton);Monitor marine habitats;direct;medium;no
+GLOBAL_MULTIYEAR_BGC;modelled biomass of low and mid trophic levels (zooplankton, micronekton);Map fish shoals;enabling;medium;no
+GLOBAL_MULTIYEAR_BGC;modelled biomass of low and mid trophic levels (zooplankton, micronekton);Monitor ocean quality & productivity;enabling;medium;no
+NUTRIENTS_CARBON|CARBON_SURFACE;ocean carbon and nutrient fields;Monitor ocean acidification;direct;high;no
+MO\.DAT\.SST_GLO;sea surface temperature analyses;Monitor ocean quality & productivity;direct;medium;no
+MO\.DAT\.SST_GLO;sea surface temperature analyses;Monitor ocean level & surface;direct;medium;no
+MO\.DAT\.SST_GLO;sea surface temperature analyses;Monitor marine habitats;direct;medium;no
+MO\.DAT\.SST_GLO;sea surface temperature analyses;Map fish shoals;enabling;medium;no
+MO\.DAT\.SST_GLO;sea surface temperature analyses;Assess climate change risk & climate forcing;enabling;medium;no
+MO\.DAT\.WIND_GLO;sea surface wind from scatterometers;Forecast & monitor ocean winds and waves;direct;high;no
+MO\.DAT\.WIND_GLO;sea surface wind from scatterometers;Map & monitor wind energy (wind farms);enabling;medium;no

@@ -1,0 +1,2514 @@
+{
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.CMIP6_HIST_ICON.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.CMIP6_HIST_IFS-NEMO.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.HIGHRESMIP_CONT_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.HIGHRESMIP_CONT_IFS-NEMO.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.SCENARIOMIP_SSP3-7.0_ICON.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.SCENARIOMIP_SSP3-7.0_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.SCENARIOMIP_SSP3-7.0_IFS-NEMO.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.STORY-NUDGING_CONT_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.STORY-NUDGING_HIST_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G1.STORY-NUDGING_TPLUS2.0K_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.BASELINE_CONT_ICON.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.BASELINE_CONT_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.BASELINE_CONT_IFS-NEMO.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.BASELINE_HIST_ICON.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.BASELINE_HIST_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.BASELINE_HIST_IFS-NEMO.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.PROJECTIONS_SSP3-7.0_ICON.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.PROJECTIONS_SSP3-7.0_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.PROJECTIONS_SSP3-7.0_IFS-NEMO.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_CONT_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_CONT_IFS-FESOM.R2": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_CONT_IFS-FESOM.R3": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_CONT_IFS-FESOM.R4": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_CONT_IFS-FESOM.R5": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_HIST_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_HIST_IFS-FESOM.R2": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_HIST_IFS-FESOM.R3": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_HIST_IFS-FESOM.R4": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_HIST_IFS-FESOM.R5": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_TPLUS2.0K_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_TPLUS2.0K_IFS-FESOM.R2": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_TPLUS2.0K_IFS-FESOM.R3": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_TPLUS2.0K_IFS-FESOM.R4": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.D1.DT_CLIMATE.G2.STORY-NUDGING_TPLUS2.0K_IFS-FESOM.R5": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.DT_CLIMATE_ADAPTATION": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.DT_EXTREMES": {
+"res_m": 500.0,
+"res_txt": "500 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ys ahead, at very high spatial resolution (4.4 km globally, 500 – 750 m over Europe). The Extremes DT sets up a unified,",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.NG.DT_CLIMATE.G1.CMIP6_HIST_IFS-FESOM.R1": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.NG.DT_CLIMATE.G1.SCENARIOMIP_SSP3-7.0_IFS-FESOM.R2": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "mescales (1990 to ~2050), at very high spatial resolutions (5 to 10 km). The Climate DT represents the first ever attem",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.DT_CLIMATE_ADAPTATION_ICON": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ulti-decadal climate projections at km-scale resolutions of 5 to 10km, leveraging the world- leading supercomputing fac",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.DT_CLIMATE_ADAPTATION_IFS-NEMO": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ulti-decadal climate projections at km-scale resolutions of 5 to 10km, leveraging the world- leading supercomputing fac",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.AERIS.DAT.IAGOS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.BSC.DAT.ENERGY_INDICATORS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.DWD.STAT.HYDROMET_EXTREMES": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.EUM.CM.METOP.ASCSZFR02": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.CM.METOP.ASCSZOR02": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.CM.METOP.ASCSZRR02": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.AMVR02": {
+"res_m": 1000.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel | SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel | SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel | SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals | SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.GSAL2R02": {
+"res_m": 1000.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel | SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel | SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel | SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals | SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.METOP.AMSUL1": {
+"res_m": 48000.0,
+"res_txt": "AMSU-A: 48 km IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AMSU-A: 48 km IFOV",
+"sensor_res": "AMSU-A: 48 km IFOV",
+"revisit": "AMSU-A: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.ASCSZF1B": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.ASCSZO1B": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.ASCSZR1B": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.AVHRDUAL0100": {
+"res_m": 1100.0,
+"res_txt": "AVHRR: 1.1 km s.s.p. IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AVHRR: 1.1 km s.s.p. IFOV",
+"sensor_res": "AVHRR: 1.1 km s.s.p. IFOV",
+"revisit": "AVHRR: Global coverage twice/day (IR) or once/day (VIS)"
+},
+"EO.EUM.DAT.METOP.AVHRPWE0200": {
+"res_m": 1100.0,
+"res_txt": "AVHRR: 1.1 km s.s.p. IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AVHRR: 1.1 km s.s.p. IFOV",
+"sensor_res": "AVHRR: 1.1 km s.s.p. IFOV",
+"revisit": "AVHRR: Global coverage twice/day (IR) or once/day (VIS)"
+},
+"EO.EUM.DAT.METOP.AVHRRGACR02": {
+"res_m": 1100.0,
+"res_txt": "AVHRR: 1.1 km s.s.p. IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AVHRR: 1.1 km s.s.p. IFOV",
+"sensor_res": "AVHRR: 1.1 km s.s.p. IFOV",
+"revisit": "AVHRR: Global coverage twice/day (IR) or once/day (VIS)"
+},
+"EO.EUM.DAT.METOP.AVHRRL1": {
+"res_m": 1100.0,
+"res_txt": "1.1 km",
+"res_src": "catalogue description",
+"snip": "r daytime and nighttime. As a high-resolution imager (about 1.1 km near nadir) its main purpose is to provide cloud",
+"sensor_res": "AVHRR: 1.1 km s.s.p. IFOV",
+"revisit": "AVHRR: Global coverage twice/day (IR) or once/day (VIS)"
+},
+"EO.EUM.DAT.METOP.GLB-SST-NC": {
+"res_m": 5566.0,
+"res_txt": "0.05 °",
+"res_src": "catalogue description",
+"snip": "Surface Temperature (GBL SST) is a 12 hourly synthesis on a 0.05° global grid. The product format is compliant with",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.GOMEL1": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "GOME-2: Main channels: 40 x 40 km2 associated to 960 km swath or 40 x 80 km2 associated to 1920 km swath. Polarisation channels: respectively 40 x 5 km2 or 40 x 10 km2 .",
+"revisit": "GOME-2: Global coverage every 3 days with high resolution or 1.5 days with low resolution. Daylight only"
+},
+"EO.EUM.DAT.METOP.GOMEL1R03": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "GOME-2: Main channels: 40 x 40 km2 associated to 960 km swath or 40 x 80 km2 associated to 1920 km swath. Polarisation channels: respectively 40 x 5 km2 or 40 x 10 km2 .",
+"revisit": "GOME-2: Global coverage every 3 days with high resolution or 1.5 days with low resolution. Daylight only"
+},
+"EO.EUM.DAT.METOP.GOMPMA020100": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.EUM.DAT.METOP.IASIL1C-ALL": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.IASI_NCM_L1": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.IASPCS1C0100": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.IASSND02": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.IASSO22X0100": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.IASTHR011": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.IASXXX1C0200": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.LSA-002": {
+"res_m": 1100.0,
+"res_txt": "AVHRR: 1.1 km s.s.p. IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AVHRR: 1.1 km s.s.p. IFOV",
+"sensor_res": "AVHRR: 1.1 km s.s.p. IFOV",
+"revisit": "AVHRR: Global coverage twice/day (IR) or once/day (VIS)"
+},
+"EO.EUM.DAT.METOP.MHSL1": {
+"res_m": 16000.0,
+"res_txt": "MHS: 16 km IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MHS: 16 km IFOV",
+"sensor_res": "MHS: 16 km IFOV",
+"revisit": "MHS: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.MHSMWHS0200": {
+"res_m": 16000.0,
+"res_txt": "MHS: 16 km IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MHS: 16 km IFOV",
+"sensor_res": "MHS: 16 km IFOV",
+"revisit": "MHS: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.MXI-DR-O3": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.O3M-517": {
+"res_m": 12000.0,
+"res_txt": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"sensor_res": "IASI: 4 x 12-km IFOV close to the centre of a 48 x 48 km2 cell (average sampling distance: 24 km)",
+"revisit": "IASI: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.METOP.OAS025": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.OSI-104": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.OSI-150-A": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.OSI-150-B": {
+"res_m": 12500.0,
+"res_txt": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.SOMO12": {
+"res_m": 12500.0,
+"res_txt": "12.5 km",
+"res_src": "catalogue description",
+"snip": "backscatter observations and given in swath orbit geometry (12.5 km sampling). This SM product provides an estimate o",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.METOP.SOMO25": {
+"res_m": 25000.0,
+"res_txt": "25 km",
+"res_src": "catalogue description",
+"snip": "backscatter observations and given in swath orbit geometry (25 km sampling). This SM product provides an estimate o",
+"sensor_res": "ASCAT: Best quality: 50 km – standard quality: 25 km – basic sampling: 12.5 km",
+"revisit": "ASCAT: Global coverage in 1.5 days"
+},
+"EO.EUM.DAT.MFG.GSA-57": {
+"res_m": 2500.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MFG.GSA-63": {
+"res_m": 2500.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MFG.MFGAMV570IODC1": {
+"res_m": 2500.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MFG.MFGAMV630IODC1": {
+"res_m": 2500.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MFG.MTP15EASY0200_0DEG": {
+"res_m": 2500.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MFG.MTP15EASY0200_57DEG": {
+"res_m": 2500.0,
+"res_txt": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"sensor_res": "MVIRI: IFOV: 5.0 km for IR channels, 2.5 km for the VIS channel",
+"revisit": "MVIRI: Full disk every 30 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.CLM": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.CLM-IODC": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.CTH": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.CTH-IODC": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.HRSEVIRI": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.HRSEVIRI-IODC": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.LSA-FRM": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.LSA-LST-CDR": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.LSA-LSTDE": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.MSG15-RSS": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.OCA-CDR": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.RSS-CLM": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.SEVIRI-RSS_AMV-CDR-V1": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.SEVIRI-RSS_HR_IMG-L1_5-V1": {
+"res_m": 1000.0,
+"res_txt": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"sensor_res": "SEVIRI: 4.8 km IFOV, 3 km sampling for narrow channels; 1.6 km IFOV, 1 km sampling for broad VIS channel",
+"revisit": "SEVIRI: Full disk every 15 min. Limited areas in correspondingly shorter time intervals"
+},
+"EO.EUM.DAT.MSG.SEVIRI-SARAH-CDR-V003": {
+"res_m": 5566.0,
+"res_txt": "0.05 °",
+"res_src": "catalogue description",
+"snip": "egular latitude/longitude grid with a spatial resolution of 0.05° x 0.05° degrees. The data record is complemented with a c",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.EUM.DAT.MTG.FCI-ACTIVE_FIRE-L2-V1": {
+"res_m": 500.0,
+"res_txt": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-AMV-BUFR": {
+"res_m": 500.0,
+"res_txt": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-AMV-NETCDF": {
+"res_m": 500.0,
+"res_txt": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-ASR-BUFR": {
+"res_m": 500.0,
+"res_txt": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-ASR-NETCDF": {
+"res_m": 500.0,
+"res_txt": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-CLM": {
+"res_m": 2000.0,
+"res_txt": "2 km",
+"res_src": "catalogue description",
+"snip": "d GRIB format, every 10 minutes, at a spatial resolution of 2 km at nadir.",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-GII": {
+"res_m": 6000.0,
+"res_txt": "6 km",
+"res_src": "catalogue description",
+"snip": "x3 pixels (IR channels), leading to a spatial resolution of 6 km at nadir.",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-OCA": {
+"res_m": 2000.0,
+"res_txt": "2 km",
+"res_src": "catalogue description",
+"snip": "product is available in netCDF format, every 10 minutes, at 2km spatial resolution at nadir.",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.FCI-OLR": {
+"res_m": 2000.0,
+"res_txt": "2 km",
+"res_src": "catalogue description",
+"snip": "product is available in netCDF format, every 10 minutes, at 2 km spatial resolution at nadir.",
+"sensor_res": "FCI: 0.5 to 2.0 km s.s.p., depending on channel",
+"revisit": "FCI: Nominal operations: two satellites, one for full disk in 10 min, the other one for 1/4 of disk (Europe) in 2.5 min. When only one satellite is available: optimally alternating sectors."
+},
+"EO.EUM.DAT.MTG.LI-AF": {
+"res_m": 4500.0,
+"res_txt": "LI: 4.5 km at s.s.p.",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "LI: 4.5 km at s.s.p.",
+"sensor_res": "LI: 4.5 km at s.s.p.",
+"revisit": "LI: Full disk continuously observed (time resolution ~ 1 ms)"
+},
+"EO.EUM.DAT.MTG.LI-AFA": {
+"res_m": 2000.0,
+"res_txt": "2 km",
+"res_src": "catalogue description",
+"snip": "ea, one can derive the flash rate for each pixel of the FCI 2km grid. This is a considerable improvement compared",
+"sensor_res": "LI: 4.5 km at s.s.p.",
+"revisit": "LI: Full disk continuously observed (time resolution ~ 1 ms)"
+},
+"EO.EUM.DAT.MTG.LI-AFR": {
+"res_m": 2000.0,
+"res_txt": "2 km",
+"res_src": "catalogue description",
+"snip": "the optical emission accumulated over 30 sec within the FCI 2km grid. This stems from the events contributing to",
+"sensor_res": "LI: 4.5 km at s.s.p.",
+"revisit": "LI: Full disk continuously observed (time resolution ~ 1 ms)"
+},
+"EO.EUM.DAT.MTG.LI-LEF": {
+"res_m": 4500.0,
+"res_txt": "LI: 4.5 km at s.s.p.",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "LI: 4.5 km at s.s.p.",
+"sensor_res": "LI: 4.5 km at s.s.p.",
+"revisit": "LI: Full disk continuously observed (time resolution ~ 1 ms)"
+},
+"EO.EUM.DAT.MTG.LI-LFL": {
+"res_m": 4500.0,
+"res_txt": "LI: 4.5 km at s.s.p.",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "LI: 4.5 km at s.s.p.",
+"sensor_res": "LI: 4.5 km at s.s.p.",
+"revisit": "LI: Full disk continuously observed (time resolution ~ 1 ms)"
+},
+"EO.EUM.DAT.MTG.LI-LGR": {
+"res_m": 4500.0,
+"res_txt": "LI: 4.5 km at s.s.p.",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "LI: 4.5 km at s.s.p.",
+"sensor_res": "LI: 4.5 km at s.s.p.",
+"revisit": "LI: Full disk continuously observed (time resolution ~ 1 ms)"
+},
+"EO.EUM.DAT.MULT.AVHGAC1C0100": {
+"res_m": 1100.0,
+"res_txt": "AVHRR: 1.1 km s.s.p. IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AVHRR: 1.1 km s.s.p. IFOV",
+"sensor_res": "AVHRR: 1.1 km s.s.p. IFOV",
+"revisit": "AVHRR: Global coverage twice/day (IR) or once/day (VIS)"
+},
+"EO.EUM.DAT.MULT.HIRSL1": {
+"res_m": 10000.0,
+"res_txt": "HIRS: 10 km at s.s.p.",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "HIRS: 10 km at s.s.p.",
+"sensor_res": "HIRS: 10 km at s.s.p.",
+"revisit": "HIRS: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.MULT.HIRSL1C-FDR": {
+"res_m": 10000.0,
+"res_txt": "HIRS: 10 km at s.s.p.",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "HIRS: 10 km at s.s.p.",
+"sensor_res": "HIRS: 10 km at s.s.p.",
+"revisit": "HIRS: Near-global coverage twice/day"
+},
+"EO.EUM.DAT.MULT.MHSMWHS0100": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.EUM.DAT.MULT.OLR-CM-11342-CM-6321": {
+"res_m": 5566.0,
+"res_txt": "0.05 ° (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "evel 2b) are provided in a global grid with a resolution of 0.05°x0.05°. CLARA-A3 features a comprehensive set of documen",
+"sensor_res": "AVHRR: 1.1 km s.s.p. IFOV",
+"revisit": "AVHRR: Global coverage twice/day (IR) or once/day (VIS)"
+},
+"EO.EUM.DAT.MULT.PMW_IR-GIRAFE_PRECIP-CDR-V001": {
+"res_m": 111320.0,
+"res_txt": "1 °",
+"res_src": "catalogue description",
+"snip": "duct which is available globally at a spatial resolution of 1° x 1° and at a temporal resolution of 24h as accumulat",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.EUM.DAT.MULT.UTH-CM-14712": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.EUM.DAT.SENTINEL-3.AOD": {
+"res_m": 9500.0,
+"res_txt": "9.5 km",
+"res_src": "catalogue description",
+"snip": "global distribution & long-range transport, at the scale of 9.5 x 9.5 km2. All observations are made available in less tha",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.EUM.DAT.SENTINEL-3.FRP": {
+"res_m": 500.0,
+"res_txt": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_1_EFRBC004": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue description",
+"snip": "OLCI (Ocean and Land Colour Instrument) Full Resolution: 300m at nadir. Level 1 products are calibrated Top Of",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_1_EFR___": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue description",
+"snip": "OLCI (Ocean and Land Colour Instrument) Full resolution: 300m at nadir. Level 1 products are calibrated Top Of",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_1_ERRBC004": {
+"res_m": 1200.0,
+"res_txt": "1200 m",
+"res_src": "catalogue description",
+"snip": "OLCI (Ocean and Land Colour Instrument) Reduced Resolution: 1200m at nadir. Level 1 products are calibrated Top Of",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_1_ERR___": {
+"res_m": 1200.0,
+"res_txt": "1200 m",
+"res_src": "catalogue description",
+"snip": "OLCI (Ocean and Land Colour Instrument) Reduced resolution: 1200m at nadir. All Sentinel-3 NRT products are availab",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_2_WFRBC003": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue description",
+"snip": "r (TSM) product. Full resolution products are at a nominal 300m resolution. This collection contains reprocessed",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_2_WFR___": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue description",
+"snip": "rument) Ocean Colour Geophysical Products. Full Resolution: 300m at nadir. All Sentinel-3 NRT products are availab",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_2_WRRBC003": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue description",
+"snip": "TSM) product. Reduced resolution products are at a nominal 1km resolution. This collection contains reprocessed",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.OL_2_WRR___": {
+"res_m": 1200.0,
+"res_txt": "1200 m",
+"res_src": "catalogue description",
+"snip": "ent) Ocean Colour Geophysical Products. Reduced Resolution: 1200m at nadir. Level 2 marine products include the fol",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.EUM.DAT.SENTINEL-3.SL_1_RBTBC003": {
+"res_m": 500.0,
+"res_txt": "500 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "for the 2 Fire (FIR) bands. Resolution: 1km at nadir (TIR), 500m (VIS). All are provided for both the oblique and",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.EUM.DAT.SENTINEL-3.SL_1_RBTBC004": {
+"res_m": 500.0,
+"res_txt": "500 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "for the 2 Fire (FIR) bands. Resolution: 1km at nadir (TIR), 500m (VIS). All are provided for both the oblique and",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.EUM.DAT.SENTINEL-3.SL_1_RBT___": {
+"res_m": 500.0,
+"res_txt": "500 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "for the 2 Fire (FIR) bands. Resolution: 1km at nadir (TIR), 500m (VIS). All are provided for both the oblique and",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.EUM.DAT.SENTINEL-3.SL_2_WSTBC003": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue description",
+"snip": "The SLSTR SST has a spatial resolution of 1km at nadir. Skin Sea Surface Temperature following",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.EUM.DAT.SENTINEL-3.SL_2_WST___": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue description",
+"snip": "SLSTR SST has a spatial resolution of 1km at nadir. Skin Sea Surface Temperature following",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_1_SRABC005": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_1_SRA_A_": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_1_SRA_A_BC005": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_1_SRA_BS": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_1_SRA_BS_BC004": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_1_SRA_BS_BC005": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_1_SRA___": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_2_WATBC005": {
+"res_m": 300.0,
+"res_txt": "300 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "low (1 Hz = approx 7km) and high resolution (20 Hz = approx 300 m), in LRM mode or in SAR mode, for both C-band and",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-3.SR_2_WAT___": {
+"res_m": 300.0,
+"res_txt": "300 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "low (1 Hz = approx 7km) and high resolution (20 Hz = approx 300 m), in LRM mode or in SAR mode, for both C-band and",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.L1B-RADIO_OCCULTATION": {
+"res_m": 300000.0,
+"res_txt": "GNSS-RO RECEIVER: About 300 km horizontal, 0.5 km vertical",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "GNSS-RO RECEIVER: About 300 km horizontal, 0.5 km vertical",
+"sensor_res": "GNSS-RO RECEIVER: About 300 km horizontal, 0.5 km vertical",
+"revisit": "GNSS-RO RECEIVER: 1 GNSS constellation tracked. About 650 soundings/day - Average spacing 880 km - Global coverage (300 km spacing) in 8.5 days"
+},
+"EO.EUM.DAT.SENTINEL-6.MW_2__AMR_F08": {
+"res_m": 25000.0,
+"res_txt": "AMR-C: 25 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AMR-C: 25 km",
+"sensor_res": "AMR-C: 25 km",
+"revisit": "AMR-C: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.MW_2__AMR____": {
+"res_m": 25000.0,
+"res_txt": "AMR-C: 25 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "AMR-C: 25 km",
+"sensor_res": "AMR-C: 25 km",
+"revisit": "AMR-C: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_1A_HR_____": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_1B_HR_F08": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_1B_HR_G01": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_1B_LR_F08": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_1B_LR_____": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_2__HR_F08": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_2__HR_____": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_2__LR_F08": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_2__LR_G01": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.EUM.DAT.SENTINEL-6.P4_3__LR": {
+"res_m": 300.0,
+"res_txt": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"sensor_res": "Poseidon-4: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m",
+"revisit": "Poseidon-4: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.FMI.DAT.DESTINE_CLIMATE_WILDFIRE_FWI": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GSW.DAT.CHANGE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GSW.DAT.EXTENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GSW.DAT.OCCURRENCE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GSW.DAT.RECURRENCE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GSW.DAT.SEASONALITY": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GSW.DAT.TRANSITIONS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ISIMIP.DAT.CLIMATE-FORCING_ISIMIP3b": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ISIMIP.DAT.SOCIO-ECONOMIC-FORCING_ISIMIP3b": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.SPACENET.DAT.ALL_WEATHER_MAPPING": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.SPACENET.DAT.BUILDINGS_DETECTION_V1": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.SPACENET.DAT.BUILDINGS_DETECTION_V2": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.SPACENET.DAT.OFF_NADIR_BUILDING": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.SPACENET.DAT.ROADS_NETWORK_DETECTION": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.SPACENET.DAT.ROADS_NETWORK_ROUTE_TRAVEL": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.UFZ.DAT.HYDROLAND": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"ML.EUROSAT.DAT.LULC_10_GEOREF": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.AVAILABLE_BEDS_HOSPITALS_NUTS2": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.BATHING_SITES_WATER_QUALITY": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.GREENHOUSE_GAS_EMISSION_AGRICULTURE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.POP_AGE_GROUP_SEX_NUTS3": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.POP_AGE_SEX_NUTS2": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.POP_CHANGE_DEMO_BALANCE_CRUDE_RATES_NUTS3": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.POP_DENSITY_NUTS3": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.SHARE_ENERGY_FROM_RENEWABLE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.SOIL_SEALING_INDEX": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"STAT.EUSTAT.DAT.SURFACE_TERRESTRIAL_PROTECTED_AREAS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.DEM.DAT.COP-DEM_GLO-30-DGED": {
+"res_m": 30.0,
+"res_txt": "30 meters",
+"res_src": "catalogue title",
+"snip": "COPERNICUS Digital Elevation Model (DEM) 30 meters DGED",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.DEM.DAT.COP-DEM_GLO-30-DTED": {
+"res_m": 30.0,
+"res_txt": "30 meters",
+"res_src": "catalogue title",
+"snip": "COPERNICUS Digital Elevation Model (DEM) 30 meters DTED",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.DEM.DAT.COP-DEM_GLO-90-DGED": {
+"res_m": 90.0,
+"res_txt": "90 meters",
+"res_src": "catalogue title",
+"snip": "COPERNICUS Digital Elevation Model (DEM) 90 meters DGED",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.DEM.DAT.COP-DEM_GLO-90-DTED": {
+"res_m": 90.0,
+"res_txt": "90 meters",
+"res_src": "catalogue title",
+"snip": "COPERNICUS Digital Elevation Model (DEM) 90 meters DTED",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ESA.DAT.SENTINEL-1.L1_GRD": {
+"res_m": 4.0,
+"res_txt": "C-SAR: 4 m to 80 m, depending on operation mode - See table",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "C-SAR: 4 m to 80 m, depending on operation mode - See table",
+"sensor_res": "C-SAR: 4 m to 80 m, depending on operation mode - See table",
+"revisit": "C-SAR: Global coverage in 5 day for the ‘Extra-wide swath’ mode (duty cycle 70 %); in longer periods for other operation modes (duty cycle 30 %), up to 3 months"
+},
+"EO.ESA.DAT.SENTINEL-1.L1_SLC": {
+"res_m": 4.0,
+"res_txt": "C-SAR: 4 m to 80 m, depending on operation mode - See table",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "C-SAR: 4 m to 80 m, depending on operation mode - See table",
+"sensor_res": "C-SAR: 4 m to 80 m, depending on operation mode - See table",
+"revisit": "C-SAR: Global coverage in 5 day for the ‘Extra-wide swath’ mode (duty cycle 70 %); in longer periods for other operation modes (duty cycle 30 %), up to 3 months"
+},
+"EO.ESA.DAT.SENTINEL-2.MSI.L1C": {
+"res_m": 10.0,
+"res_txt": "MSI: IFOV: 10 to 60 m, depending on channel (see table)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MSI: IFOV: 10 to 60 m, depending on channel (see table)",
+"sensor_res": "MSI: IFOV: 10 to 60 m, depending on channel (see table)",
+"revisit": "MSI: Global coverage in 10 days, in daylight. More frequent possible for emergencies"
+},
+"EO.ESA.DAT.SENTINEL-2.MSI.L2A": {
+"res_m": 10.0,
+"res_txt": "MSI: IFOV: 10 to 60 m, depending on channel (see table)",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MSI: IFOV: 10 to 60 m, depending on channel (see table)",
+"sensor_res": "MSI: IFOV: 10 to 60 m, depending on channel (see table)",
+"revisit": "MSI: Global coverage in 10 days, in daylight. More frequent possible for emergencies"
+},
+"EO.ESA.DAT.SENTINEL-3.OL_2_LFR___": {
+"res_m": 300.0,
+"res_txt": "OLCI: 300 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "OLCI: 300 m",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.ESA.DAT.SENTINEL-3.OL_2_LRR___": {
+"res_m": 1200.0,
+"res_txt": "1200 m",
+"res_src": "catalogue description",
+"snip": "ent) Ocean Colour Geophysical Products. Reduced Resolution: 1200m at nadir. OLCI Land Level 2 product contains land",
+"sensor_res": "OLCI: 300 m",
+"revisit": "OLCI: Global coverage in 2 days, in daylight"
+},
+"EO.ESA.DAT.SENTINEL-3.SL_2_LST___": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue description",
+"snip": "duct provides land surface parameters generated on the wide 1 km measurement grid. It contains measurement file wi",
+"sensor_res": "SLSTR: IFOV: 0.5 km for VIS/NIR/SWIR, 1.0 km for MWIR/TIR",
+"revisit": "SLSTR: Global in 1 day (MWIR/TIR) or 2 days (VIS/NIR/SWIR); dual-view: 2 days (MWIR/TIR) or 4 days (VIS/NIR/SWIR)"
+},
+"EO.ESA.DAT.SENTINEL-3.SR_2_LAN___": {
+"res_m": 300.0,
+"res_txt": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m | MWR: 20 km",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m | MWR: 20 km",
+"sensor_res": "SRAL: 20 km IFOV. When used in SAR mode, the along-track resolution is 300 m | MWR: 20 km",
+"revisit": "SRAL: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing | MWR: Global coverage in 1 month for 30 km average spacing, or in 10 days for 100 km average spacing"
+},
+"EO.ESA.DAT.SENTINEL-5P.TROPOMI.L1": {
+"res_m": 3500.0,
+"res_txt": "3.5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "arth's surface. The typical pixel size (near nadir) will be 7x3.5 km2 for all spectral bands, with the exception of th",
+"sensor_res": "TROPOMI: 7 km at s.s.p.",
+"revisit": "TROPOMI: Global coverage every day, in daylight"
+},
+"EO.ESA.DAT.SENTINEL-5P.TROPOMI.L2": {
+"res_m": 3500.0,
+"res_txt": "3.5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "arth's surface. The typical pixel size (near nadir) will be 7x3.5 km2 for all spectral bands, with the exception of th",
+"sensor_res": "TROPOMI: 7 km at s.s.p.",
+"revisit": "TROPOMI: Global coverage every day, in daylight"
+},
+"EO.CLMS.DAT.CORINE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.GLO.DMP300_V1": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue title",
+"snip": "Dry Matter Productivity 2014-present (raster 300 m), global, 10-daily - version 1",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.GLO.FAPAR300_V1": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue title",
+"snip": "ed Photosynthetically Active Radiation 2014-present (raster 300 m), global, 10-daily – version 1",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.GLO.FCOVER300_V1": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue title",
+"snip": "Fraction of Green Vegetation Cover 2014-present (raster 300 m), global, 10-daily – version 1",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.GLO.GDMP300_V1": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue title",
+"snip": "Gross Dry Matter Productivity 2014-present (raster 300 m), global, 10-daily – version 1",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.GLO.LAI300_V1": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue title",
+"snip": "Leaf Area Index 2014-present (raster 300 m), global, 10-daily – version 1",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.GLO.NDVI300_V1": {
+"res_m": 300.0,
+"res_txt": "300 m",
+"res_src": "catalogue title",
+"snip": "Normalised Difference Vegetation Index 2014-2020 (raster 300 m), global, 10-daily – version 1",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.GLO.NDVI_1KM_V2": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue title",
+"snip": "Normalised Difference Vegetation Index 1998-2020 (raster 1 km), global, 10-daily – version 2",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.SENTINEL-2.HRVPP_ST": {
+"res_m": 10.0,
+"res_txt": "10 m",
+"res_src": "catalogue description",
+"snip": "T products are made available as a set of raster files with 10 x 10m resolution, in UTM/WGS84 projection corresponding",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.SENTINEL-2.HRVPP_ST-LAEA": {
+"res_m": 10.0,
+"res_txt": "10 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "T products are made available as a set of raster files with 10m and 100m resolution, in ETRS89/LAEA projection co",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.SENTINEL-2.HRVPP_VPP": {
+"res_m": 10.0,
+"res_txt": "10 m",
+"res_src": "catalogue description",
+"snip": "parameters are made available as a set of raster files with 10 x 10m resolution, in UTM/WGS84 projection corresponding",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.CLMS.DAT.SENTINEL-2.HRVPP_VPP-LAEA": {
+"res_m": 10.0,
+"res_txt": "10 m (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "parameters are made available as a set of raster files with 10m and 100m resolution, in ETRS89/LAEA projection co",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_EUROPE_AIR_QUALITY_FORECASTS": {
+"res_m": 10000.0,
+"res_txt": "10 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ignificantly higher spatial resolution (0.1 degrees, approx 10km) than is available from the global analyses and f",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_EUROPE_AIR_QUALITY_REANALYSES": {
+"res_m": 10000.0,
+"res_txt": "10 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ignificantly higher spatial resolution (0.1 degrees, approx 10km) than is available from the global reanalyses. Th",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_ATMOSHERIC_COMPO_FORECAST": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_EMISSION_INVENTORIES": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_FIRE_EMISSIONS_GFAS": {
+"res_m": 11132.0,
+"res_txt": "0.1 degrees",
+"res_src": "catalogue description",
+"snip": "house gases, on a regular grid with a spatial resolution of 0.1 degrees longitude by 0.1 degrees latitude. This version",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_GREENHOUSE_GAS_REANALYSIS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_GREENHOUSE_GAS_REANALYSIS_MONTHLY_AV_FIELDS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_RADIATIVE_FORCING": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_RADIATIVE_FORCING_AUX": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_REANALYSIS_EAC4": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GLOBAL_REANALYSIS_EAC4_MONTHLY_AV_FIELDS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_GREENHOUSE_GAS_FLUXES": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CAMS_SOLAR_RADIATION_TIMESERIES": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CEMS_FIRE_HISTORICAL": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CEMS_GLOFAS_FORECAST": {
+"res_m": 5000.0,
+"res_txt": "5 km",
+"res_src": "catalogue description",
+"snip": "as produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with meteorological forecasts. The for",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CEMS_GLOFAS_HISTORICAL": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CEMS_GLOFAS_REFORECAST": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CEMS_GLOFAS_SEASONAL": {
+"res_m": 11000.0,
+"res_txt": "11 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "uced by forcing the LISFLOOD hydrological model at a 0.1° (~11 km at the equator) resolution with downscaled runoff",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CEMS_GLOFAS_SEASONAL_REFORECAST": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CMIP6_CLIMATE_PROJECTIONS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.CO2_DATA_FROM_SATELLITE_SENSORS_2002_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.DERIVED_GRIDDED_GLACIER_MASS_CHANGE": {
+"res_m": 55660.0,
+"res_txt": "0.5 °",
+"res_src": "catalogue description",
+"snip": "lacier mass changes distributed on a global regular grid at 0.5° resolution (latitude, longitude) based on the Flu",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.EFAS_FORECAST": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.EFAS_HISTORICAL": {
+"res_m": 5000.0,
+"res_txt": "5 km",
+"res_src": "catalogue description",
+"snip": "ed observational data of precipitation and temperature at a 5x5 km resolution across the EFAS domain. The most recen",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.EFAS_REFORECAST": {
+"res_m": 5000.0,
+"res_txt": "5 km",
+"res_src": "catalogue description",
+"snip": "as produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with ensemble meteorological reforecas",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.EFAS_SEASONAL": {
+"res_m": 5000.0,
+"res_txt": "5 km",
+"res_src": "catalogue description",
+"snip": "as produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with seasonal meteorological ensemble",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.EFAS_SEASONAL_REFORECAST": {
+"res_m": 5000.0,
+"res_txt": "5 km",
+"res_src": "catalogue description",
+"snip": "as produced by forcing the LISFLOOD hydrological model at a 5x5km gridded resolution with seasonal meteorological e",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.ERA5_HOURLY_VARIABLES_ON_PRESSURE_LEVELS": {
+"res_m": 27830.0,
+"res_txt": "0.25 degrees (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ines . Data has been regridded to a regular lat-lon grid of 0.25 degrees for the reanalysis and 0.5 degrees for the uncert",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.ERA5_LAND_HOURLY": {
+"res_m": 9000.0,
+"res_txt": "9 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "al Horizontal resolution: 0.1° x 0.1°; Native resolution is 9 km. Vertical coverage: From 2 m above the surface le",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.ERA5_LAND_MONTHLY": {
+"res_m": 9000.0,
+"res_txt": "9 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "e spatial resolution of the ERA5-Land reanalysis dataset is 9km on a reduced Gaussian grid (TCo1279). The data in",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.ERA5_MONTHLY_MEANS_VARIABLES_ON_PRESSURE_LEVELS": {
+"res_m": 27830.0,
+"res_txt": "0.25 degrees (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ions. Data has been regridded to a regular lat-lon grid of 0.25 degrees for the reanalysis and 0.5 degrees for the uncert",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.GLACIERS_DISTRIBUTION_DATA_FROM_RANDOLPH_GLACIER_INVENTORY_2000": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.METHANE_DATA_SATELLITE_SENSORS_2002_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.REANALYSIS_ERA5_SINGLE_LEVELS": {
+"res_m": 27830.0,
+"res_txt": "0.25 degrees (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ions. Data has been regridded to a regular lat-lon grid of 0.25 degrees for the reanalysis and 0.5 degrees for the uncert",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.REANALYSIS_ERA5_SINGLE_LEVELS_MONTHLY_MEANS": {
+"res_m": 27830.0,
+"res_txt": "0.25 degrees (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ions. Data has been regridded to a regular lat-lon grid of 0.25 degrees for the reanalysis and 0.5 degrees for the uncert",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.REANALYSIS_UERRA_EUROPE_SINGLE_LEVELS": {
+"res_m": 5500.0,
+"res_txt": "5.5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ntal resolution: 11km x 11km for the UERRA-HARMONIE system. 5.5km x 5.5km for the MESCAN-SURFEX system. Vertical coverage:",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SATELLITE_SEA_ICE_CONCENTRATION": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SATELLITE_SEA_ICE_EDGE_TYPE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SATELLITE_SEA_ICE_THICKNESS": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SEASONAL_FORECAST_ANOMALIES_ON_PRESSURE_LEVELS_2017_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SEASONAL_FORECAST_ANOMALIES_ON_SINGLE_LEVELS_2017_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SEASONAL_FORECAST_DAILY_DATA_ON_PRESSURE_LEVELS_2017_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SEASONAL_FORECAST_DAILY_DATA_ON_SINGLE_LEVELS_2017_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SEASONAL_FORECAST_MONTHLY_STATISTICS_ON_PRESSURE_LEVELS_2017_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SEASONAL_FORECAST_MONTHLY_STATISTICS_ON_SINGLE_LEVELS_2017_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SEA_LEVEL_DAILY_GRIDDED_DATA_FOR_GLOBAL_OCEAN_1993_PRESENT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.ECMWF.DAT.SIS_HYDROLOGY_METEOROLOGY_DERIVED_PROJECTIONS": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "and five CIIs at a spatial resolution of 0.11° x 0.11° and 5km x 5km. The ECV data meet the technical specification se",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GBIF.DAT.OCCURRENCE": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.BUILT-C": {
+"res_m": 10.0,
+"res_txt": "10 m",
+"res_src": "catalogue description",
+"snip": "taset delineates the boundaries of the human settlements at 10m resolution, and describes their inner characteris",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.BUILT-H": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.BUILT-LAUSTAT": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.BUILT-S": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.BUILT-V": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.DUC": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.ENACT-POP": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue description",
+"snip": "ing the number of people per cell. The data is published at 1 km resolution in Lambert Azimuthal Equal Area (EPSG:",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.ESM": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.FUA": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.LAND": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.POP": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.SMOD": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.UCDB-DOMAIN": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue description",
+"snip": "lues on resident population and built-up surface share in a 1x1 km uniform global grid. The input data is generated",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.GHSL.DAT.UCDB-REGION": {
+"res_m": 1000.0,
+"res_txt": "1 km",
+"res_src": "catalogue description",
+"snip": "lues on resident population and built-up surface share in a 1x1 km uniform global grid. The input data is generated",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.GLOBAL_ANALYSISFORECAST_BGC_001_028": {
+"res_m": 27830.0,
+"res_txt": "1/4 degree",
+"res_src": "catalogue description",
+"snip": "l ocean. The global ocean output files are displayed with a 1/4 degree horizontal resolution with regular longitude/lati",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.GLOBAL_ANALYSISFORECAST_PHY_001_024": {
+"res_m": 9276.7,
+"res_txt": "1/12 degree",
+"res_src": "catalogue description",
+"snip": "urrents. The global ocean output files are displayed with a 1/12 degree horizontal resolution with regular longitude/lati",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.GLOBAL_ANALYSISFORECAST_WAV_001_027": {
+"res_m": 9276.7,
+"res_txt": "1/12 degree (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "is and forecast system of Météo-France with a resolution of 1/12 degree is providing daily analyses and 10 days forecasts",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.GLOBAL_MULTIYEAR_BGC_001_033": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.GLOBAL_MULTIYEAR_PHY_ENS_001_031": {
+"res_m": 27830.0,
+"res_txt": "1/4 degree",
+"res_src": "catalogue description",
+"snip": "here the CMEMS Global Ocean Ensemble Reanalysis product at 1/4 degree resolution: monthly means of Temperature, Salinit",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.GLOBAL_MULTIYEAR_WAV_001_032": {
+"res_m": 22264.0,
+"res_txt": "1/5 °",
+"res_src": "catalogue description",
+"snip": "ibution of sea state energy in frequency and direction on a 1/5° irregular grid. Average wave quantities derived f",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.INSITU_GLO_PHY_TS_OA_MY_013_052": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.INSITU_GLO_PHY_TS_OA_NRT_013_002": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.MULTIOBS_GLO_BGC_NUTRIENTS_CARBON_PROFILES_MYNRT_015_009": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.MULTIOBS_GLO_BIO_BGC_3D_REP_015_010": {
+"res_m": 27830.0,
+"res_txt": "0.25 °",
+"res_src": "catalogue description",
+"snip": "ion (Chla) at depth. The reprocessed product is provided at 0.25°x0.25° horizontal resolution, over 36 levels from the su",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.MULTIOBS_GLO_BIO_CARBON_SURFACE_MYNRT_015_008": {
+"res_m": 27830.0,
+"res_txt": "0.25 °",
+"res_src": "catalogue description",
+"snip": "to calcite and aragonite, and associated uncertainties on a 0.25° x 0.25° regular grid. The product is obtained from an ens",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.MULTIOBS_GLO_PHY_MYNRT_015_003": {
+"res_m": 27830.0,
+"res_txt": "1/4 degree",
+"res_src": "catalogue description",
+"snip": "the zonal and meridional velocity at a 1h frequency and at 1/4 degree regular grid. The total velocity fields are obtai",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.MULTIOBS_GLO_PHY_S_SURFACE_MYNRT_015_013": {
+"res_m": 13915.0,
+"res_txt": "1/8 °",
+"res_src": "catalogue description",
+"snip": "Sea Surface Salinity (SSS) and Sea Surface Density (SSD) at 1/8° of resolution, obtained through a multivariate op",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.MULTIOBS_GLO_PHY_TSUV_3D_MYNRT_015_012": {
+"res_m": 27830.0,
+"res_txt": "1/4 degree",
+"res_src": "catalogue description",
+"snip": "Geostrophic Currents and Mixed Layer Depth, available on a 1/4 degree regular grid and on 50 depth levels from the surf",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.MULTIOBS_GLO_PHY_UVW_3D_MYNRT_015_007": {
+"res_m": 27830.0,
+"res_txt": "1/4 °",
+"res_src": "catalogue description",
+"snip": "cerche. The data are provided weekly over a regular grid at 1/4° horizontal resolution, from the surface to 1500 m",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.OCEANCOLOUR_GLO_BGC_L3_MY_009_103": {
+"res_m": 300.0,
+"res_txt": "300 meters (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "esolutions: **4 km** and a finer resolution based on olci **300 meters** inputs. * Recent products are organized in data",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.OCEANCOLOUR_GLO_BGC_L3_MY_009_107": {
+"res_m": 4000.0,
+"res_txt": "4 km",
+"res_src": "catalogue description",
+"snip": "solutions: **daily**, **monthly**. * Spatial resolutions: **4 km** (multi). * Recent products are organized in dat",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.OCEANCOLOUR_GLO_BGC_L3_NRT_009_101": {
+"res_m": 300.0,
+"res_txt": "300 meters (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "esolutions: **4 km** and a finer resolution based on olci **300 meters** inputs. * Recent products are organized in data",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.OCEANCOLOUR_GLO_BGC_L4_MY_009_104": {
+"res_m": 300.0,
+"res_txt": "300 meters (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "esolutions: **4 km** and a finer resolution based on olci **300 meters** inputs. * Recent products are organized in data",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.OCEANCOLOUR_GLO_BGC_L4_MY_009_108": {
+"res_m": 4000.0,
+"res_txt": "4 km",
+"res_src": "catalogue description",
+"snip": "Temporal resolutions: **monthly**. * Spatial resolutions: **4 km** (multi). * Recent products are organized in dat",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.OCEANCOLOUR_GLO_BGC_L4_NRT_009_102": {
+"res_m": 300.0,
+"res_txt": "300 meters (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "esolutions: **4 km** and a finer resolution based on olci **300 meters** inputs. * Recent products are organized in data",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001": {
+"res_m": 10000.0,
+"res_txt": "10 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "OSI-402 and OSI-403). These products are delivered daily at 10km resolution in a polar stereographic projection co",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_006": {
+"res_m": 10000.0,
+"res_txt": "10 km",
+"res_src": "catalogue description",
+"snip": "swaths is 24hours, the nominal product grid resolution is a 10km. **DOI (product):** https://doi.org/10.48670/",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SEAICE_GLO_SEAICE_L4_REP_OBSERVATIONS_011_009": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SEALEVEL_GLO_PHY_L4_NRT_008_046": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SEALEVEL_GLO_PHY_MDT_008_063": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010": {
+"res_m": 11132.0,
+"res_txt": "0.1 °",
+"res_src": "catalogue description",
+"snip": "observations from multiple satellite sensors, daily, over a 0.1° resolution global grid. It includes observations",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001": {
+"res_m": 5566.0,
+"res_txt": "0.05 ° (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ily gap-free maps of: Foundation Sea Surface Temperature at 0.05° x 0.05° horizontal grid resolution, using in-situ and sat",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SST_GLO_SST_L4_REP_OBSERVATIONS_010_011": {
+"res_m": 5566.0,
+"res_txt": "0.05 deg.",
+"res_src": "catalogue description",
+"snip": "ure and ice concentration (referred to as an L4 product) at 0.05deg.x 0.05deg. horizontal grid resolution, using in-situ and sat",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.SST_GLO_SST_L4_REP_OBSERVATIONS_010_024": {
+"res_m": 5000.0,
+"res_txt": "5 km (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "al., 2020) to provide a high resolution (1/20deg. - approx 5km grid resolution) daily analysis of the daily aver",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WAVE_GLO_PHY_SPC_FWK_L3_NRT_014_002": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WAVE_GLO_PHY_SWH_L3_NRT_014_001": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WAVE_GLO_PHY_SWH_L4_NRT_014_003": {
+"res_m": 222640.0,
+"res_txt": "2 °",
+"res_src": "catalogue description",
+"snip": "CFOSAT and HaiYang-2B. The resulting gridded product has a 2° horizontal resolution and is produced daily. Diff",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WIND_GLO_PHY_CLIMATE_L4_MY_012_003": {
+"res_m": 27830.0,
+"res_txt": "0.25 degrees",
+"res_src": "catalogue description",
+"snip": "tains monthly Level-4 sea surface wind and stress fields at 0.25 degrees horizontal spatial resolution. The monthly averag",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WIND_GLO_PHY_L3_MY_012_005": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WIND_GLO_PHY_L3_NRT_012_002": {
+"res_m": null,
+"res_txt": "",
+"res_src": "",
+"snip": "",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WIND_GLO_PHY_L4_MY_012_006": {
+"res_m": 13915.0,
+"res_txt": "0.125 degrees (finest of several values stated)",
+"res_src": "catalogue description",
+"snip": "ntains hourly Level-4 sea surface wind and stress fields at 0.125 and 0.25 degrees horizontal spatial resolution. Scatterometer obse",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.MO.DAT.WIND_GLO_PHY_L4_NRT_012_004": {
+"res_m": 13915.0,
+"res_txt": "0.125 degrees",
+"res_src": "catalogue description",
+"snip": "ntains hourly Level-4 sea surface wind and stress fields at 0.125 degrees horizontal spatial resolution. Scatterometer obse",
+"sensor_res": "",
+"revisit": ""
+},
+"EO.NASA.DAT.LANDSAT.C2_L1": {
+"res_m": 80.0,
+"res_txt": "MSS: 80 m IFOV",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "MSS: 80 m IFOV",
+"sensor_res": "MSS: 80 m IFOV",
+"revisit": "MSS: Global coverage in 16 days, in daylight."
+},
+"EO.NASA.DAT.LANDSAT.C2_L2": {
+"res_m": 15.0,
+"res_txt": "TM: 30 m (6 short-wave channels), 120 m (TIR) | ETM+: 30 m (6 narrow-band channels), 15 m (PAN), 60 m (TIR) | OLI: 30 m (8 narrow-band channels), 15 m (PAN) | TIRS: 100 m",
+"res_src": "WMO OSCAR (sensor, best case)",
+"snip": "TM: 30 m (6 short-wave channels), 120 m (TIR) | ETM+: 30 m (6 narrow-band channels), 15 m (PAN), 60 m (TIR) | OLI: 30 m (8 narrow-band channels), 15 m (PAN) | TIRS: 100 m",
+"sensor_res": "TM: 30 m (6 short-wave channels), 120 m (TIR) | ETM+: 30 m (6 narrow-band channels), 15 m (PAN), 60 m (TIR) | OLI: 30 m (8 narrow-band channels), 15 m (PAN) | TIRS: 100 m",
+"revisit": "TM: Global coverage in 16 days, in daylight. | ETM+: Global coverage in 16 days, in daylight. | OLI: Global coverage in 16 days, in daylight. | TIRS: Global coverage in 8 days"
+}
+}

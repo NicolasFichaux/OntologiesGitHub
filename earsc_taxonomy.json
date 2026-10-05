@@ -1,0 +1,2713 @@
+{
+ "source": {
+  "thematic": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221925",
+  "markets": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221916",
+  "retrieved": "2026-10-02",
+  "note": "Extraction automatique du portail EARSC (EOwiki). Codes bok_* = correspondance établie à la main avec la branche TA du BoK EO4GEO (https://bok.eo4geo.eu/<code>), à relire ; match=exact|alias|url|none pour le lien marché→service (alias = renommage jugé évident, url = même page wiki)."
+ },
+ "thematic_services": [
+  {
+   "domain": "Land",
+   "area": "Monitor agriculture",
+   "service": "Assess environmental impact of farming",
+   "description": "Assess how yields and production are evolving and how agricultural activities are impacting the environment (i.e. the monitoring of farm-produced dust and particulate matter, polluted runoff, etc).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+Environmental+impact+of+farming",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Agriculture",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-4-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor agriculture",
+   "service": "Assess crop damage due to storms",
+   "description": "Protect crops from extreme weather events (hailstorms, lightning and extreme temperatures) using early warning systems. Accurately and repeatedly assess current and historic losses for crop insurance, identify the plant growth stage, warning-service loss assessment, food-security, impact.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+crop+damage+due+to+storms",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Agriculture",
+    "Financial & Digital Services / Insurance & Real Estate"
+   ],
+   "bok_area": "TA13-4-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor agriculture",
+   "service": "Assess and monitor crop disease and stress",
+   "description": "crop health ( disease and stress ), crop acreage and yield harvest (inventories / statistics), crop types (extent, growth, health, stress), crop yields",
+   "wiki_url": null,
+   "related_links": [
+    {
+     "label": "disease and stress",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+crop+disease+and+stress"
+    },
+    {
+     "label": "crop acreage and yield harvest",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+crop+acreage+and+yield+harvest"
+    },
+    {
+     "label": "crop types",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+specific+crop+types"
+    },
+    {
+     "label": "crop yields",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+crop+yields"
+    }
+   ],
+   "markets": [
+    "Managed Living Resources / Agriculture"
+   ],
+   "bok_area": "TA13-4-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor agriculture",
+   "service": "Monitor and forecast crop yields",
+   "description": "Monitor and forecast specific crop types i.e. predicting certain crop characteristics on a day-by-day basis after a planting date, near-real-time data which helps make day-to-day farming decisions, to assess crop status, and predict how changes in the plant growth stage will affect crop acreage and yield harvest (inventories / statistics), crop types (extent, growth, health, stress), land surface and temperature. Seasonal forecasts with adaptive decisions such as (choosing crop varieties, crop–grazing balancing, commodity trading and food emergency preparedness, return on investment (nutrients & fertilisation monitoring)).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecast+crop+yields",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Agriculture",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-4-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor agriculture",
+   "service": "Detect illegal or undesired crops",
+   "description": "Crop planting area monitoring, crop area information acquisition, multi-temporal data and multi-spectral time series are two major aspects for improving crop identification accuracy and illicit crops, estimates, cultivation patterns, hyperspectral thematic crop type mapping.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+illegal+or+undesired+crops",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Agriculture"
+   ],
+   "bok_area": "TA13-4-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor agriculture",
+   "service": "Monitor water use on crops and horticulture",
+   "description": "Monitoring of run-off, improved agricultural water management, overall irrigation, taking into account soil water index, surface soil moisture, map vegetation index, etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+water+use+on+crops+and+horticulture",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Agriculture",
+    "Defence & Security / Humanitarian Operations",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-4-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor forests",
+   "service": "Assess deforestation / forest degradation",
+   "description": "Assessment and monitoring of forest biomass (above-ground, deforestation, reforestation, afforestation and degradation). Time series analysis of forest loss, disturbance index, carbon emissions, greenhouse gas (GHG) emissions, disturbance, measurement reporting and verification (MRV), Reducing Emissions from Deforestation and Forest Degradation (REDD+).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+Deforestation+or+Forest+Degradation",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Forestry"
+   ],
+   "bok_area": "TA13-4-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor forests",
+   "service": "Assess forest damage due to storms or insects",
+   "description": "Assessing and managing damaged timber due to events such as storms, fires, insect damage etc. Elaboration of impact maps including sudden changes in forest stock volume, pest infestations modelling, ice and snow damages, etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+forest+damage+due+to+storms+or+insects",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Forestry"
+   ],
+   "bok_area": "TA13-4-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor forests",
+   "service": "Assess, monitor & manage onitor forest resources",
+   "description": "Mapping forest and classifying forest type/cover change (classification/capacity) such as biomass (diversity, health, height, volume stress, location, extent), tree cover density (canopy coverage) and tree species, tree height and diameter), growth predictions, harvesting analysis (timber volume, inventory, clear cuts, accreditation and certification), forest condition mapping, time series, change detection monitoring of moist, etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+forest+resources",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Forestry",
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor forests",
+   "service": "Detect illegal forest activities",
+   "description": "Detect and identify illicit logging, change-detection, forest cover, forest types, biomass, density, etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+illegal+forest+activities",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Forestry"
+   ],
+   "bok_area": "TA13-4-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor forests",
+   "service": "Assess environmental impact of forestry",
+   "description": "Assess changes in the forestry and tree line (fragmentation, capacity, location, extent and tree cover density, atmospheric deposition and GHG emissions, transboundary atmospheric pollution, climate change effects on forestry, etc.).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+forestry",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Forestry"
+   ],
+   "bok_area": "TA13-4-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor forests",
+   "service": "Monitor forest carbon content",
+   "description": "Monitor carbon balance, carbon tracking, global carbon stocks, greenhouse gas emissions from deforestation and forest degradation, land use, land use change and forestry (LULUCF). Support to the UN Framework Convention on Climate Change, REDD+.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-4-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor bodies of inland water",
+   "service": "Assess and monitor water bodies",
+   "description": "Provides qualitative and quantitative information (e.g. time series and/or/of maps) concerning inland water quality, regarding chlorophyll content (algal blooms), suspended matter (turbidity, suspended sediment concentrations), and the water body (surface water extent, water quality, pollution, temperature, volume, level, alkaline water, evaporation, surface temperature) for permanent, ephemeral, inland water bodies.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+and+monitor+water+bodies",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor bodies of inland water",
+   "service": "Assess & monitor wetlands",
+   "description": "Water bodies monitoring and assessment, surface water dynamics, wetland ecosystem extent, water quality, ecosystem service mapping (e.g. carbon sequestration, flood regulation).",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-4-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor bodies of inland water",
+   "service": "Assess ground water and run-off",
+   "description": "Assess water run-off (water quantity), hydrological network and catchment areas (water catchment), hydrological simulations, run-off season, groundwater, integrated water management, soil moisture as relevant on the threshold runoff response in a small headwater catchment.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+ground+water+and+run-off",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Utilities & Supplies"
+   ],
+   "bok_area": "TA13-4-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor snow & ice",
+   "service": "Monitor ice on rivers and lakes",
+   "description": "Monitor grounded and floating ice covers on shallow water and lakes (ice cover concentration, extent and phenology, inland ice, ice sheets, thickness, freezing period, melting period, land fast ice, ice/lake extent, snow/ice surface temperature).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+ice+on+rivers+and+lakes",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Transport & Logistics"
+   ],
+   "bok_area": "TA13-4-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor snow & ice",
+   "service": "Detect changes in glaciers",
+   "description": "Long term monitoring of glacial variations especially at the glacier margins and terminus location. Mapping and charting fluctuation, ice caps, landslides, etc. or measuring parameters such as ice thickness, surface ice velocities, and changes in surface elevation over time.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+changes+in+glaciers",
+   "related_links": [],
+   "markets": [
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-4-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor snow & ice",
+   "service": "Monitor & assess snow cover",
+   "description": "Monitoring snow cover area extent (depth, temperature), fractional snow cover, snow water equivalent and snow mass.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+snow+cover",
+   "related_links": [],
+   "markets": [
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-4-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Assess land ecosystems",
+   "service": "Assess land ecosystems and biodiversity",
+   "description": "Assessment of the ecosystem condition and pressure mapping of biodiversity with critical habitat maps, monitoring wildlife corridors, linear features (hedges and boundaries), soil moisture, vegetation indices (e.g., normalized difference vegetation index (NDVI), greenness and biomass, leaf area index (LAI), estimation of stem volume, etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+ecosystems+and+biodiversity",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Assess land ecosystems",
+   "service": "Assess environmental impact of human activities",
+   "description": "Monitoring anthropogenic impact on land resources; LU/LC, productivity, Soil Organic Carbon (SOC), burnt area mapping, Forest & wooded land, Cropland, Pasture (improved grassland), Wetland, Settlements (villages, urban), Cropland/ grazing land management, Long-term cultivated; improved pasture, unimproved pasture, new set aside, old set aside, wetland/paddy, shifting agriculture, abandoned/ degraded, etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+human+activities",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Energy & Mineral Resources / Raw Materials",
+    "Infrastructure & Transport / Utilities & Supplies",
+    "Infrastructure & Transport / Construction",
+    "Infrastructure & Transport / Transport & Logistics",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-4-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor land use",
+   "service": "Monitor land use and land use change",
+   "description": "Monitoring Land Use (LU) and Land Cover Change (LC) is the measure available to monitor pressures on terrestrial ecosystems and biodiversity; mapping surface imperviousness, canopy structure phenology, etc., its classification and change detection (accuracy assessment procedures), Land Use, Land Use Change, and Forestry (LULUCF) reporting, land use studies, baseline map, etc.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Agriculture",
+    "Energy & Mineral Resources / Raw Materials",
+    "Infrastructure & Transport / Construction",
+    "Financial & Digital Services / Travel, Tourism and Leisure",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities"
+   ],
+   "bok_area": "TA13-4-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor land use",
+   "service": "Detect illegal mining activities",
+   "description": "Monitor and address various impacts of mining and hydrocarbons extraction studying environmental changes like acid mine drainage, illegal surface mining supporting law enforcement and allowing the regulatory agencies helping to avoid or minimize the adverse effects of illegal mining. These activities monitor the progression of disturbance caused by illegal mining, identifying and tracking reclamation sites, and assessing land use and land cover changes.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+illegal+mining+activities",
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-4-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor land use",
+   "service": "Assess land accounting (value, ownership, type, use)",
+   "description": "Measure land use statistics and land accounting (land administration, baseline map, land use studies and statistics; life populations, human settlement patterns, impact of drought on agricultural production, impact of loss of agricultural land on production, pollution caused by use of fertilizers/ pesticides, threats to wildlife due to habitat destruction, land evaluation for agriculture, areas at risk to land degradation, remedial measures to counter inappropriate land management, soil sealing). Monitoring human–environmental interactions such as landscape changes e.g. land use land cover (LULC), soil and terrain forms, surface hydrology (including shallow lakes, rivers, marshes and swamps) as well as ecological services (conservation), anthropogenic usage and land take (urban planning and management), land accounting and land administration, land use studies and statistics (use, parcels), cadastral.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+land+value%2C+ownership%2C+type%2C+use",
+   "related_links": [],
+   "markets": [
+    "Financial & Digital Services / Retail & Geo-marketing",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities"
+   ],
+   "bok_area": "TA13-4-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor land use",
+   "service": "Monitor vegetation encroachment",
+   "description": "Monitoring terrain surrounding infrastructure such as railways, pipeline and high voltage power line corridors. Major products to support this service are vegetation condition index (VCI), ancillary data, risk identification layer, prioritization layer.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor land use",
+   "service": "Monitor land cover and detect change assessment",
+   "description": "A range of direct and indirect measurements to monitor pressures on land cover which is changing over time. Land cover assessment includes mapping from wide coverage (land cover and use) to locally or regionally focussed (habitat mapping). High-resolution Layers (characterization & classification), soil sealing, arid areas, wet areas, erosion potential, LCCS (Land Cover Classification System), imperviousness (e.g. CORINE land cover inventory).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+cover+and+detect+change",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor topography & motion",
+   "service": "Baseline mapping",
+   "description": "Surface deformation maps and profiles elevation data products such: Digital Elevation Models (DEMs), Digital Surface Model (DSM), Digital Terrain Model (DTM), terrain roughness measure, slope stability (curvature, aspect), etc",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-7",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor topography & motion",
+   "service": "Measure and detect land surface change",
+   "description": "Measure ground and infrastructure displacements (change detection monitor), surface movement (sand dunes, pipeline routes, corridor status, soil erosion) or landslides and subsidence.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-7",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor topography & motion",
+   "service": "Monitor coastal land cover",
+   "description": "Monitor coastal land cover, coastline, shoreline change and coastal morphology (coastal terrain models), including pollution by oil, litter etc.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-4-7",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Monitor topography & motion",
+   "service": "Detect and monitor ground movement",
+   "description": "Detect reservoir compartmentalization & optimization, permafrost zone stability, ground displacement: fault identification, reactivation & discontinuities, uplift, subsidence, heave, thawing, landslides, earthquakes.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+ground+movement",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Energy & Mineral Resources / Raw Materials",
+    "Infrastructure & Transport / Construction",
+    "Infrastructure & Transport / Transport & Logistics",
+    "Financial & Digital Services / Insurance & Real Estate",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities"
+   ],
+   "bok_area": "TA13-4-7",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Extract information about subsurface geology",
+   "service": "Map geological features",
+   "description": "Detect and map features extraction, near surface features, lithology features, linear disturbance features (faults & discontinuities).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+geological+features",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Energy & Mineral Resources / Raw Materials",
+    "Citizens & Society / Education, Training & Research"
+   ],
+   "bok_area": "TA13-4-8",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Extract information about subsurface geology",
+   "service": "Map seismic survey operations",
+   "description": "Map seismic (survey, coupling, logistics), gravity-seafloor classification maps, onshore seismic survey operations (hydrocarbon exploration), satellite derived bathymetry products (water depth, water clarity - turbidity).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+seismic+survey+operations",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-8",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Extract information about subsurface geology",
+   "service": "Monitor mineral extraction",
+   "description": "Monitoring the environmental impacts of mineral resources exploitation (ground surface), illegal activities, recovering abandoned sites, mine waste mapping and monitoring (erosion, land subsistence, biodiversity/habitat loss, destruction & disturbance of ecosystems).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+mineral+extraction",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Raw Materials"
+   ],
+   "bok_area": "TA13-4-8",
+   "bok_service": null
+  },
+  {
+   "domain": "Land",
+   "area": "Extract information about subsurface geology",
+   "service": "Identify hydrocarbon seeps in soil",
+   "description": "Identification of hydrocarbon seepage (oil seeps) detection (near surface geology: faults, fractures, unconformities or carrier beds) as indicators of petroleum charge.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-4-8",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor built environment",
+   "service": "Monitor urban areas",
+   "description": "Observation, identification, mapping, assessment and monitoring of urban areas and their dynamics at a range of spatial and temporal resolutions. Digital imaging processing methods such basic thresholding, unsupervised classification or products such urban heat island, impervious surfaces, land use change (residential, commercial, other), building density (3D city modelling), high photovoltaic penetration at the urban scale. .",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+urban+areas",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Financial & Digital Services / Retail & Geo-marketing",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities"
+   ],
+   "bok_area": "TA13-5",
+   "bok_service": "TA13-5-1"
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor built environment",
+   "service": "Monitor urban surroundings",
+   "description": "Understanding human settlements on the outskirts and near rural areas. Mapping and evolution characterization of human interactions (environmental, population and habitat fragmentation, soil sealing and socio-economic) of rural areas and surroundings, urban sprawl, green urban areas.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+urban+surroundings",
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor built environment",
+   "service": "Monitor urban green & blue areas",
+   "description": "Monitor green and blue urban areas (in relation to urban form, energy use and carbon emissions). It is about the estimation of urban energy fluxes at a neighbourhood scale (urban energy balance) using land cover, Digital Surface Models (DSM), surface roughness parameters (such as plan area index, frontal area index, roughness length and zero-displacement height), urban ecosystem restoration, urban heat island effect, green corridors, garden monitors.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor built environment",
+   "service": "Monitor construction & buildings",
+   "description": "Construction site surveying and progress mapping, comprising surrounding ground as well as displacements of key components of such structures. There is a need for Near Real Time (NRT) data delivery and measuring stress.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+construction+and+buildings",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Construction",
+    "Infrastructure & Transport / Communications & Connectivity",
+    "Financial & Digital Services / Insurance & Real Estate",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities"
+   ],
+   "bok_area": "TA13-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor infrastructure & installations",
+   "service": "Assess damage from industrial accidents",
+   "description": "Assess structural integrity of the infrastructure, site suitability and vulnerability. Connection with disaster risk reduction (emergency response, recovery, rehabilitation and reconstruction).",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-5-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor infrastructure & installations",
+   "service": "Asset infrastructure monitoring",
+   "description": "Industrial activity assessment, monitoring of functional planning zones, exploit correlation with industrial activity to improve the model of subsurface, site suitability and vulnerability, land cover, infrastructure, dyke monitoring, emergency airport planning, etc.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-5-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor infrastructure & installations",
+   "service": "Map & monitor solar energy (solar farms)",
+   "description": "Urban solar mapping and understanding the basic characteristics of solar radiation over specific monitoring locations including estimating the variability of solar radiation for site selection and grid data/operators. Solar monitoring services use time series, Direct Normal Irradiance (DNI), Diffuse Horizontal Irradiance (DHI) and Global Horizontal Irradiance (GHI), shadow mask.",
+   "wiki_url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221967",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Renewable Energy"
+   ],
+   "bok_area": "TA13-5-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor infrastructure & installations",
+   "service": "Map & monitor wind energy (wind farms)",
+   "description": "Understand where wind farms can be sited most cost-effectively and monitor and map wind energy fields (design and operation), wind roses, wind speed & direction.",
+   "wiki_url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221973",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Renewable Energy"
+   ],
+   "bok_area": "TA13-5-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor infrastructure & installations",
+   "service": "Map & monitor hydroelectric energy",
+   "description": "Hydrological network mapping (drainage navigation erosion) including hydropower grid monitoring and resource assessment. Water resource (reservoirs) monitoring, hydrological modelling and flood forecasting and mapping (dams).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+and+monitor+hydroelectric+energy",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Renewable Energy"
+   ],
+   "bok_area": "TA13-5-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor transport networks",
+   "service": "Map line of sight visibility (land surface)",
+   "description": "Landscape visibility mapping and analysis, including spatial planning, terrain mapping (DTMs), land surface, map transmission and land routes.",
+   "wiki_url": "https://earsc-portal.eu/pages/viewpage.action?pageId=16550146",
+   "related_links": [],
+   "markets": [
+    "Infrastructure & Transport / Communications & Connectivity"
+   ],
+   "bok_area": "TA13-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor transport networks",
+   "service": "Map & monitor transport networks",
+   "description": "Transportation systems, interdependencies and industrial progress planning including site, soft ground and network mapping, highway environmental monitoring and assessment, identification of road or track for logistics planning.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+and+monitor+transport+networks",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Built Environment",
+   "area": "Monitor waste",
+   "service": "Monitor land pollution & waste management",
+   "description": "Identifying illegal dumping and waste management and disposal for law enforcement. Landfills and dump sites emit large quantities of methane, quantify the emissions from these large sites in a single snapshot (maps) and do it frequently, surface and subsurface soil contamination monitoring, Land use/Land cover (LU/LC) maps which depict the physical characteristics of the surface, dry matter productivity, migration of pollutants and imperviousness land surface are parameters needed for this service.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+pollution",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Raw Materials",
+    "Infrastructure & Transport / Utilities & Supplies",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Metocean",
+   "service": "Forecast & monitor ocean currents and drift",
+   "description": "Ocean water forecasting including ocean dynamics and circulation: tides and ocean currents (surface current models for tides), sea level, sea surface salinity (internal waves, eddies and frontal areas), upwelling, sea state, etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+current+movement+and+drift",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Fisheries",
+    "Energy & Mineral Resources / Oil and Gas",
+    "Energy & Mineral Resources / Renewable Energy",
+    "Infrastructure & Transport / Marine & Maritime",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-6-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Metocean",
+   "service": "Forecast & monitor ocean winds and waves",
+   "description": "Wind resource mapping, derived winds (speed, direction, stress) and waves (current veins, swell-maps, sea surface height), wave exposure (fetch, averaged directional wind speed and bathymetry). The sea surface roughness is impacted by wind (waves) and rain cells.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+ocean+winds+and+waves",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Energy & Mineral Resources / Renewable Energy",
+    "Infrastructure & Transport / Marine & Maritime",
+    "Financial & Digital Services / Travel, Tourism and Leisure"
+   ],
+   "bok_area": "TA13-6-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Metocean",
+   "service": "Forecast & map large waves",
+   "description": "Forecasting extreme waves / tsunami, inundation forecasting (flow depth distribution), vulnerability maps, bathymetry, current velocity.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+map+large+waves",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Fisheries",
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Marine & Maritime",
+    "Financial & Digital Services / Insurance & Real Estate",
+    "Financial & Digital Services / News & Media",
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-6-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Metocean",
+   "service": "Detect & monitor hurricanes and typhoons",
+   "description": "Monitoring atmospheric front, local weather phenomena, cloud structure, winds and waves, sea-surface temperature and sea-surface height.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+hurricanes+and+typhoons",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-6-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Metocean",
+   "service": "Monitor ocean level & surface",
+   "description": "Monitor (changes in) sea level, physical characteristics such as gravity, currents, temperature and salinity, ocean circulation (currents and eddies at the edges of holes and bumps), seasonal or inter-annual variations, or even longer periods (long-term rise in sea level), hindcasting.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+ocean+level+and+surface",
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-6-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor coastal areas",
+   "service": "Monitor water depth or charting",
+   "description": "Satellite derived bathymetry mapping and charting. Surveying shallow waters.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+water+depth+or+charting",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Fisheries",
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Marine & Maritime"
+   ],
+   "bok_area": "TA13-6-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor coastal areas",
+   "service": "Monitor transitional water bodies",
+   "description": "Essential environmental monitoring and management in aquatic ecosystems focus on rivers (inland waters, watershed) and lagoon/estuary-coastal region-ocean/Sea. Research projects now aiming to harmonise monitoring approaches across different water bodies.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-6-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor coastal areas",
+   "service": "Assess & monitor coastal water quality",
+   "description": "Detecting and mapping suspended sediment concentrations sediment (qualitative, quantitative), turbidity (quality, quantitative), visibility, chlorophyll-a concentration, suspended sediment may be indicative of estuarine processes, re-suspension or pollution.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Infrastructure & Transport / Utilities & Supplies"
+   ],
+   "bok_area": "TA13-6-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor coastal areas",
+   "service": "Predict jellyfish",
+   "description": "Assess the impact of jellyfish in human activities through ocean physics analysis maps (salinity, currents, sea level (SS hight), temperature (SST), ocean colour), ocean biogeochemistry analysis maps (ocean chlorophyll), policy objectives (marine policy, coastal management, common fisheries policy, marine strategy framework).",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-6-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor marine ecosystem",
+   "service": "Monitor ocean quality & productivity",
+   "description": "Assessing water-related ecosystems. Water quality status (sea surface temperature (SST), transparency or turbidity, and ocean colour ocean colour composite (chl-a, transparency, swath, qualitative, quantitative), which enable eutrophication assessments and the detection of algal bloom (phytoplankton, harmful blooms - HABs), ocean productivity (carbon content, primary production).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+ocean+quality+and+productivity",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Marine & Maritime"
+   ],
+   "bok_area": "TA13-6-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor marine ecosystem",
+   "service": "Monitor marine habitats",
+   "description": "Monitoring generic life marine ecosystem (algal blooms, marine mammals...), sea surface temperature, sediments, plumes, nutrients, dredging operation, coral reef health assessment (bleaching), marine non-indigenous species (NIS), etc.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+marine+habitats",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-6-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor marine ecosystem",
+   "service": "Monitor ocean acidification",
+   "description": "Monitoring the ocean carbonate chemistry, bio-geo-chemical cycles, ocean salinity, insitu (partial pressure of carbon dioxide in the water, dissolved inorganic carbon, alkalinity and pH).",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-6-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor marine ecosystem",
+   "service": "Monitor invasive species",
+   "description": "Sargassum detection for seasonal planning (estimate drift and eventual landings on the coasts), Products such as drifting simulation modelling, together with weather and surface currents.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-6-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor fisheries",
+   "service": "Map fish shoals",
+   "description": "Fish-shoal location, fish population dynamics fed by-catch reports (ERS-Electronic recording and reporting system) and catch efforts estimated from VMS (Vessel Monitoring System), collection of catch reports. Other products in consideration such bathymetry, waves, current movement and drift, pollution, ocean colour, surface temperatures (SSTs), sea surface height anomalies and sea surface colour revealing the abundance of chlorophyll a).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+fish+shoals",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Fisheries"
+   ],
+   "bok_area": "TA13-6-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor fisheries",
+   "service": "Detect & monitor illegal fishing",
+   "description": "Track and localization of licensed fishing vessels movements and detect suspicious activity, fleet management services (ocean colour, PP, SST, etc).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+illegal+fishing",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Fisheries"
+   ],
+   "bok_area": "TA13-6-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor sea-ice & icebergs",
+   "service": "Detect & monitor ice-risk at sea",
+   "description": "Detect sea-ice and icebergs (ice cover, sea ice thickness, height of the ice surface, water body extent) during ship routing.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+ice-risk+at+sea",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Marine & Maritime",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-6-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Ships monitoring, detection & tracking",
+   "service": "Detect ships in critical areas",
+   "description": "Detect and monitor the movement of ships and activity at associated ports and infrastructures (baseline activity), shipping and navigation.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+ships+in+critical+areas",
+   "related_links": [],
+   "markets": [
+    "Defence & Security / Security, Defence & Military"
+   ],
+   "bok_area": "TA13-6-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Ships monitoring, detection & tracking",
+   "service": "Monitor ship movements",
+   "description": "Monitor sea-traffic, shipping lanes, ship-source pollution, discharges, sea surface temperature (SST).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+ships+movements",
+   "related_links": [],
+   "markets": [
+    "Infrastructure & Transport / Marine & Maritime"
+   ],
+   "bok_area": "TA13-6-5",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor marine pollution",
+   "service": "Monitor pollution at sea",
+   "description": "Monitoring turbidity & pollutants at sea such marine litter, marine plastics, hazardous and noxious substances (HNS) with relevant parameters (altimetry, sea-surface salinity, sea-surface temperature, ocean colour and sea-ice data) and policy objectives (integrated maritime policy, environmental action programme, etc).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+at+sea",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Fisheries",
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Marine & Maritime"
+   ],
+   "bok_area": "TA13-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor marine pollution",
+   "service": "Detect & monitor oil slicks",
+   "description": "Detect and monitor size, extent and location of oil spills, as well as providing information on wind, current and waves to predict oil movement. The oil spill threats are on early warning stages of natural oil seepage and during the disaster monitoring and characterization).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+oil+slicks",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Fisheries",
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Marine & Maritime",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution"
+   ],
+   "bok_area": "TA13-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Maritime & Marine",
+   "area": "Monitor marine pollution",
+   "service": "Monitor oil rigs & flares",
+   "description": "Monitoring of methane and other gases flared from gas flares and oil rigs, oil wells due to possible malfunctioning. Typically service accompanying forecast weather conditions.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+oil+rigs+and+flares",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-6",
+   "bok_service": null
+  },
+  {
+   "domain": "Atmosphere & Climate",
+   "area": "Monitor the atmosphere",
+   "service": "Monitor and forecast air quality & emissions (fluxes)",
+   "description": "Pollution and greenhouse gas emission monitoring. Measuring atmospheric concentrations and characterizing the micrometeorology or using atmospheric dispersion models to back-calculate the emission rates that gave the concentrations observed. Air quality/pollution source maps ( CH4 , CO2 , NO2 & SO2 , Particulate Matter , maps of average pollutant flux PM2.5, PM10).",
+   "wiki_url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221935",
+   "related_links": [
+    {
+     "label": "CH4",
+     "url": "https://earsc-portal.eu/display/EO4RawMaterials/Product+Sheet%3A+Air+Quality+CH4"
+    },
+    {
+     "label": "CO2",
+     "url": "https://earsc-portal.eu/display/EO4RawMaterials/Product+Sheet%3A+Air+Quality+CO2"
+    },
+    {
+     "label": "NO2 & SO2",
+     "url": "https://earsc-portal.eu/display/EO4RawMaterials/Product+Sheet%3A+Air+Quality+NO2+and+SO2"
+    },
+    {
+     "label": "Particulate Matter",
+     "url": "https://earsc-portal.eu/display/EO4RawMaterials/Product+Sheet%3A+Air+Quality+Particulate+Matter"
+    }
+   ],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Defence & Security / Humanitarian Operations",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities"
+   ],
+   "bok_area": "TA13-1-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Atmosphere & Climate",
+   "area": "Monitor the atmosphere",
+   "service": "Monitor atmosphere composition",
+   "description": "Monitoring present conditions and forecasting the distribution (transportation), for a few days ahead, of both anthropogenic and naturally occurring key greenhouse gases (GHG) like carbon dioxide (CO2), methane (CH4), or reactive gases such as nitrogen dioxide (NO2), sulphur dioxide (SO2), ozone (O3), etc.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-1-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Atmosphere & Climate",
+   "area": "Monitor the atmosphere",
+   "service": "Forecasting sunlight exposure",
+   "description": "While the solar radiation impacting the top of the atmosphere can be well modelled, the solar radiation arriving at the surface is dependent on the atmospheric transmission and turbidity and aerosol optical depth. Forecasting and risk assessment amount of solar (sunlight) radiation which reaches the surface of the planet (UV, radiation measures, models).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecasting+sunlight+exposure",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Defence & Security / Humanitarian Operations"
+   ],
+   "bok_area": "TA13-1-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Atmosphere & Climate",
+   "area": "Monitor climate change",
+   "service": "Assess changes in the carbon balance",
+   "description": "Measuring carbon stocks, especially aboveground biomass and providing an overview of a range of approaches that have been developed and used to map biomass across a diverse set of conditions and geographic areas (quantifying stem volume and carbon stock changes). It also includes historical climate data.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+changes+in+the+carbon+balance",
+   "related_links": [],
+   "markets": [
+    "Managed Living Resources / Forestry",
+    "Energy & Mineral Resources / Renewable Energy",
+    "Infrastructure & Transport / Utilities & Supplies",
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution",
+    "Citizens & Society / Education, Training & Research"
+   ],
+   "bok_area": "TA13-1-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Atmosphere & Climate",
+   "area": "Monitor climate change",
+   "service": "Assess climate change risk & climate forcing",
+   "description": "Assess current and future vulnerability to climate change including variability caused by a perturbation of the climate system and associated atmospheric composition (aerosol, ozone and greenhouse gases) driven by human activities). The radiative forcing measures the imbalance in the surface solar irradiance and is a useful predictor of globally averaged temperature change.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+climate+change+risk",
+   "related_links": [],
+   "markets": [
+    "Environmental, Climate & Health / Environmental Ecosystems & Pollution",
+    "Citizens & Society / Education, Training & Research"
+   ],
+   "bok_area": "TA13-1-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Atmosphere & Climate",
+   "area": "Forecast the weather (meteo)",
+   "service": "Forecast weather",
+   "description": "Monitor and forecast weather conditions such as temperature, storms, precipitation, heat waves and tropical cyclones – as well as other hazards influenced by weather, like floods or dispersion of atmospheric or marine pollution.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecast+weather",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas"
+   ],
+   "bok_area": "TA13-1-3",
+   "bok_service": null
+  },
+  {
+   "domain": "Disasters & Geohazards",
+   "area": "Assess disasters & geohazards (emergency)",
+   "service": "Map and assess flooding",
+   "description": "Map and assess the extent of the flooding event (floods map, exposure), floodplain mapping, flood risk dynamic assessment and management of water buffer areas (overflow). Measure a variety of physical and biological parameters (incl. turbidity levels) in aquatic ecosystems over small and large areas. Products look into the flood impact and extent in phases such as early warning (early/quick/rapid detection), response and recovery monitoring.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+and+assess+flooding",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Infrastructure & Transport / Construction",
+    "Infrastructure & Transport / Transport & Logistics",
+    "Financial & Digital Services / Insurance & Real Estate",
+    "Financial & Digital Services / Travel, Tourism and Leisure",
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-3",
+   "bok_service": "TA13-3-1"
+  },
+  {
+   "domain": "Disasters & Geohazards",
+   "area": "Assess disasters & geohazards (emergency)",
+   "service": "Forecast and assess landslides",
+   "description": "Mapping, monitoring, early warning (quick/rapid detection) and assessment of trigger events, unstable areas (rainfall influence) such as landslides (dynamic risk damage, slope instability, subsidence detection, fault and discontinuity maps (vector or raster), ground deformation and motion). Associated services include support for the evacuation of areas prone to collapse or the identification of suitable areas for urban replacement.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+assess+landslides",
+   "related_links": [],
+   "markets": [
+    "Financial & Digital Services / Insurance & Real Estate",
+    "Financial & Digital Services / News & Media",
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-3",
+   "bok_service": "TA13-3-4"
+  },
+  {
+   "domain": "Disasters & Geohazards",
+   "area": "Assess disasters & geohazards (emergency)",
+   "service": "Assess and monitor volcanic activity",
+   "description": "Assess ground deformation associated with volcanoes, seismic activity, volcanic eruptions (pre-eruptive, sin-eruptive, gas emissions, atmospheric ash, dispersion, heat flux). Rapid damage estimation (prevention), earthquake damage extent (loss adjuster dispatch). Impact on land cover and landscape (changes). Early warning (quick/rapid detection) and tracking of unrest / eruptive activity using satellite data in support of hazards mitigation activities. Map of the recent lava flows.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+and+Monitor+Volcanic+Activity",
+   "related_links": [],
+   "markets": [
+    "Infrastructure & Transport / Transport & Logistics",
+    "Financial & Digital Services / News & Media",
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-3",
+   "bok_service": "TA13-3-5"
+  },
+  {
+   "domain": "Disasters & Geohazards",
+   "area": "Assess disasters & geohazards (emergency)",
+   "service": "Detect and monitor wildfires",
+   "description": "Use optical data to detect and monitor the heat emitted by the fires [forest fire risk (extent, burnt scars) under rapid damage estimation, fire weather index [1] damage, fire protection, rapid damage estimation (prevention, insurance)]. Impact on global atmospheric emissions, with biomass burning to contribute to the risk on human health (besides direct effects, PM2.5, PM10 health impacts) and also to global budgets of greenhouse gases (GHG) like carbon dioxide etc. Monitoring of risk prevention factors [early warning (early/quick/rapid detection)] and issuing alerts for high risk locations.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+wildfires",
+   "related_links": [
+    {
+     "label": "[1]",
+     "url": "https://earsc-portal.eu#_ftn1"
+    }
+   ],
+   "markets": [
+    "Managed Living Resources / Forestry",
+    "Energy & Mineral Resources / Oil and Gas",
+    "Financial & Digital Services / Insurance & Real Estate",
+    "Financial & Digital Services / News & Media",
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-3",
+   "bok_service": "TA13-3-2"
+  },
+  {
+   "domain": "Disasters & Geohazards",
+   "area": "Assess disasters & geohazards (emergency)",
+   "service": "Assess damage from earthquakes",
+   "description": "Mapping and monitoring of seismic exposure (e.g. population distribution and density in high-seismic-hazard areas). Earthquake disaster prevention, early warning (early/quick/rapid detection), recovery (reconstruction monitoring, residual risk assessment, dynamic risk assessment, information, damage). Extracting background information on seismic, inter-seismic deformations, slip rates & active faults, stress transfer on faults, rapid damage estimation (prevention), change detection and preliminary damage map earthquake damage extent (loss adjuster dispatch).",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+damage+from+earthquakes",
+   "related_links": [],
+   "markets": [
+    "Financial & Digital Services / Insurance & Real Estate",
+    "Financial & Digital Services / News & Media",
+    "Defence & Security / Emergency & Social Protection"
+   ],
+   "bok_area": "TA13-3",
+   "bok_service": "TA13-3-3"
+  },
+  {
+   "domain": "Disasters & Geohazards",
+   "area": "Assess disasters & geohazards (emergency)",
+   "service": "Map disaster areas and multi hazard assessment",
+   "description": "Assess overall disaster risk maps in an appropriate format by using space, in-situ and location-based disaster risk information, vulnerability, capacity, exposure, hazard characteristics and their possible sequential effects at the relevant social and spatial scale on ecosystems, in line with national circumstances. Products will include disaster recovery maps and rapid mapping for crises, humanitarian aid maps (population density, infrastructure, logistical information), vulnerability assessment, damage assessment. Important to note the Sendai Framework for Disaster Risk Reduction 2015-2030.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Map+disaster+areas",
+   "related_links": [],
+   "markets": [
+    "Defence & Security / Humanitarian Operations"
+   ],
+   "bok_area": "TA13-3",
+   "bok_service": "TA13-3-6"
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor critical assets",
+   "service": "Monitor sensitive risk areas",
+   "description": "Geospatial intelligence analysis, sensitive risk areas (mines, unexploded objects (UXO), de-mining) mapping, high risk areas mapping, precision mapping, activity detection, auxiliary research and judgment on anti-terrorism in important areas of public security.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+sensitive+risk+areas",
+   "related_links": [],
+   "markets": [
+    "Energy & Mineral Resources / Oil and Gas",
+    "Financial & Digital Services / Retail & Geo-marketing",
+    "Financial & Digital Services / News & Media",
+    "Defence & Security / Security, Defence & Military",
+    "Defence & Security / Humanitarian Operations",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities",
+    "Citizens & Society / Education, Training & Research"
+   ],
+   "bok_area": "TA13-2-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor critical assets",
+   "service": "Monitor critical infrastructure",
+   "description": "Risk evaluation, threat analysis, vulnerability assessment, dams monitoring, water treatment monitoring facilities monitoring, oil fields monitoring, pipelines monitoring, pumping stations monitoring, airports monitoring, governmental buildings monitoring, transport networks monitoring.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-2-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor critical assets",
+   "service": "Cultural heritage assessment",
+   "description": "Mapping heritage sites and in supporting the archaeological investigation, understand the scale, impact, opportunities , responses and tools for conserving world heritage and mitigating threats, vulnerability assessment, damage assessment, risk evaluation, looting tracking. Detect ground deformation and monitor subsidence at archaeological sites, monuments and historic urban centres to detect different types of surface changes caused by erosion, floods, vegetation or human actions.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-2-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor critical assets",
+   "service": "General crime & security surveillance assessment",
+   "description": "Border control monitoring, terrorism threat risk assessment, piracy, illegal cropping analysis, cross-border state disputes analysis.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-2-1",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor borders",
+   "service": "Monitor land & marine border incursions",
+   "description": "Border area monitoring, coastal area monitoring, migration monitoring.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+and+sea+border+incursions",
+   "related_links": [],
+   "markets": [
+    "Defence & Security / Security, Defence & Military"
+   ],
+   "bok_area": "TA13-2-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor borders",
+   "service": "Assess pressures on populations and monitor humanitarian movement",
+   "description": "Monitor movement of people , population pressures, monitoring of settlements, evolution, characterization, situation maps, migration and cleansing monitoring, population pressures, displacement of population assessment, planning of contingency operations and operations security & coordination maps (moving objects such vehicles), impact on the surrounding environment, humanitarian camps.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Assess+pressures+on+populations+and+migration",
+   "related_links": [],
+   "markets": [
+    "Defence & Security / Security, Defence & Military",
+    "Defence & Security / Humanitarian Operations",
+    "Urban Development / Local & Regional Planning",
+    "Urban Development / Smart Cities"
+   ],
+   "bok_area": "TA13-2-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor borders",
+   "service": "Monitor transport routes",
+   "description": "Monitor economic activity , transportation of legal and illegal goods monitoring, tracking and identification (drug trafficking monitoring), smuggling location, maritime traffic assessment.",
+   "wiki_url": null,
+   "related_links": [
+    {
+     "label": "Monitor economic activity",
+     "url": "https://earsc-portal.eu/display/EOSTAN/Monitor+economic+activity"
+    }
+   ],
+   "markets": [],
+   "bok_area": "TA13-2-4",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Monitor health",
+   "service": "Forecasting epidemics and diseases",
+   "description": "Health maps and epidemic vector control mapping (daily disease risk maps, NDVI, land cover, soil type), environmental monitoring of endemic diseases and chronic diseases, public health emergencies disaster/danger, pollution-health risks profiling in the urban environment.",
+   "wiki_url": "https://earsc-portal.eu/display/EOwiki/Forecasting+epidemics+and+diseases",
+   "related_links": [],
+   "markets": [
+    "Defence & Security / Humanitarian Operations"
+   ],
+   "bok_area": "TA13-2-2",
+   "bok_service": null
+  },
+  {
+   "domain": "Security & Safety",
+   "area": "Food security & production",
+   "service": "Food security monitoring",
+   "description": "Map and assess the extent and intensity of the drought. support food security throughout the cycle, from design to implementation, monitoring, evaluation, and adaptive decision making. Assess a variety of physical and biological parameters in ecosystems and economy; maximize sustainable yield and productivity by providing timely and accurate information (early warning system) like; drought, insect plagues, pest and diseases, infection risks, storm damage. Monitor crop’s growth, monitor groundwater and water levels in rivers, radiation and soil, etc.",
+   "wiki_url": null,
+   "related_links": [],
+   "markets": [],
+   "bok_area": "TA13-2-3",
+   "bok_service": null
+  }
+ ],
+ "market_sectors": [
+  {
+   "market": "Managed Living Resources",
+   "market_description": "Users in managed living resources refer to human activities exploiting natural organic resources. Knowledge and information products to forge a viable strategy for the user’s operations such as the assessment of the status of the resource due to natural or human activities for effective commercial exploitation and conservation. This includes agriculture , fishing and forestry sectors.",
+   "sector": "Agriculture",
+   "composition": "Agricultural commodities/trading, agricultural production / horticulture, agricultural services, agriculture machinery, agriculture and rural development policy, agri chemicals / plants & fertilizers, animal production / livestock/ stock traders on commodity price like wheat, coffee. The EO/GI users also include agriculture and rural policy makers and insurers.",
+   "services": [
+    {
+     "label": "Assess environmental impact of farming",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+Environmental+impact+of+farming",
+     "thematic_service": "Assess environmental impact of farming",
+     "match": "exact"
+    },
+    {
+     "label": "Assess crop damage due to storms",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+crop+damage+due+to+storms",
+     "thematic_service": "Assess crop damage due to storms",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor crop disease and stress",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+crop+disease+and+stress",
+     "thematic_service": "Assess and monitor crop disease and stress",
+     "match": "alias"
+    },
+    {
+     "label": "Assess crop acreage and yield harvest",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+crop+acreage+and+yield+harvest",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Monitor specific crop types",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+specific+crop+types",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Forecast crop yields",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+crop+yields",
+     "thematic_service": "Monitor and forecast crop yields",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor water use on crops and horticulture",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+water+use+on+crops+and+horticulture",
+     "thematic_service": "Monitor water use on crops and horticulture",
+     "match": "exact"
+    },
+    {
+     "label": "Detect illegal or undesired crops",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+illegal+or+undesired+crops",
+     "thematic_service": "Detect illegal or undesired crops",
+     "match": "exact"
+    },
+    {
+     "label": "Measure land use statistics",
+     "url": "https://earsc-portal.eu/display/EOwiki/Measure+land+use+statistics",
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-1-1",
+   "bok_market": "TA11-1"
+  },
+  {
+   "market": "Managed Living Resources",
+   "market_description": "Users in managed living resources refer to human activities exploiting natural organic resources. Knowledge and information products to forge a viable strategy for the user’s operations such as the assessment of the status of the resource due to natural or human activities for effective commercial exploitation and conservation. This includes agriculture , fishing and forestry sectors.",
+   "sector": "Forestry",
+   "composition": "Forest management, forest Services, commodities, logging industry, wood, paper and pulp industry, forest policy, forest machinery, forest policy makers.",
+   "services": [
+    {
+     "label": "Assess deforestation / forest degradation",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+Deforestation+or+Forest+Degradation",
+     "thematic_service": "Assess deforestation / forest degradation",
+     "match": "exact"
+    },
+    {
+     "label": "Assess environmental impact of forestry",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+forestry",
+     "thematic_service": "Assess environmental impact of forestry",
+     "match": "exact"
+    },
+    {
+     "label": "Assess forest damage due to storms or insects",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+forest+damage+due+to+storms+or+insects",
+     "thematic_service": "Assess forest damage due to storms or insects",
+     "match": "exact"
+    },
+    {
+     "label": "Assess changes in the carbon balance",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+changes+in+the+carbon+balance",
+     "thematic_service": "Assess changes in the carbon balance",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor wildfires",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+wildfires",
+     "thematic_service": "Detect and monitor wildfires",
+     "match": "exact"
+    },
+    {
+     "label": "Assess forest types",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+forest+types",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Monitor forest resources",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+forest+resources",
+     "thematic_service": "Assess, monitor & manage onitor forest resources",
+     "match": "alias"
+    },
+    {
+     "label": "Detect illegal forest activities",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+illegal+forest+activities",
+     "thematic_service": "Detect illegal forest activities",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-1-3",
+   "bok_market": "TA11-1"
+  },
+  {
+   "market": "Managed Living Resources",
+   "market_description": "Users in managed living resources refer to human activities exploiting natural organic resources. Knowledge and information products to forge a viable strategy for the user’s operations such as the assessment of the status of the resource due to natural or human activities for effective commercial exploitation and conservation. This includes agriculture , fishing and forestry sectors.",
+   "sector": "Fisheries",
+   "composition": "Fish stock management, fishing fleets, fishery distribution logistics, aquaculture / fish farms, coastal management agencies, fisheries authorities / policy makers.",
+   "services": [
+    {
+     "label": "Map water depth / charting",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+water+depth+or+charting",
+     "thematic_service": "Monitor water depth or charting",
+     "match": "alias"
+    },
+    {
+     "label": "Forecast and map large waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+map+large+waves",
+     "thematic_service": "Forecast & map large waves",
+     "match": "exact"
+    },
+    {
+     "label": "Map fish shoals",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+fish+shoals",
+     "thematic_service": "Map fish shoals",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor illegal fishing",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+illegal+fishing",
+     "thematic_service": "Detect & monitor illegal fishing",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and monitor current movement and drift",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+current+movement+and+drift",
+     "thematic_service": "Forecast & monitor ocean currents and drift",
+     "match": "alias"
+    },
+    {
+     "label": "Detect and monitor oil slicks",
+     "url": "https://earsc-portal.eu/pages/viewpage.action?pageId=16548299",
+     "thematic_service": "Detect & monitor oil slicks",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor oil slicks",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+oil+slicks",
+     "thematic_service": "Detect & monitor oil slicks",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor pollution at sea",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+at+sea",
+     "thematic_service": "Monitor pollution at sea",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-1-2",
+   "bok_market": "TA11-1"
+  },
+  {
+   "market": "Energy & Mineral Resources",
+   "market_description": "Users in energy and mineral resources deal with the harvesting of energy from renewable resources and extractive industries including oil and gas and raw materials . EO information helps them in exploring potential locations to build new mines or power plants, in identifying risks from infrastructure and in managing the environmental impact of their operations. Uses that apply to the extractive industries: a study of landforms, structures, and the subsurface, to understand physical processes creating and modifying the Earth's crust.",
+   "sector": "Oil and Gas",
+   "composition": "Offshore & onshore exploration and production, drilling and support services, oil and gas commodities trading, energy planners.",
+   "services": [
+    {
+     "label": "Assess environmental impact of human activities",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+human+activities",
+     "thematic_service": "Assess environmental impact of human activities",
+     "match": "exact"
+    },
+    {
+     "label": "Asset infrastructure monitoring",
+     "url": "https://earsc-portal.eu/display/EOwiki/Asset+infrastructure+monitoring",
+     "thematic_service": "Asset infrastructure monitoring",
+     "match": "exact"
+    },
+    {
+     "label": "Map water depth / charting",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+water+depth+or+charting",
+     "thematic_service": "Monitor water depth or charting",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor construction and buildings",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+construction+and+buildings",
+     "thematic_service": "Monitor construction & buildings",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor ocean quality and productivity",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+ocean+quality+and+productivity",
+     "thematic_service": "Monitor ocean quality & productivity",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor the coast line",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+the+coast+line",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Monitor atmosphere composition",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+atmosphere+composition",
+     "thematic_service": "Monitor atmosphere composition",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor land ecosystems and biodiversity",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+ecosystems+and+biodiversity",
+     "thematic_service": "Assess land ecosystems and biodiversity",
+     "match": "alias"
+    },
+    {
+     "label": "Forecast and monitor current movement and drift",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+current+movement+and+drift",
+     "thematic_service": "Forecast & monitor ocean currents and drift",
+     "match": "alias"
+    },
+    {
+     "label": "Baseline mapping",
+     "url": "https://earsc-portal.eu/display/EOwiki/Baseline+mapping",
+     "thematic_service": "Baseline mapping",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor vegetation encroachment",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+vegetation+encroachment",
+     "thematic_service": "Monitor vegetation encroachment",
+     "match": "exact"
+    },
+    {
+     "label": "Map geological features",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+geological+features",
+     "thematic_service": "Map geological features",
+     "match": "exact"
+    },
+    {
+     "label": "Measure detect land surface change",
+     "url": "https://earsc-portal.eu/display/EOwiki/Measure+detect+land+surface+change",
+     "thematic_service": "Measure and detect land surface change",
+     "match": "alias"
+    },
+    {
+     "label": "Map and assess flooding",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+assess+flooding",
+     "thematic_service": "Map and assess flooding",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor forest resources",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+forest+resources",
+     "thematic_service": "Assess, monitor & manage onitor forest resources",
+     "match": "alias"
+    },
+    {
+     "label": "Detect and monitor wildfires",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+wildfires",
+     "thematic_service": "Detect and monitor wildfires",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor hurricanes and typhoons",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+hurricanes+and+typhoons",
+     "thematic_service": "Detect & monitor hurricanes and typhoons",
+     "match": "exact"
+    },
+    {
+     "label": "Identify hydrocarbon seeps in soil",
+     "url": "https://earsc-portal.eu/display/EOwiki/Identify+hydrocarbon+seeps+in+soil",
+     "thematic_service": "Identify hydrocarbon seeps in soil",
+     "match": "exact"
+    },
+    {
+     "label": "Assess ground water and run-off",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+ground+water+and+run-off",
+     "thematic_service": "Assess ground water and run-off",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor ice risk at sea",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+ice-risk+at+sea",
+     "thematic_service": "Detect & monitor ice-risk at sea",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor land cover and detect change",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+cover+and+detect+change",
+     "thematic_service": "Monitor land cover and detect change assessment",
+     "match": "alias"
+    },
+    {
+     "label": "Forecast and monitor ocean winds and waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+ocean+winds+and+waves",
+     "thematic_service": "Forecast & monitor ocean winds and waves",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor oil slicks",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+oil+slicks",
+     "thematic_service": "Detect & monitor oil slicks",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor coastal ecosystem",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+coastal+ecosystem",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Monitor air quality & emissions",
+     "url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221935",
+     "thematic_service": "Monitor and forecast air quality & emissions (fluxes)",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor marine habitats",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+marine+habitats",
+     "thematic_service": "Monitor marine habitats",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and map large waves",
+     "url": "https://earsc-portal.eu/display/EOSTAN/Monitor+marine+habitats",
+     "thematic_service": "Forecast & map large waves",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor ice on rivers and lakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+ice+on+rivers+and+lakes",
+     "thematic_service": "Monitor ice on rivers and lakes",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor oil rigs and flares",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+oil+rigs+and+flares",
+     "thematic_service": "Monitor oil rigs & flares",
+     "match": "exact"
+    },
+    {
+     "label": "Forecasting sunlight exposure",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecasting+sunlight+exposure",
+     "thematic_service": "Forecasting sunlight exposure",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast weather",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+weather",
+     "thematic_service": "Forecast weather",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor pollution at sea",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+at+sea",
+     "thematic_service": "Monitor pollution at sea",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor urban areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+urban+areas",
+     "thematic_service": "Monitor urban areas",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor sensitive risk areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+sensitive+risk+areas",
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "exact"
+    },
+    {
+     "label": "Assess and monitor water bodies",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+and+monitor+water+bodies",
+     "thematic_service": "Assess and monitor water bodies",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor ground movement",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+ground+movement",
+     "thematic_service": "Detect and monitor ground movement",
+     "match": "exact"
+    },
+    {
+     "label": "Assess dredging operation impacts",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+dredging+operation+impacts",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Map seismic survey operations",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+seismic+survey+operations",
+     "thematic_service": "Map seismic survey operations",
+     "match": "exact"
+    },
+    {
+     "label": "Map and monitor transport networks",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+monitor+transport+networks",
+     "thematic_service": "Map & monitor transport networks",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-2-2",
+   "bok_market": "TA11-2"
+  },
+  {
+   "market": "Energy & Mineral Resources",
+   "market_description": "Users in energy and mineral resources deal with the harvesting of energy from renewable resources and extractive industries including oil and gas and raw materials . EO information helps them in exploring potential locations to build new mines or power plants, in identifying risks from infrastructure and in managing the environmental impact of their operations. Uses that apply to the extractive industries: a study of landforms, structures, and the subsurface, to understand physical processes creating and modifying the Earth's crust.",
+   "sector": "Renewable Energy",
+   "composition": "Solar energy providers, wind energy providers, tidal energy providers, energy and carbon traders, local and regional planners, national policy makers.",
+   "services": [
+    {
+     "label": "Assess changes in the carbon balance",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+changes+in+the+carbon+balance",
+     "thematic_service": "Assess changes in the carbon balance",
+     "match": "exact"
+    },
+    {
+     "label": "Map and monitor solar energy (solar farms)",
+     "url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221967",
+     "thematic_service": "Map & monitor solar energy (solar farms)",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and monitor current movement and drift",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+current+movement+and+drift",
+     "thematic_service": "Forecast & monitor ocean currents and drift",
+     "match": "alias"
+    },
+    {
+     "label": "Map and monitor wind energy (wind farms)",
+     "url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221973",
+     "thematic_service": "Map & monitor wind energy (wind farms)",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and monitor ocean winds and waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+ocean+winds+and+waves",
+     "thematic_service": "Forecast & monitor ocean winds and waves",
+     "match": "exact"
+    },
+    {
+     "label": "Map hydroelectric sources",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+monitor+hydroelectric+energy",
+     "thematic_service": "Map & monitor hydroelectric energy",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-2-1",
+   "bok_market": "TA11-2"
+  },
+  {
+   "market": "Energy & Mineral Resources",
+   "market_description": "Users in energy and mineral resources deal with the harvesting of energy from renewable resources and extractive industries including oil and gas and raw materials . EO information helps them in exploring potential locations to build new mines or power plants, in identifying risks from infrastructure and in managing the environmental impact of their operations. Uses that apply to the extractive industries: a study of landforms, structures, and the subsurface, to understand physical processes creating and modifying the Earth's crust.",
+   "sector": "Raw Materials",
+   "composition": "Mining and quarrying companies, exploration and survey specialists, commodities traders, exploration and extraction equipment suppliers, drilling, excavation and support services, regional planners / policy makers.",
+   "services": [
+    {
+     "label": "Assess environmental impact of human activities",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+human+activities",
+     "thematic_service": "Assess environmental impact of human activities",
+     "match": "exact"
+    },
+    {
+     "label": "Map geological features",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+geological+features",
+     "thematic_service": "Map geological features",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor ground movement",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+ground+movement",
+     "thematic_service": "Detect and monitor ground movement",
+     "match": "exact"
+    },
+    {
+     "label": "Measure land use statistics",
+     "url": "https://earsc-portal.eu/display/EOwiki/Measure+land+use+statistics",
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor land pollution",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+pollution",
+     "thematic_service": "Monitor land pollution & waste management",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor mineral extraction",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+mineral+extraction",
+     "thematic_service": "Monitor mineral extraction",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-2-3",
+   "bok_market": "TA11-2"
+  },
+  {
+   "market": "Infrastructure & Transport",
+   "market_description": "Users in transport and infrastructure apply to all manufacturing and physical supply in land but also marine domains including transport & logistics , utilities , construction , communication & connectivity , and tourism . They oversee assets, monitor competition, build competitive advantage and source ground-truthing data.",
+   "sector": "Utilities & Supplies",
+   "composition": "Power station operators, water plants operators, survey companies, hydroelectric suppliers, regulatory Bodies, distribution companies, landfill and waste, regional planners / policy makers.",
+   "services": [
+    {
+     "label": "Monitor pollution in rivers and lakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+in+rivers+and+lakes",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Assess changes in the carbon balance",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+changes+in+the+carbon+balance",
+     "thematic_service": "Assess changes in the carbon balance",
+     "match": "exact"
+    },
+    {
+     "label": "Assess environmental impact of human activities",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+human+activities",
+     "thematic_service": "Assess environmental impact of human activities",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor land pollution",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+pollution",
+     "thematic_service": "Monitor land pollution & waste management",
+     "match": "alias"
+    },
+    {
+     "label": "Assess and monitor water quality",
+     "url": null,
+     "thematic_service": "Assess & monitor coastal water quality",
+     "match": "alias"
+    },
+    {
+     "label": "Assess ground water and run-off",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+ground+water+and+run-off",
+     "thematic_service": "Assess ground water and run-off",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-3-2",
+   "bok_market": "TA11-3"
+  },
+  {
+   "market": "Infrastructure & Transport",
+   "market_description": "Users in transport and infrastructure apply to all manufacturing and physical supply in land but also marine domains including transport & logistics , utilities , construction , communication & connectivity , and tourism . They oversee assets, monitor competition, build competitive advantage and source ground-truthing data.",
+   "sector": "Construction",
+   "composition": "Construction companies, civil engineering consultancies, architect and design companies, planning authorities, national land agencies.",
+   "services": [
+    {
+     "label": "Monitor building development",
+     "url": null,
+     "thematic_service": "Monitor construction & buildings",
+     "match": "alias"
+    },
+    {
+     "label": "Assess environmental impact of human activities",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+human+activities",
+     "thematic_service": "Assess environmental impact of human activities",
+     "match": "exact"
+    },
+    {
+     "label": "Map and assess flooding",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+assess+flooding",
+     "thematic_service": "Map and assess flooding",
+     "match": "exact"
+    },
+    {
+     "label": "Detect land movement, subsidence, heave",
+     "url": null,
+     "thematic_service": "Detect and monitor ground movement",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor land-use statistics",
+     "url": "https://earsc-portal.eu/display/EOwiki/Measure+land+use+statistics",
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-3-1",
+   "bok_market": "TA11-3"
+  },
+  {
+   "market": "Infrastructure & Transport",
+   "market_description": "Users in transport and infrastructure apply to all manufacturing and physical supply in land but also marine domains including transport & logistics , utilities , construction , communication & connectivity , and tourism . They oversee assets, monitor competition, build competitive advantage and source ground-truthing data.",
+   "sector": "Transport & Logistics",
+   "composition": "Road transport operators, haulage, road infrastructure operators, tolls airport operators, rail operators, airlines and airline services, transport engineers.",
+   "services": [
+    {
+     "label": "Assess environmental impact of human activities",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+human+activities",
+     "thematic_service": "Assess environmental impact of human activities",
+     "match": "exact"
+    },
+    {
+     "label": "Map and assess flooding",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+assess+flooding",
+     "thematic_service": "Map and assess flooding",
+     "match": "exact"
+    },
+    {
+     "label": "Detect land movement, subsidence, heave",
+     "url": null,
+     "thematic_service": "Detect and monitor ground movement",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes to urban and rural areas",
+     "url": null,
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Assess and monitor volcanic activity",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+and+Monitor+Volcanic+Activity",
+     "thematic_service": "Assess and monitor volcanic activity",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor ice on rivers and lakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+ice+on+rivers+and+lakes",
+     "thematic_service": "Monitor ice on rivers and lakes",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor ice free passages for ships",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+ice+free+passages+for+ships",
+     "thematic_service": null,
+     "match": "none"
+    }
+   ],
+   "bok_sector": "TA11-3-4",
+   "bok_market": "TA11-3"
+  },
+  {
+   "market": "Infrastructure & Transport",
+   "market_description": "Users in transport and infrastructure apply to all manufacturing and physical supply in land but also marine domains including transport & logistics , utilities , construction , communication & connectivity , and tourism . They oversee assets, monitor competition, build competitive advantage and source ground-truthing data.",
+   "sector": "Marine & Maritime",
+   "composition": "Ports & harbors administration, bulk cargo carriers, cruise liners operators, ferry operators, naval operations, rescue and safety at sea.",
+   "services": [
+    {
+     "label": "Monitor water quality and productivity",
+     "url": null,
+     "thematic_service": "Monitor ocean quality & productivity",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor pollution at sea",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+at+sea",
+     "thematic_service": "Monitor pollution at sea",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and map large waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+map+large+waves",
+     "thematic_service": "Forecast & map large waves",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor oil slicks",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+oil+slicks",
+     "thematic_service": "Detect & monitor oil slicks",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor ice-risk at sea",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+ice-risk+at+sea",
+     "thematic_service": "Detect & monitor ice-risk at sea",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor ice free passages for ships",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+ice+free+passages+for+ships",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Forecast and monitor ocean movement and drift",
+     "url": null,
+     "thematic_service": "Forecast & monitor ocean currents and drift",
+     "match": "alias"
+    },
+    {
+     "label": "Forecast and monitor ocean winds and waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+ocean+winds+and+waves",
+     "thematic_service": "Forecast & monitor ocean winds and waves",
+     "match": "exact"
+    },
+    {
+     "label": "Map water depth / charting",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+water+depth+or+charting",
+     "thematic_service": "Monitor water depth or charting",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor ship movements",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+ships+movements",
+     "thematic_service": "Monitor ship movements",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-3-5",
+   "bok_market": "TA11-3"
+  },
+  {
+   "market": "Infrastructure & Transport",
+   "market_description": "Users in transport and infrastructure apply to all manufacturing and physical supply in land but also marine domains including transport & logistics , utilities , construction , communication & connectivity , and tourism . They oversee assets, monitor competition, build competitive advantage and source ground-truthing data.",
+   "sector": "Communications & Connectivity",
+   "composition": "Construction companies, civil engineering consultancies, architect and design companies, planning authorities, national land agencies.",
+   "services": [
+    {
+     "label": "Monitor building development",
+     "url": null,
+     "thematic_service": "Monitor construction & buildings",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes to urban and rural areas",
+     "url": null,
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Map line of sight visibility (terrain height, land cover)",
+     "url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221975",
+     "thematic_service": "Map line of sight visibility (land surface)",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-3-3",
+   "bok_market": "TA11-3"
+  },
+  {
+   "market": "Infrastructure & Transport",
+   "market_description": "Users in transport and infrastructure apply to all manufacturing and physical supply in land but also marine domains including transport & logistics , utilities , construction , communication & connectivity , and tourism . They oversee assets, monitor competition, build competitive advantage and source ground-truthing data.",
+   "sector": "Travel & Tourism",
+   "composition": "Tour operators, leisure service providers, hotels, parks etc., offices of tourism, travel agencies, ski and coastal resorts, surfers & sailors.",
+   "services": [],
+   "bok_sector": "TA11-3-6",
+   "bok_market": "TA11-3"
+  },
+  {
+   "market": "Financial & Digital Services",
+   "market_description": "Users in financial and digital services cover a broad area of activity that touches on many other market sectors such as insurance & real estate , retail , news & media and digital interfaces . They look to better understand risks, accelerate claims, and detect fraud. The categories included are identifiable as a “service” for the tertiary sector which provides advice, access, experience activities and knowledge and there are not part of the physical supply of goods.",
+   "sector": "Insurance & Real Estate",
+   "composition": "Primary insurance companies, re-insurance sector, insurance brokers, insurance service suppliers, commercial banks, major projects, international financial institution.",
+   "services": [
+    {
+     "label": "Assess crop damage due to storms",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+crop+damage+due+to+storms",
+     "thematic_service": "Assess crop damage due to storms",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor building development",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+construction+and+buildings",
+     "thematic_service": "Monitor construction & buildings",
+     "match": "alias"
+    },
+    {
+     "label": "Assess damage from earthquakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+damage+from+earthquakes",
+     "thematic_service": "Assess damage from earthquakes",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and map large waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+map+large+waves",
+     "thematic_service": "Forecast & map large waves",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor wildfires",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+wildfires",
+     "thematic_service": "Detect and monitor wildfires",
+     "match": "exact"
+    },
+    {
+     "label": "Map and assess flooding",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+assess+flooding",
+     "thematic_service": "Map and assess flooding",
+     "match": "exact"
+    },
+    {
+     "label": "Detect land movement, subsidence, heave",
+     "url": null,
+     "thematic_service": "Detect and monitor ground movement",
+     "match": "alias"
+    },
+    {
+     "label": "Forecast and assess landslides",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+assess+landslides",
+     "thematic_service": "Forecast and assess landslides",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-4-1",
+   "bok_market": "TA11-4"
+  },
+  {
+   "market": "Financial & Digital Services",
+   "market_description": "Users in financial and digital services cover a broad area of activity that touches on many other market sectors such as insurance & real estate , retail , news & media and digital interfaces . They look to better understand risks, accelerate claims, and detect fraud. The categories included are identifiable as a “service” for the tertiary sector which provides advice, access, experience activities and knowledge and there are not part of the physical supply of goods.",
+   "sector": "Retail & Geo-marketing",
+   "composition": "Navigation and LBS, retail centres, advertising and marketing agencies, shopping chains, logistics.",
+   "services": [
+    {
+     "label": "Assess land value, ownership, type, use",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+land+value%2C+ownership%2C+type%2C+use",
+     "thematic_service": "Assess land accounting (value, ownership, type, use)",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor high risk areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+high+risk+areas",
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Map urban areas",
+     "url": null,
+     "thematic_service": "Monitor urban areas",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-4-2",
+   "bok_market": "TA11-4"
+  },
+  {
+   "market": "Financial & Digital Services",
+   "market_description": "Users in financial and digital services cover a broad area of activity that touches on many other market sectors such as insurance & real estate , retail , news & media and digital interfaces . They look to better understand risks, accelerate claims, and detect fraud. The categories included are identifiable as a “service” for the tertiary sector which provides advice, access, experience activities and knowledge and there are not part of the physical supply of goods.",
+   "sector": "News & Media",
+   "composition": "Television companies, broadcasting providers, news and Information agencies, web service providers, entertainment software providers",
+   "services": [
+    {
+     "label": "Assess damage from earthquakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+damage+from+earthquakes",
+     "thematic_service": "Assess damage from earthquakes",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and map large waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+map+large+waves",
+     "thematic_service": "Forecast & map large waves",
+     "match": "exact"
+    },
+    {
+     "label": "Detect and monitor wildfires",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+wildfires",
+     "thematic_service": "Detect and monitor wildfires",
+     "match": "exact"
+    },
+    {
+     "label": "Detect sensitive risk areas",
+     "url": null,
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Forecast and assess landslides",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+assess+landslides",
+     "thematic_service": "Forecast and assess landslides",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor high risk areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+high+risk+areas",
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Assess and monitor volcanic activity",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+and+Monitor+Volcanic+Activity",
+     "thematic_service": "Assess and monitor volcanic activity",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-4-3",
+   "bok_market": "TA11-4"
+  },
+  {
+   "market": "Financial & Digital Services",
+   "market_description": "Users in financial and digital services cover a broad area of activity that touches on many other market sectors such as insurance & real estate , retail , news & media and digital interfaces . They look to better understand risks, accelerate claims, and detect fraud. The categories included are identifiable as a “service” for the tertiary sector which provides advice, access, experience activities and knowledge and there are not part of the physical supply of goods.",
+   "sector": "ICT, Knowledge & Digital Interfaces",
+   "composition": "Fixed and mobile telecommunications providers",
+   "services": [],
+   "bok_sector": "TA11-4-4",
+   "bok_market": "TA11-4"
+  },
+  {
+   "market": "Financial & Digital Services",
+   "market_description": "Users in financial and digital services cover a broad area of activity that touches on many other market sectors such as insurance & real estate , retail , news & media and digital interfaces . They look to better understand risks, accelerate claims, and detect fraud. The categories included are identifiable as a “service” for the tertiary sector which provides advice, access, experience activities and knowledge and there are not part of the physical supply of goods.",
+   "sector": "Travel, Tourism and Leisure",
+   "composition": "Tour operators, Leisure service providers, hotels, parks etc, Offices of tourism, Travel agencies, Ski and coastal resorts, Surfers & sailors.",
+   "services": [
+    {
+     "label": "Monitor pollution in rivers and lakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+in+rivers+and+lakes",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Assess changes in land use and quality",
+     "url": null,
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Map and assess flooding",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+assess+flooding",
+     "thematic_service": "Map and assess flooding",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and monitor ocean winds and waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+monitor+ocean+winds+and+waves",
+     "thematic_service": "Forecast & monitor ocean winds and waves",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-3-6",
+   "bok_market": "TA11-4"
+  },
+  {
+   "market": "Defence & Security",
+   "market_description": "Users in defence and security work in the field of military, emergency and social protection and define, collect, analyse information to provide intelligence & safety (monitor events, improve response and drive resilience). Some examples are activities under humanitarian response such as border control organisations, police and rescue forces, coast guards, civil protection, military services, and intelligence services which can use EO services to detect and monitor high risk areas produced naturally or by humans, monitor border incursions or maritime movements.",
+   "sector": "Emergency & Social Protection",
+   "composition": "Coast guards, ambulance services, fire services, police services, civil protection organisations, rescue services.",
+   "services": [
+    {
+     "label": "Detect and monitor arid areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+arid+areas",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Detect and monitor wildfires",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+wildfires",
+     "thematic_service": "Detect and monitor wildfires",
+     "match": "exact"
+    },
+    {
+     "label": "Map and assess flooding",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+and+assess+flooding",
+     "thematic_service": "Map and assess flooding",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and assess landslides",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+assess+landslides",
+     "thematic_service": "Forecast and assess landslides",
+     "match": "exact"
+    },
+    {
+     "label": "Assess and monitor volcanic activity",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+and+Monitor+Volcanic+Activity",
+     "thematic_service": "Assess and monitor volcanic activity",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and map large waves",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+and+map+large+waves",
+     "thematic_service": "Forecast & map large waves",
+     "match": "exact"
+    },
+    {
+     "label": "Assess damage from earthquakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+damage+from+earthquakes",
+     "thematic_service": "Assess damage from earthquakes",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor snow cover",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+snow+cover",
+     "thematic_service": "Monitor & assess snow cover",
+     "match": "alias"
+    },
+    {
+     "label": "Detect and monitor hurricanes and typhoons",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+hurricanes+and+typhoons",
+     "thematic_service": "Detect & monitor hurricanes and typhoons",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-6-2",
+   "bok_market": "TA11-6"
+  },
+  {
+   "market": "Defence & Security",
+   "market_description": "Users in defence and security work in the field of military, emergency and social protection and define, collect, analyse information to provide intelligence & safety (monitor events, improve response and drive resilience). Some examples are activities under humanitarian response such as border control organisations, police and rescue forces, coast guards, civil protection, military services, and intelligence services which can use EO services to detect and monitor high risk areas produced naturally or by humans, monitor border incursions or maritime movements.",
+   "sector": "Security, Defence & Military",
+   "composition": "Border control organisations, police and rescue forces, military services, intelligence Services.",
+   "services": [
+    {
+     "label": "Monitor land border incursions",
+     "url": null,
+     "thematic_service": "Monitor land & marine border incursions",
+     "match": "alias"
+    },
+    {
+     "label": "Detect sensitive risk areas",
+     "url": null,
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor high risk areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+high+risk+areas",
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Assess pressures on populations and migrations",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+pressures+on+populations+and+migration",
+     "thematic_service": "Assess pressures on populations and monitor humanitarian movement",
+     "match": "alias"
+    },
+    {
+     "label": "Detect ships in critical areas .",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+ships+in+critical+areas",
+     "thematic_service": "Detect ships in critical areas",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-6-1",
+   "bok_market": "TA11-6"
+  },
+  {
+   "market": "Defence & Security",
+   "market_description": "Users in defence and security work in the field of military, emergency and social protection and define, collect, analyse information to provide intelligence & safety (monitor events, improve response and drive resilience). Some examples are activities under humanitarian response such as border control organisations, police and rescue forces, coast guards, civil protection, military services, and intelligence services which can use EO services to detect and monitor high risk areas produced naturally or by humans, monitor border incursions or maritime movements.",
+   "sector": "Humanitarian Operations",
+   "composition": "Humanitarian aid and support organisations such as: European level (DG RELEX; DG ECHO, DG ENV / MIC), UN level (OCHA, UNHCR, UNDPKO, UNDP, UNOPS, UNITAR, UNICEF, UNESCO, WFP), international level (IFRC, WHO, WB, donor organisations), national level (Civil Protection Agencies, Ministries of Internal Affairs / Civil Protection Department, Development and Aid Agencies).",
+   "services": [
+    {
+     "label": "Detect and monitor arid areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+arid+areas",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Detect sensitive risk areas",
+     "url": null,
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Map disaster areas (Situation Awareness)",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+disaster+areas",
+     "thematic_service": "Map disaster areas and multi hazard assessment",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor water use on crops and horticulture",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+water+use+on+crops+and+horticulture",
+     "thematic_service": "Monitor water use on crops and horticulture",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor humanitarian movement and camps",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+humanitarian+movement+and+camps",
+     "thematic_service": "Assess pressures on populations and monitor humanitarian movement",
+     "match": "alias"
+    },
+    {
+     "label": "Assess pressures on populations and migration",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+pressures+on+populations+and+migration",
+     "thematic_service": "Assess pressures on populations and monitor humanitarian movement",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor air quality",
+     "url": null,
+     "thematic_service": "Monitor and forecast air quality & emissions (fluxes)",
+     "match": "alias"
+    },
+    {
+     "label": "Forecasting epidemics and diseases",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecasting+epidemics+and+diseases",
+     "thematic_service": "Forecasting epidemics and diseases",
+     "match": "exact"
+    },
+    {
+     "label": "Forecasting sunlight exposure",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecasting+sunlight+exposure",
+     "thematic_service": "Forecasting sunlight exposure",
+     "match": "exact"
+    }
+   ],
+   "bok_sector": "TA11-6-3",
+   "bok_market": "TA11-6"
+  },
+  {
+   "market": "Environmental, Climate & Health",
+   "market_description": "Users in the public administrations or private organizations using EO to increase the environmental or climate change impact on policy making decisions which are key to our safety and our economy i.e., assisting in developing monitoring to evaluate and deliver policy goals, provide an assessment of ecosystems, rapid response to major environmental risk events, or those associated with health security & care. These users are largely related to international treaties and hence a strong international collaboration.",
+   "sector": "Environmental Ecosystems & Pollution",
+   "composition": "Coast guards, ambulance services, fire services, police services, civil protection organisations, rescue services.",
+   "services": [
+    {
+     "label": "Assess environmental impact of farming",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+Environmental+impact+of+farming",
+     "thematic_service": "Assess environmental impact of farming",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor air quality",
+     "url": null,
+     "thematic_service": "Monitor and forecast air quality & emissions (fluxes)",
+     "match": "alias"
+    },
+    {
+     "label": "Assess Change in the carbon balance",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+changes+in+the+carbon+balance",
+     "thematic_service": "Assess changes in the carbon balance",
+     "match": "alias"
+    },
+    {
+     "label": "Assess climate change risk",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+climate+change+risk",
+     "thematic_service": "Assess climate change risk & climate forcing",
+     "match": "alias"
+    },
+    {
+     "label": "Assess crop acreage and yield harvest",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+crop+acreage+and+yield+harvest",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Forecast crop yields",
+     "url": "https://earsc-portal.eu/display/EOwiki/Forecast+crop+yields",
+     "thematic_service": "Monitor and forecast crop yields",
+     "match": "alias"
+    },
+    {
+     "label": "Assess environmental impact of human activities",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+environmental+impact+of+human+activities",
+     "thematic_service": "Assess environmental impact of human activities",
+     "match": "exact"
+    },
+    {
+     "label": "Detect changes in glaciers",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+changes+in+glaciers",
+     "thematic_service": "Detect changes in glaciers",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor water use on crops and horticulture",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+water+use+on+crops+and+horticulture",
+     "thematic_service": "Monitor water use on crops and horticulture",
+     "match": "exact"
+    },
+    {
+     "label": "Assess land value, ownership, type use etc",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+land+value%2C+ownership%2C+type%2C+use",
+     "thematic_service": "Assess land accounting (value, ownership, type, use)",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes in land use and quality",
+     "url": null,
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Measure land-use statistics",
+     "url": "https://earsc-portal.eu/display/EOwiki/Measure+land+use+statistics",
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Detect and monitor oil slicks",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+oil+slicks",
+     "thematic_service": "Detect & monitor oil slicks",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor land pollution",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+land+pollution",
+     "thematic_service": "Monitor land pollution & waste management",
+     "match": "alias"
+    },
+    {
+     "label": "Assess dredging operations impacts",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+dredging+operation+impacts",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Detect and monitor ice-risk at sea",
+     "url": "https://earsc-portal.eu/display/EOwiki/Detect+and+monitor+ice-risk+at+sea",
+     "thematic_service": "Detect & monitor ice-risk at sea",
+     "match": "exact"
+    },
+    {
+     "label": "Forecast and monitor ocean movement and drift",
+     "url": null,
+     "thematic_service": "Forecast & monitor ocean currents and drift",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-7-1",
+   "bok_market": "TA11-7"
+  },
+  {
+   "market": "Environmental, Climate & Health",
+   "market_description": "Users in the public administrations or private organizations using EO to increase the environmental or climate change impact on policy making decisions which are key to our safety and our economy i.e., assisting in developing monitoring to evaluate and deliver policy goals, provide an assessment of ecosystems, rapid response to major environmental risk events, or those associated with health security & care. These users are largely related to international treaties and hence a strong international collaboration.",
+   "sector": "Health Care",
+   "composition": "Public administration personnel, civil servants, public health community (working on health issues such as air quality, forecasting sunlight exposure, forecasting epidemics, diseases).",
+   "services": [],
+   "bok_sector": "TA11-7-2",
+   "bok_market": "TA11-7"
+  },
+  {
+   "market": "Environmental, Climate & Health",
+   "market_description": "Users in the public administrations or private organizations using EO to increase the environmental or climate change impact on policy making decisions which are key to our safety and our economy i.e., assisting in developing monitoring to evaluate and deliver policy goals, provide an assessment of ecosystems, rapid response to major environmental risk events, or those associated with health security & care. These users are largely related to international treaties and hence a strong international collaboration.",
+   "sector": "Meteo & Climate",
+   "composition": "Meteorologists in range of downstream applications.",
+   "services": [],
+   "bok_sector": "TA11-7-3",
+   "bok_market": "TA11-7"
+  },
+  {
+   "market": "Urban Development",
+   "market_description": "Users in urban development and users involved in the development of rural settlements perform tasks at local and regional scales (to the scale of nations) on mapping land use and monitoring urbanization. These users benefit from EO information to manage the use of land & its impacts. Users include experts in e.g. urban planners, architects, spatial planning offices, urban policy makers in public/private sectors in smart cities or generic urban local/regional planning belong to this category.",
+   "sector": "Local & Regional Planning",
+   "composition": "Spatial planning departments of municipalities, spatial planning offices, spatial planning policy makers.",
+   "services": [
+    {
+     "label": "Monitor air quality",
+     "url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221935",
+     "thematic_service": "Monitor and forecast air quality & emissions (fluxes)",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor pollution in rivers and lakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+in+rivers+and+lakes",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Monitor building development",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+construction+and+buildings",
+     "thematic_service": "Monitor construction & buildings",
+     "match": "alias"
+    },
+    {
+     "label": "Assess land value, ownership, type, use",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+land+value%2C+ownership%2C+type%2C+use",
+     "thematic_service": "Assess land accounting (value, ownership, type, use)",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes in land use and quality",
+     "url": null,
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Detect land movement; subsidence, heave",
+     "url": null,
+     "thematic_service": "Detect and monitor ground movement",
+     "match": "alias"
+    },
+    {
+     "label": "Measure land-use statistics",
+     "url": "https://earsc-portal.eu/display/EOwiki/Measure+land+use+statistics",
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor high risk areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+high+risk+areas",
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Assess pressures on populations and migration",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+pressures+on+populations+and+migration",
+     "thematic_service": "Assess pressures on populations and monitor humanitarian movement",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes to urban and rural areas",
+     "url": null,
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Map urban areas",
+     "url": null,
+     "thematic_service": "Monitor urban areas",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor urban development",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+urban+development",
+     "thematic_service": "Monitor urban areas",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-5-2",
+   "bok_market": "TA11-5"
+  },
+  {
+   "market": "Urban Development",
+   "market_description": "Users in urban development and users involved in the development of rural settlements perform tasks at local and regional scales (to the scale of nations) on mapping land use and monitoring urbanization. These users benefit from EO information to manage the use of land & its impacts. Users include experts in e.g. urban planners, architects, spatial planning offices, urban policy makers in public/private sectors in smart cities or generic urban local/regional planning belong to this category.",
+   "sector": "Smart Cities",
+   "composition": "Urban planners, architects, spatial planning offices, urban policy makers.",
+   "services": [
+    {
+     "label": "Monitor air quality",
+     "url": "https://earsc-portal.eu/pages/viewpage.action?pageId=78221935",
+     "thematic_service": "Monitor and forecast air quality & emissions (fluxes)",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor pollution in rivers and lakes",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+pollution+in+rivers+and+lakes",
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Monitor building development",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+construction+and+buildings",
+     "thematic_service": "Monitor construction & buildings",
+     "match": "alias"
+    },
+    {
+     "label": "Assess land value, ownership, type, use",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+land+value%2C+ownership%2C+type%2C+use",
+     "thematic_service": "Assess land accounting (value, ownership, type, use)",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes in land use and quality",
+     "url": null,
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Detect land movement; subsidence, heave",
+     "url": null,
+     "thematic_service": "Detect and monitor ground movement",
+     "match": "alias"
+    },
+    {
+     "label": "Measure land-use statistics",
+     "url": "https://earsc-portal.eu/display/EOwiki/Measure+land+use+statistics",
+     "thematic_service": "Monitor land use and land use change",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor high risk areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+high+risk+areas",
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Assess pressures on populations and migration",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+pressures+on+populations+and+migration",
+     "thematic_service": "Assess pressures on populations and monitor humanitarian movement",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes to urban and rural areas",
+     "url": null,
+     "thematic_service": null,
+     "match": "none"
+    },
+    {
+     "label": "Map urban areas",
+     "url": null,
+     "thematic_service": "Monitor urban areas",
+     "match": "alias"
+    },
+    {
+     "label": "Monitor urban development",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+urban+development",
+     "thematic_service": "Monitor urban areas",
+     "match": "alias"
+    }
+   ],
+   "bok_sector": "TA11-5-1",
+   "bok_market": "TA11-5"
+  },
+  {
+   "market": "Citizens & Society",
+   "market_description": "Citizens and society in general use and engage with EO services through mobile devices , social media platforms and apps . We also categorize in this section the users in education , research and training providing knowledge and learning outcomes.",
+   "sector": "Consumer Solutions",
+   "composition": "Mobile devices, social media platforms, app developers.",
+   "services": [],
+   "bok_sector": "TA11-8-1",
+   "bok_market": "TA11-8"
+  },
+  {
+   "market": "Citizens & Society",
+   "market_description": "Citizens and society in general use and engage with EO services through mobile devices , social media platforms and apps . We also categorize in this section the users in education , research and training providing knowledge and learning outcomes.",
+   "sector": "Leisure",
+   "composition": "People oriented to basic public understanding on EO services for their leisure activities.",
+   "services": [],
+   "bok_sector": "TA11-8-2",
+   "bok_market": "TA11-8"
+  },
+  {
+   "market": "Citizens & Society",
+   "market_description": "Citizens and society in general use and engage with EO services through mobile devices , social media platforms and apps . We also categorize in this section the users in education , research and training providing knowledge and learning outcomes.",
+   "sector": "Education, Training & Research",
+   "composition": "Schools and education authorities, universities, research organisations, professional training organisations.",
+   "services": [
+    {
+     "label": "Assess changes in the carbon balance",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+changes+in+the+carbon+balance",
+     "thematic_service": "Assess changes in the carbon balance",
+     "match": "exact"
+    },
+    {
+     "label": "Assess climate change risk",
+     "url": "https://earsc-portal.eu/display/EOwiki/Assess+climate+change+risk",
+     "thematic_service": "Assess climate change risk & climate forcing",
+     "match": "alias"
+    },
+    {
+     "label": "Map geological features",
+     "url": "https://earsc-portal.eu/display/EOwiki/Map+geological+features",
+     "thematic_service": "Map geological features",
+     "match": "exact"
+    },
+    {
+     "label": "Monitor high risk areas",
+     "url": "https://earsc-portal.eu/display/EOwiki/Monitor+high+risk+areas",
+     "thematic_service": "Monitor sensitive risk areas",
+     "match": "alias"
+    },
+    {
+     "label": "Assess changes to urban and rural areas",
+     "url": null,
+     "thematic_service": null,
+     "match": "none"
+    }
+   ],
+   "bok_sector": "TA11-8-3",
+   "bok_market": "TA11-8"
+  }
+ ]
+}

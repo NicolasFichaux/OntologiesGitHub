@@ -1,0 +1,14 @@
+streamlit>=1.40
+requests
+lxml
+pandas
+numpy
+matplotlib
+pydeck
+xarray>=2024.10
+zarr>=3
+dask
+fsspec
+aiohttp
+netCDF4
+rasterio

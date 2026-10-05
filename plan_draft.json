@@ -1,0 +1,48 @@
+{
+ "prototype_plan": 1,
+ "made_by": "Earth data navigator",
+ "made_on": "2026-10-04",
+ "ingredient": "hauteur des bâtiments",
+ "information": "potentiel solaire par bâtiment, avec ombrage",
+ "variable": "",
+ "service": "",
+ "place": "Toulouse, France",
+ "need": "",
+ "recipe": null,
+ "params": {},
+ "bbox": [
+  1.3,
+  43.5,
+  1.55,
+  43.7
+ ],
+ "draft": {
+  "title": "Hauteur du bâti à partir du modèle de surface",
+  "feasible": "partly",
+  "steps": [
+   {
+    "t": "Lire le modèle de surface Copernicus sur la zone",
+    "how": "named"
+   },
+   {
+    "t": "Soustraire une estimation du sol par filtre minimum sur 300 m",
+    "how": "choice"
+   },
+   {
+    "t": "Lire la différence comme hauteur des bâtiments",
+    "how": "interpretation"
+   },
+   {
+    "t": "x",
+    "how": "interpretation"
+   }
+  ],
+  "data": [],
+  "output": "Une carte des hauteurs relatives.",
+  "missing": [
+   "Un modèle à 1 m",
+   "Une validation"
+  ],
+  "on": "2026-10-04"
+ }
+}

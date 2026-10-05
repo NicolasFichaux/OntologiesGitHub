@@ -1,0 +1,81 @@
+hda_instrument;earsc_service;confidence;rationale;only_if_id_matches;validated
+C-SAR;Map and assess flooding;high;SAR backscatter change, all-weather;;no
+C-SAR;Detect ships in critical areas;high;bright targets on the sea surface;;no
+C-SAR;Monitor ship movements;medium;needs fusion with AIS;;no
+C-SAR;Detect & monitor illegal fishing;medium;vessel detection without AIS;;no
+C-SAR;Detect and monitor ground movement;high;InSAR (SLC product);SLC;no
+C-SAR;Measure and detect land surface change;high;InSAR / coherence (SLC);SLC;no
+C-SAR;Asset infrastructure monitoring;medium;InSAR on infrastructure (SLC);SLC;no
+C-SAR;Assess damage from earthquakes;medium;InSAR / coherence change;SLC;no
+C-SAR;Assess and monitor volcanic activity;medium;InSAR deformation;SLC;no
+C-SAR;Forecast and assess landslides;medium;InSAR, coherence;SLC;no
+C-SAR;Assess deforestation / forest degradation;medium;backscatter time series;;no
+C-SAR;Map disaster areas and multi hazard assessment;medium;rapid mapping;;no
+C-SAR;Monitor ice on rivers and lakes;medium;backscatter;;no
+C-SAR;Assess & monitor wetlands;medium;backscatter time series;;no
+MSI;Monitor urban areas;high;10 m multispectral imagery;;no
+MSI;Monitor urban green & blue areas;high;vegetation and water indices at 10 m;;no
+MSI;Monitor urban surroundings;medium;sprawl mapping;;no
+MSI;Monitor construction & buildings;medium;10 m: large structures only;;no
+MSI;Assess deforestation / forest degradation;high;time series;;no
+MSI;Assess forest damage due to storms or insects;medium;change detection;;no
+MSI;Detect and monitor wildfires;high;burnt area, active fire in SWIR;;no
+MSI;Map and assess flooding;medium;cloud-limited;;no
+MSI;Assess and monitor water bodies;high;water extent and quality;;no
+MSI;Assess & monitor wetlands;medium;indices;;no
+MSI;Assess crop damage due to storms;medium;change detection;;no
+MSI;Detect illegal or undesired crops;medium;crop classification;;no
+MSI;Monitor mineral extraction;medium;change detection;;no
+MSI;Assess & monitor coastal water quality;medium;turbidity near shore;;no
+MSI;Map disaster areas and multi hazard assessment;medium;cloud-limited;;no
+MSI;Detect changes in glaciers;medium;outlines;;no
+MSI;Monitor water depth or charting;medium;satellite-derived bathymetry, clear shallow water;;no
+MSI;Monitor invasive species;medium;sargassum detection;;no
+TM;Monitor land use and land use change;high;long time series of 30 m imagery;;no
+TM;Monitor land cover and detect change assessment;high;30 m multispectral imagery;;no
+TM;Assess deforestation / forest degradation;high;long time series;;no
+TM;Monitor urban areas;medium;30 m imagery;;no
+TM;Monitor urban surroundings;medium;sprawl over decades;;no
+TM;Assess and monitor water bodies;high;water extent;;no
+TM;Detect changes in glaciers;medium;outlines;;no
+TM;Detect and monitor wildfires;medium;burnt area;;no
+TM;Monitor mineral extraction;medium;change detection;;no
+ETM+;Monitor land use and land use change;high;long time series of 30 m imagery;;no
+ETM+;Monitor land cover and detect change assessment;high;30 m multispectral imagery;;no
+ETM+;Assess deforestation / forest degradation;high;long time series;;no
+ETM+;Monitor urban areas;medium;30 m imagery;;no
+ETM+;Monitor urban surroundings;medium;sprawl over decades;;no
+ETM+;Assess and monitor water bodies;high;water extent;;no
+ETM+;Detect changes in glaciers;medium;outlines;;no
+ETM+;Detect and monitor wildfires;medium;burnt area;;no
+ETM+;Monitor mineral extraction;medium;change detection;;no
+OLI;Monitor land use and land use change;high;long time series of 30 m imagery;;no
+OLI;Monitor land cover and detect change assessment;high;30 m multispectral imagery;;no
+OLI;Assess deforestation / forest degradation;high;long time series;;no
+OLI;Monitor urban areas;medium;30 m imagery;;no
+OLI;Monitor urban surroundings;medium;sprawl over decades;;no
+OLI;Assess and monitor water bodies;high;water extent;;no
+OLI;Detect changes in glaciers;medium;outlines;;no
+OLI;Detect and monitor wildfires;medium;burnt area;;no
+OLI;Monitor mineral extraction;medium;change detection;;no
+MSS;Monitor land use and land use change;high;long time series of 30 m imagery;;no
+MSS;Monitor land cover and detect change assessment;high;30 m multispectral imagery;;no
+MSS;Assess deforestation / forest degradation;high;long time series;;no
+MSS;Monitor urban areas;medium;30 m imagery;;no
+MSS;Monitor urban surroundings;medium;sprawl over decades;;no
+MSS;Assess and monitor water bodies;high;water extent;;no
+MSS;Detect changes in glaciers;medium;outlines;;no
+MSS;Detect and monitor wildfires;medium;burnt area;;no
+MSS;Monitor mineral extraction;medium;change detection;;no
+TIRS;Monitor urban areas;medium;surface temperature at 100 m (heat islands);;no
+TIRS;Monitor urban green & blue areas;medium;surface temperature;;no
+TIRS;Monitor water use on crops and horticulture;medium;evapotranspiration;;no
+SEVIRI;Detect & monitor hurricanes and typhoons;high;geostationary imagery every 15 min;;no
+FCI;Detect & monitor hurricanes and typhoons;high;geostationary imagery every 10 min;;no
+MVIRI;Detect & monitor hurricanes and typhoons;medium;geostationary imagery;;no
+AVHRR;Detect & monitor hurricanes and typhoons;medium;polar imagery;;no
+OLCI;Monitor invasive species;medium;floating algae indices;;no
+OLCI;Assess and monitor water bodies;medium;inland water quality, 300 m;;no
+SRAL;Assess and monitor water bodies;medium;inland water level by altimetry;;no
+SRAL;Map & monitor hydroelectric energy;medium;reservoir level;;no
+Poseidon-4;Assess and monitor water bodies;medium;inland water level by altimetry;;no

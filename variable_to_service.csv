@@ -1,0 +1,216 @@
+oscar_variable;match_terms;earsc_service;confidence;role;evidence;validated
+Aerosol Optical Depth;aerosol optical (depth|thickness)|\bAOD\b;Monitor atmosphere composition;high;product;expert judgement (Claude);no
+Aerosol Optical Depth;aerosol optical (depth|thickness)|\bAOD\b;Monitor and forecast air quality & emissions (fluxes);medium;input;expert judgement (Claude);no
+Aerosol Optical Depth;aerosol optical (depth|thickness)|\bAOD\b;Forecasting sunlight exposure;high;input;term found in EARSC description;no
+Aerosol Optical Depth;aerosol optical (depth|thickness)|\bAOD\b;Map & monitor solar energy (solar farms);medium;input;expert judgement (Claude);no
+Aerosol column burden;aerosol (column|burden|load);Monitor atmosphere composition;high;product;expert judgement (Claude);no
+Aerosol column burden;aerosol (column|burden|load);Monitor and forecast air quality & emissions (fluxes);medium;input;expert judgement (Claude);no
+Aerosol mass mixing ratio;aerosol (mass|mixing);Monitor atmosphere composition;high;product;expert judgement (Claude);no
+Aerosol mass mixing ratio;aerosol (mass|mixing);Monitor and forecast air quality & emissions (fluxes);medium;input;expert judgement (Claude);no
+Aerosol type;aerosol typ;Monitor atmosphere composition;high;product;expert judgement (Claude);no
+Aerosol type;aerosol typ;Monitor and forecast air quality & emissions (fluxes);medium;input;expert judgement (Claude);no
+Aerosol effective radius;aerosol[^.]{0,30}radius;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+Aerosol volcanic ash;volcanic ash;Assess and monitor volcanic activity;high;product;expert judgement (Claude);no
+Aerosol volcanic ash;volcanic ash;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+Aerosol volcanic ash Total Column;volcanic ash;Assess and monitor volcanic activity;high;product;expert judgement (Claude);no
+Aerosol volcanic ash Total Column;volcanic ash;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+NO2;\bNO2\b|nitrogen dioxide;Monitor and forecast air quality & emissions (fluxes);high;product;term found in EARSC description;no
+NO2;\bNO2\b|nitrogen dioxide;Monitor atmosphere composition;high;product;term found in EARSC description;no
+NO2 Total Column;\bNO2\b|nitrogen dioxide;Monitor and forecast air quality & emissions (fluxes);high;product;term found in EARSC description;no
+NO2 Total Column;\bNO2\b|nitrogen dioxide;Monitor atmosphere composition;high;product;term found in EARSC description;no
+NO;nitric oxide|nitrogen monoxide;Monitor and forecast air quality & emissions (fluxes);high;product;expert judgement (Claude);no
+NO;nitric oxide|nitrogen monoxide;Monitor atmosphere composition;high;product;expert judgement (Claude);no
+SO2;\bSO2\b|sulphur dioxide|sulfur dioxide;Monitor and forecast air quality & emissions (fluxes);high;product;term found in EARSC description;no
+SO2;\bSO2\b|sulphur dioxide|sulfur dioxide;Monitor atmosphere composition;high;product;term found in EARSC description;no
+SO2;\bSO2\b|sulphur dioxide|sulfur dioxide;Assess and monitor volcanic activity;medium;input;expert judgement (Claude);no
+SO2 Total Column;\bSO2\b|sulphur dioxide|sulfur dioxide;Monitor and forecast air quality & emissions (fluxes);high;product;term found in EARSC description;no
+SO2 Total Column;\bSO2\b|sulphur dioxide|sulfur dioxide;Monitor atmosphere composition;high;product;term found in EARSC description;no
+SO2 Total Column;\bSO2\b|sulphur dioxide|sulfur dioxide;Assess and monitor volcanic activity;medium;input;expert judgement (Claude);no
+O3;\bO3\b|ozone;Monitor and forecast air quality & emissions (fluxes);high;product;expert judgement (Claude);no
+O3;\bO3\b|ozone;Monitor atmosphere composition;high;product;term found in EARSC description;no
+O3 Total Column;\bO3\b|ozone;Monitor and forecast air quality & emissions (fluxes);high;product;expert judgement (Claude);no
+O3 Total Column;\bO3\b|ozone;Monitor atmosphere composition;high;product;term found in EARSC description;no
+CO;carbon monoxide;Monitor and forecast air quality & emissions (fluxes);high;product;expert judgement (Claude);no
+CO;carbon monoxide;Monitor atmosphere composition;high;product;expert judgement (Claude);no
+HCHO;formaldehyde|HCHO;Monitor and forecast air quality & emissions (fluxes);high;product;expert judgement (Claude);no
+HCHO;formaldehyde|HCHO;Monitor atmosphere composition;high;product;expert judgement (Claude);no
+HCHO Total Column;formaldehyde|HCHO;Monitor and forecast air quality & emissions (fluxes);high;product;expert judgement (Claude);no
+HCHO Total Column;formaldehyde|HCHO;Monitor atmosphere composition;high;product;expert judgement (Claude);no
+CH4 mole fraction;methane|\bCH4\b;Monitor and forecast air quality & emissions (fluxes);high;product;term found in EARSC description;no
+CH4 mole fraction;methane|\bCH4\b;Monitor atmosphere composition;high;product;term found in EARSC description;no
+CH4 mole fraction;methane|\bCH4\b;Assess changes in the carbon balance;medium;input;expert judgement (Claude);no
+CH4 mole fraction;methane|\bCH4\b;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+CH4 mole fraction;methane|\bCH4\b;Monitor oil rigs & flares;medium;input;term found in EARSC description;no
+CO2 mole fraction;carbon dioxide|\bCO2\b;Monitor and forecast air quality & emissions (fluxes);high;product;term found in EARSC description;no
+CO2 mole fraction;carbon dioxide|\bCO2\b;Monitor atmosphere composition;high;product;term found in EARSC description;no
+CO2 mole fraction;carbon dioxide|\bCO2\b;Assess changes in the carbon balance;medium;input;expert judgement (Claude);no
+CO2 mole fraction;carbon dioxide|\bCO2\b;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+N2O mole fraction;nitrous oxide|\bN2O\b;Monitor atmosphere composition;high;product;expert judgement (Claude);no
+N2O mole fraction;nitrous oxide|\bN2O\b;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+BrO;\bBrO\b;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+ClO;\bClO\b;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+ClONO2;ClONO2;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+CFC-11;CFC;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+CFC-12;CFC;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+CH3Br;CH3Br;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+COS;\bCOS\b|carbonyl sulphide;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+HNO3;HNO3|nitric acid;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+N2O5;N2O5;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+PAN;peroxyacetyl;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+SF6;\bSF6\b;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+C2H2;C2H2;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+C2H6;C2H6;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+H2O;water vapou?r;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+PSC occurrence;polar stratospheric cloud;Monitor atmosphere composition;medium;product;expert judgement (Claude);no
+Atmospheric temperature;temperature profile|atmospheric temperature|temperature sounding|temperature and humidity;Forecast weather;high;product;expert judgement (Claude);no
+Specific humidity;humidity;Forecast weather;high;product;expert judgement (Claude);no
+Integrated Water Vapour (IWV);water vapou?r|precipitable water;Forecast weather;high;product;expert judgement (Claude);no
+Wind (horizontal);atmospheric motion vector|\bAMV\b|wind profile|upper[- ]air wind;Forecast weather;high;product;expert judgement (Claude);no
+Wind (horizontal);atmospheric motion vector|\bAMV\b|wind profile|upper[- ]air wind;Detect & monitor hurricanes and typhoons;medium;input;expert judgement (Claude);no
+Accumulated precipitation;precipitation|rainfall|rain rate;Forecast weather;high;product;term found in EARSC description;no
+Accumulated precipitation;precipitation|rainfall|rain rate;Assess ground water and run-off;medium;input;expert judgement (Claude);no
+Accumulated precipitation;precipitation|rainfall|rain rate;Map and assess flooding;medium;input;expert judgement (Claude);no
+Precipitation intensity at surface (liquid or solid);precipitation|rainfall|rain rate;Forecast weather;high;product;term found in EARSC description;no
+Precipitation intensity at surface (liquid or solid);precipitation|rainfall|rain rate;Map and assess flooding;medium;input;expert judgement (Claude);no
+Precipitation intensity at surface (liquid or solid);precipitation|rainfall|rain rate;Detect & monitor hurricanes and typhoons;medium;input;expert judgement (Claude);no
+Cloud cover;cloud (mask|cover|fraction|analysis);Forecast weather;high;product;expert judgement (Claude);no
+Cloud cover;cloud (mask|cover|fraction|analysis);Forecasting sunlight exposure;high;input;expert judgement (Claude);no
+Cloud cover;cloud (mask|cover|fraction|analysis);Map & monitor solar energy (solar farms);medium;input;expert judgement (Claude);no
+Cloud type;cloud (type|analysis);Forecast weather;high;product;expert judgement (Claude);no
+Cloud top height;cloud top;Forecast weather;medium;product;expert judgement (Claude);no
+Cloud top temperature;cloud top;Forecast weather;medium;product;expert judgement (Claude);no
+Cloud top temperature;cloud top;Detect & monitor hurricanes and typhoons;medium;input;expert judgement (Claude);no
+Cloud optical depth;cloud optical|cloud properties;Forecast weather;medium;input;expert judgement (Claude);no
+Cloud optical depth;cloud optical|cloud properties;Forecasting sunlight exposure;high;input;expert judgement (Claude);no
+Cloud drop effective radius;effective radius|cloud properties;Forecast weather;medium;input;expert judgement (Claude);no
+Cloud ice effective radius;effective radius|cloud properties;Forecast weather;medium;input;expert judgement (Claude);no
+Cloud ice;cloud ice;Forecast weather;medium;input;expert judgement (Claude);no
+Cloud ice Total Column;ice water path|cloud ice;Forecast weather;medium;input;expert judgement (Claude);no
+Cloud liquid water (CLW);cloud liquid water|liquid water;Forecast weather;medium;input;expert judgement (Claude);no
+Cloud liquid water (CLW) total column;liquid water path|cloud liquid water;Forecast weather;medium;input;expert judgement (Claude);no
+Height of the top of PBL;boundary layer;Forecast weather;medium;input;expert judgement (Claude);no
+Height of the tropopause;tropopause;Forecast weather;medium;input;expert judgement (Claude);no
+Temperature of the tropopause;tropopause;Forecast weather;medium;input;expert judgement (Claude);no
+Freezing level height in clouds;freezing level;Forecast weather;medium;input;expert judgement (Claude);no
+Melting layer depth in clouds;melting layer;Forecast weather;medium;input;expert judgement (Claude);no
+Total lightning stroke density;lightning;Forecast weather;high;product;expert judgement (Claude);no
+Downward short-wave irradiance at Earth surface;surface solar (irradiance|radiation)|solar surface (irradiance|radiation)|surface (incoming|downward|downwelling) (solar|short-?wave)|downward (surface )?short-?wave|\bDSSF\b|global horizontal|solar irradiance at (the )?surface;Map & monitor solar energy (solar farms);high;product;term found in EARSC description;no
+Downward short-wave irradiance at Earth surface;surface solar (irradiance|radiation)|solar surface (irradiance|radiation)|surface (incoming|downward|downwelling) (solar|short-?wave)|downward (surface )?short-?wave|\bDSSF\b|global horizontal|solar irradiance at (the )?surface;Forecasting sunlight exposure;high;product;expert judgement (Claude);no
+Downward short-wave irradiance at Earth surface;surface solar (irradiance|radiation)|solar surface (irradiance|radiation)|surface (incoming|downward|downwelling) (solar|short-?wave)|downward (surface )?short-?wave|\bDSSF\b|global horizontal|solar irradiance at (the )?surface;Assess climate change risk & climate forcing;medium;input;term found in EARSC description;no
+Photosynthetically Active Radiation (PAR);(?<!absorbed )photosynthetically (active|available) radiation|\bPAR\b;Monitor and forecast crop yields;medium;input;expert judgement (Claude);no
+Photosynthetically Active Radiation (PAR);(?<!absorbed )photosynthetically (active|available) radiation|\bPAR\b;Monitor ocean quality & productivity;medium;input;expert judgement (Claude);no
+Downward long-wave irradiance at Earth surface;downward (surface )?long-?wave|downwelling long-?wave|\bDSLF\b;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+Upward long-wave irradiance at Earth surface;upward (surface )?long-?wave|surface (emitted|upwelling) long-?wave;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+Upward long-wave irradiance at TOA;outgoing long-?wave|\bOLR\b|outgoing LW|LW radiation at TOA;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+Upward short-wave irradiance at TOA;reflected solar|outgoing short-?wave|SW radiation at TOA;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+Earth surface albedo;albedo;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+Land cover;land cover;Monitor land cover and detect change assessment;high;product;term found in EARSC description;no
+Land cover;land cover;Monitor land use and land use change;high;product;term found in EARSC description;no
+Land cover;land cover;Monitor coastal land cover;medium;product;term found in EARSC description;no
+Land cover;land cover;Monitor urban areas;medium;input;expert judgement (Claude);no
+Land cover;land cover;Assess deforestation / forest degradation;medium;input;expert judgement (Claude);no
+Land cover;land cover;Forecasting epidemics and diseases;medium;input;term found in EARSC description;no
+Fraction of vegetated land;vegetation cover|fraction of (green )?vegetation|\bFVC\b|FCOVER;Monitor land cover and detect change assessment;high;input;expert judgement (Claude);no
+Fraction of vegetated land;vegetation cover|fraction of (green )?vegetation|\bFVC\b|FCOVER;Monitor urban green & blue areas;medium;input;expert judgement (Claude);no
+Fraction of vegetated land;vegetation cover|fraction of (green )?vegetation|\bFVC\b|FCOVER;Monitor vegetation encroachment;medium;input;expert judgement (Claude);no
+Fraction of vegetated land;vegetation cover|fraction of (green )?vegetation|\bFVC\b|FCOVER;Assess deforestation / forest degradation;medium;input;expert judgement (Claude);no
+Vegetation type;vegetation type;Assess land ecosystems and biodiversity;medium;input;expert judgement (Claude);no
+Vegetation type;vegetation type;Assess, monitor & manage onitor forest resources;medium;input;expert judgement (Claude);no
+Leaf Area Index (LAI);leaf area index|\bLAI\b;Monitor and forecast crop yields;high;input;expert judgement (Claude);no
+Leaf Area Index (LAI);leaf area index|\bLAI\b;Assess and monitor crop disease and stress;high;input;expert judgement (Claude);no
+Leaf Area Index (LAI);leaf area index|\bLAI\b;Assess, monitor & manage onitor forest resources;medium;input;expert judgement (Claude);no
+Leaf Area Index (LAI);leaf area index|\bLAI\b;Assess land ecosystems and biodiversity;medium;input;term found in EARSC description;no
+Normalised Difference Vegetation Index (NDVI);\bNDVI\b|normali[sz]ed difference vegetation;Monitor and forecast crop yields;high;input;expert judgement (Claude);no
+Normalised Difference Vegetation Index (NDVI);\bNDVI\b|normali[sz]ed difference vegetation;Assess and monitor crop disease and stress;high;input;expert judgement (Claude);no
+Normalised Difference Vegetation Index (NDVI);\bNDVI\b|normali[sz]ed difference vegetation;Monitor water use on crops and horticulture;medium;product;expert judgement (Claude);no
+Normalised Difference Vegetation Index (NDVI);\bNDVI\b|normali[sz]ed difference vegetation;Monitor vegetation encroachment;medium;input;expert judgement (Claude);no
+Normalised Difference Vegetation Index (NDVI);\bNDVI\b|normali[sz]ed difference vegetation;Monitor urban green & blue areas;medium;input;expert judgement (Claude);no
+Normalised Difference Vegetation Index (NDVI);\bNDVI\b|normali[sz]ed difference vegetation;Assess land ecosystems and biodiversity;medium;input;term found in EARSC description;no
+Normalised Difference Vegetation Index (NDVI);\bNDVI\b|normali[sz]ed difference vegetation;Forecasting epidemics and diseases;medium;input;term found in EARSC description;no
+Fraction of Absorbed PAR (FAPAR);\bFAPAR\b|\bFPAR\b|absorbed photosynthetically|\bOGVI\b|global vegetation index;Monitor and forecast crop yields;high;input;expert judgement (Claude);no
+Fraction of Absorbed PAR (FAPAR);\bFAPAR\b|\bFPAR\b|absorbed photosynthetically|\bOGVI\b|global vegetation index;Assess and monitor crop disease and stress;high;input;expert judgement (Claude);no
+Fraction of Absorbed PAR (FAPAR);\bFAPAR\b|\bFPAR\b|absorbed photosynthetically|\bOGVI\b|global vegetation index;Assess land ecosystems and biodiversity;medium;input;expert judgement (Claude);no
+Biomass;biomass;Monitor forest carbon content;high;product;expert judgement (Claude);no
+Biomass;biomass;Assess, monitor & manage onitor forest resources;medium;product;term found in EARSC description;no
+Biomass;biomass;Assess changes in the carbon balance;high;input;term found in EARSC description;no
+Soil moisture at surface;soil moisture|soil water;Monitor water use on crops and horticulture;high;product;term found in EARSC description;no
+Soil moisture at surface;soil moisture|soil water;Assess ground water and run-off;high;product;term found in EARSC description;no
+Soil moisture at surface;soil moisture|soil water;Monitor and forecast crop yields;medium;input;expert judgement (Claude);no
+Soil moisture at surface;soil moisture|soil water;Map and assess flooding;medium;input;expert judgement (Claude);no
+Soil moisture at surface;soil moisture|soil water;Forecast and assess landslides;medium;input;expert judgement (Claude);no
+Soil moisture (in the roots region);root zone|soil water index|soil moisture;Monitor water use on crops and horticulture;high;product;term found in EARSC description;no
+Soil moisture (in the roots region);root zone|soil water index|soil moisture;Assess ground water and run-off;medium;product;term found in EARSC description;no
+Soil moisture (in the roots region);root zone|soil water index|soil moisture;Monitor and forecast crop yields;medium;input;expert judgement (Claude);no
+Land surface temperature;land surface temperature|\bLST\b;Monitor urban areas;medium;input;expert judgement (Claude);no
+Land surface temperature;land surface temperature|\bLST\b;Monitor urban green & blue areas;medium;input;expert judgement (Claude);no
+Land surface temperature;land surface temperature|\bLST\b;Assess and monitor crop disease and stress;medium;input;expert judgement (Claude);no
+Land surface temperature;land surface temperature|\bLST\b;Monitor water use on crops and horticulture;medium;input;expert judgement (Claude);no
+Land surface topography;digital elevation|elevation model|\bDEM\b|terrain (height|elevation)|land (surface )?topography;Baseline mapping;high;product;term found in EARSC description;no
+Land surface topography;digital elevation|elevation model|\bDEM\b|terrain (height|elevation)|land (surface )?topography;Map line of sight visibility (land surface);high;input;expert judgement (Claude);no
+Land surface topography;digital elevation|elevation model|\bDEM\b|terrain (height|elevation)|land (surface )?topography;Measure and detect land surface change;medium;input;expert judgement (Claude);no
+Snow cover;snow;Monitor & assess snow cover;high;product;term found in EARSC description;no
+Snow cover;snow;Assess ground water and run-off;medium;input;expert judgement (Claude);no
+Snow status (wet/dry);snow;Monitor & assess snow cover;high;product;term found in EARSC description;no
+Snow water equivalent;snow water;Monitor & assess snow cover;high;product;term found in EARSC description;no
+Snow water equivalent;snow water;Assess ground water and run-off;medium;input;expert judgement (Claude);no
+Snow water equivalent;snow water;Map & monitor hydroelectric energy;medium;input;expert judgement (Claude);no
+Glacier cover;glacier;Detect changes in glaciers;high;product;term found in EARSC description;no
+Glacier motion;glacier;Detect changes in glaciers;high;product;term found in EARSC description;no
+Glacier topography;glacier;Detect changes in glaciers;high;product;term found in EARSC description;no
+Ice sheet topography;ice sheet;Detect changes in glaciers;medium;product;expert judgement (Claude);no
+Fire fractional cover;burn(t|ed) area|fire (extent|cover|scar)|active fire;Detect and monitor wildfires;high;product;expert judgement (Claude);no
+Fire radiative power;fire radiative|\bFRP\b;Detect and monitor wildfires;high;product;expert judgement (Claude);no
+Fire radiative power;fire radiative|\bFRP\b;Monitor and forecast air quality & emissions (fluxes);medium;input;expert judgement (Claude);no
+Fire temperature;active fire|fire temperature|fire (detection|monitoring);Detect and monitor wildfires;high;product;expert judgement (Claude);no
+Sea surface temperature;sea surface temperature|\bSST\b;Monitor ocean quality & productivity;high;product;term found in EARSC description;no
+Sea surface temperature;sea surface temperature|\bSST\b;Monitor ocean level & surface;medium;product;expert judgement (Claude);no
+Sea surface temperature;sea surface temperature|\bSST\b;Monitor marine habitats;medium;product;term found in EARSC description;no
+Sea surface temperature;sea surface temperature|\bSST\b;Map fish shoals;medium;input;expert judgement (Claude);no
+Sea surface temperature;sea surface temperature|\bSST\b;Detect & monitor hurricanes and typhoons;medium;input;expert judgement (Claude);no
+Sea surface temperature;sea surface temperature|\bSST\b;Assess climate change risk & climate forcing;medium;input;expert judgement (Claude);no
+Ocean chlorophyll concentration;chlorophyll|ocean colou?r;Assess & monitor coastal water quality;high;product;term found in EARSC description;no
+Ocean chlorophyll concentration;chlorophyll|ocean colou?r;Monitor ocean quality & productivity;high;product;term found in EARSC description;no
+Ocean chlorophyll concentration;chlorophyll|ocean colou?r;Monitor marine habitats;medium;product;expert judgement (Claude);no
+Ocean chlorophyll concentration;chlorophyll|ocean colou?r;Map fish shoals;medium;input;term found in EARSC description;no
+Ocean chlorophyll concentration;chlorophyll|ocean colou?r;Assess and monitor water bodies;medium;input;term found in EARSC description;no
+Colour Dissolved Organic Matter (CDOM);\bCDOM\b|dissolved organic|ocean colou?r;Assess & monitor coastal water quality;medium;product;expert judgement (Claude);no
+Colour Dissolved Organic Matter (CDOM);\bCDOM\b|dissolved organic|ocean colou?r;Monitor ocean quality & productivity;medium;product;term found in EARSC description;no
+Ocean suspended sediments concentration;suspended (matter|sediment)|\bTSM\b|ocean colou?r;Assess & monitor coastal water quality;high;product;term found in EARSC description;no
+Ocean suspended sediments concentration;suspended (matter|sediment)|\bTSM\b|ocean colou?r;Monitor ocean quality & productivity;medium;product;term found in EARSC description;no
+Ocean suspended sediments concentration;suspended (matter|sediment)|\bTSM\b|ocean colou?r;Assess and monitor water bodies;medium;input;term found in EARSC description;no
+Ocean Diffuse Attenuation Coefficient (DAC);attenuation|\bKd\b|ocean colou?r;Assess & monitor coastal water quality;medium;product;expert judgement (Claude);no
+Ocean Diffuse Attenuation Coefficient (DAC);attenuation|\bKd\b|ocean colou?r;Monitor ocean quality & productivity;medium;product;term found in EARSC description;no
+Oil spill cover;oil spill|oil slick;Detect & monitor oil slicks;high;product;term found in EARSC description;no
+Oil spill cover;oil spill|oil slick;Monitor pollution at sea;high;product;expert judgement (Claude);no
+Sea-ice concentration;sea[- ]ice;Detect & monitor ice-risk at sea;high;product;term found in EARSC description;no
+Sea-ice type;sea[- ]ice;Detect & monitor ice-risk at sea;high;product;term found in EARSC description;no
+Sea-ice thickness;sea[- ]ice;Detect & monitor ice-risk at sea;high;product;term found in EARSC description;no
+Sea-ice freeboard;sea[- ]ice|freeboard;Detect & monitor ice-risk at sea;medium;product;term found in EARSC description;no
+Significant wave height;wave height|\bSWH\b;Forecast & monitor ocean winds and waves;high;product;expert judgement (Claude);no
+Significant wave height;wave height|\bSWH\b;Forecast & map large waves;medium;input;expert judgement (Claude);no
+Significant wave height;wave height|\bSWH\b;Detect & monitor hurricanes and typhoons;medium;input;expert judgement (Claude);no
+Dominant wave direction;\bwaves?\b;Forecast & monitor ocean winds and waves;high;product;term found in EARSC description;no
+Dominant wave period;\bwaves?\b;Forecast & monitor ocean winds and waves;high;product;term found in EARSC description;no
+Wave directional energy frequency spectrum;wave spectr;Forecast & monitor ocean winds and waves;medium;product;expert judgement (Claude);no
+Wind speed (near surface);wind speed|ocean (surface )?winds?|sea surface winds?|coastal winds?|winds? (and|at)\b;Forecast & monitor ocean winds and waves;high;product;term found in EARSC description;no
+Wind speed (near surface);wind speed|ocean (surface )?winds?|sea surface winds?|coastal winds?|winds? (and|at)\b;Map & monitor wind energy (wind farms);medium;input;term found in EARSC description;no
+Wind speed (near surface);wind speed|ocean (surface )?winds?|sea surface winds?|coastal winds?|winds? (and|at)\b;Detect & monitor hurricanes and typhoons;medium;input;term found in EARSC description;no
+Wind vector (near surface);wind vector|ocean (surface )?winds?|sea surface winds?|coastal winds?|winds? (and|at)\b;Forecast & monitor ocean winds and waves;high;product;expert judgement (Claude);no
+Wind vector (near surface);wind vector|ocean (surface )?winds?|sea surface winds?|coastal winds?|winds? (and|at)\b;Map & monitor wind energy (wind farms);medium;input;expert judgement (Claude);no
+Wind vector (near surface);wind vector|ocean (surface )?winds?|sea surface winds?|coastal winds?|winds? (and|at)\b;Detect & monitor hurricanes and typhoons;medium;input;term found in EARSC description;no
+Wind vector (near surface);wind vector|ocean (surface )?winds?|sea surface winds?|coastal winds?|winds? (and|at)\b;Detect & monitor oil slicks;medium;input;expert judgement (Claude);no
+Ocean dynamic topography;sea (surface|level) height|dynamic topography|sea level|altimetry;Monitor ocean level & surface;high;product;term found in EARSC description;no
+Ocean dynamic topography;sea (surface|level) height|dynamic topography|sea level|altimetry;Forecast & monitor ocean currents and drift;high;input;term found in EARSC description;no
+Coastal sea level (tide);sea level|\btides?\b;Monitor ocean level & surface;high;product;term found in EARSC description;no
+Coastal sea level (tide);sea level|\btides?\b;Forecast & monitor ocean currents and drift;medium;product;term found in EARSC description;no
+Atmospheric density;;;;;no EARSC service identified;no
+Earth surface short-wave bidirectional reflectance;;;;;no EARSC service identified;no
+Electron Density;;;;;no EARSC service identified;no
+Geoid;;;;;no EARSC service identified;no
+Gravity field;;;;;no EARSC service identified;no
+Ionospheric Scintillation;;;;;no EARSC service identified;no
+Ionospheric Total Electron Content (TEC);;;;;no EARSC service identified;no
+Long-wave Earth surface emissivity;;;;;no EARSC service identified;no
+Short-wave cloud reflectance;;;;;no EARSC service identified;no
+Soil type;;;;;no EARSC service identified;no
+Upward spectral radiance at TOA;;;;;no EARSC service identified;no

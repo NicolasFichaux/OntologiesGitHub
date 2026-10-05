@@ -1,0 +1,1670 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Earth data navigator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F6F5; --surface:#FFFFFF; --ink:#12333B; --muted:#55707A; --line:#C9D8D6;
+  --sea:#0F5560; --sea-soft:#DCECEC; --marker:#C7541B; --ok:#1F7A55; --mid:#9A6B00; --low:#6B7780;
+  --ok-bg:#DDF0E6; --mid-bg:#F6EBCB; --low-bg:#E6EBEC; --code:#0E2A30; --code-ink:#DDEDEA;
+  --water:#7FB7C2; --urban:#E9DCC3; --road:#C2AE96;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1F24; --surface:#122B31; --ink:#E4EFEE; --muted:#9DB4B8; --line:#27454B;
+    --sea:#7FD0D3; --sea-soft:#17393F; --marker:#F08A52; --ok:#6FD3A4; --mid:#E6C25C; --low:#A9B7BB;
+    --ok-bg:#153A2C; --mid-bg:#3B3113; --low-bg:#22363A; --code:#071519; --code-ink:#D5E8E5;
+    --water:#2F6E7A; --urban:#3A3A2C; --road:#5C5546;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1F24; --surface:#122B31; --ink:#E4EFEE; --muted:#9DB4B8; --line:#27454B;
+  --sea:#7FD0D3; --sea-soft:#17393F; --marker:#F08A52; --ok:#6FD3A4; --mid:#E6C25C; --low:#A9B7BB;
+  --ok-bg:#153A2C; --mid-bg:#3B3113; --low-bg:#22363A; --code:#071519; --code-ink:#D5E8E5;
+    --water:#2F6E7A; --urban:#3A3A2C; --road:#5C5546;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.5 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:2.2rem 1.1rem 4rem}
+h1{font:700 clamp(1.9rem,5.2vw,3rem)/1.05 "Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;margin:0 0 .5rem;letter-spacing:-.01em;max-width:18ch}
+h2{font:700 1.35rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 .6rem}
+h3{font:600 1.05rem/1.3 "Source Sans 3",system-ui,sans-serif;margin:1.1rem 0 .4rem}
+p{margin:.4rem 0;max-width:68ch}
+.lede{color:var(--muted);margin-bottom:1.2rem}
+.step{border-left:3px solid var(--line);padding:.2rem 0 1.4rem 1.1rem;margin-left:.5rem;position:relative}
+.step[data-on="1"]{border-left-color:var(--sea)}
+.step > .num{position:absolute;left:-1.02rem;top:0;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--surface);
+  border:2px solid var(--line);display:grid;place-items:center;font:700 .95rem "Bricolage Grotesque",sans-serif;color:var(--muted)}
+.step[data-on="1"] > .num{border-color:var(--sea);color:var(--sea)}
+.step > h2{padding-left:1.3rem}
+.step > .body{padding-left:1.3rem}
+textarea,input,select{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:8px;padding:.6rem .7rem;width:100%}
+textarea{min-height:5.2rem;resize:vertical}
+textarea:focus,input:focus,select:focus,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--marker);outline-offset:2px}
+button{font:600 1rem "Source Sans 3",sans-serif;border-radius:8px;border:1.5px solid var(--sea);background:var(--sea);color:var(--paper);padding:.55rem 1rem;cursor:pointer}
+button.ghost{background:transparent;color:var(--sea)}
+button.small{padding:.3rem .65rem;font-size:.92rem}
+button:disabled{opacity:.5;cursor:default}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin-top:.6rem}
+.chips{display:flex;gap:.45rem;flex-wrap:wrap;margin:.5rem 0}
+.chip{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:.3rem .8rem;font-weight:400;font-size:.95rem}
+.chip[aria-pressed="true"]{border-color:var(--sea);background:var(--sea-soft)}
+.note{color:var(--muted);font-size:.93rem}
+.warn{border-left:4px solid var(--marker);background:var(--surface);padding:.6rem .8rem;border-radius:0 8px 8px 0;margin:.7rem 0}
+.q{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:.8rem .9rem;margin:.6rem 0}
+.q strong{display:block;margin-bottom:.2rem}
+.svc{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:1rem;margin:.9rem 0}
+.svc header{display:flex;gap:.6rem;flex-wrap:wrap;align-items:baseline;justify-content:space-between}
+.svc header h3{margin:0;font:700 1.15rem "Bricolage Grotesque",sans-serif}
+.svc p{max-width:92ch}
+.crumb{color:var(--muted);font-size:.9rem}
+.badge{display:inline-block;border-radius:6px;padding:.08rem .5rem;font-size:.85rem;font-weight:600;white-space:nowrap}
+.b-high{background:var(--ok-bg);color:var(--ok)} .b-medium{background:var(--mid-bg);color:var(--mid)} .b-low{background:var(--low-bg);color:var(--low)}
+.b-kind{background:var(--sea-soft);color:var(--sea)}
+.layer{border-top:1px solid var(--line);padding:.7rem 0}
+.layer .top{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.layer .ttl{font-weight:600;flex:1 1 16rem}
+.mono{font:400 .82rem/1.4 "Source Code Pro",ui-monospace,Menlo,Consolas,monospace;color:var(--muted);overflow-wrap:anywhere}
+.why{color:var(--muted);font-size:.92rem;margin-top:.15rem}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.8rem;margin-top:.6rem}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(7.2rem,1fr));gap:.5rem}
+label{font-size:.88rem;color:var(--muted);display:block}
+.scroll{overflow-x:auto;max-width:100%}
+pre{background:var(--code);color:var(--code-ink);border-radius:8px;padding:.8rem;margin:.6rem 0 0;font:400 .82rem/1.45 "Source Code Pro",ui-monospace,Menlo,Consolas,monospace;white-space:pre;min-width:0}
+ul.res{padding-left:1.1rem;margin:.3rem 0}
+ul.res li{margin:.35rem 0}
+a{color:var(--sea)}
+details summary{cursor:pointer;color:var(--sea);font-weight:600}
+footer{margin-top:2rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:.8rem}
+.strip{display:flex;gap:.25rem;flex-wrap:wrap;margin:.35rem 0}
+.dot{width:1.5rem;height:1.5rem;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:600;background:var(--low-bg);color:var(--low)}
+.dot[data-l="3"]{background:var(--ok-bg);color:var(--ok)} .dot[data-l="2"]{background:var(--mid-bg);color:var(--mid)}
+.dot[data-l="1"]{background:transparent;color:var(--marker);border:1.5px solid var(--marker)}
+.tags{display:flex;gap:.3rem;flex-wrap:wrap;margin:.3rem 0}
+.tag{border:1px solid var(--line);border-radius:6px;padding:.05rem .45rem;font-size:.85rem;color:var(--muted)}
+.tag.adapt{border-color:var(--marker);color:var(--ink)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.4rem 1.2rem}
+label.opt{display:flex;gap:.5rem;align-items:flex-start;font-size:1rem;color:var(--ink);margin-top:.7rem}
+label.opt input{width:1.15rem;height:1.15rem;margin-top:.2rem;flex:none}
+.map{position:relative;margin-top:.6rem;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--sea-soft)}
+.map canvas{display:block;width:100%;height:280px;touch-action:none;cursor:grab}
+.map .tools{position:absolute;top:.4rem;right:.4rem;display:flex;gap:.3rem;flex-wrap:wrap;justify-content:flex-end}
+.map .tools button{padding:.2rem .55rem;font-size:.9rem;background:var(--surface);color:var(--sea);border-color:var(--line)}
+.map .tools button[aria-pressed="true"]{background:var(--sea);color:var(--paper);border-color:var(--sea)}
+.preview{display:flex;gap:.8rem;flex-wrap:wrap;align-items:flex-start;margin-top:.7rem}
+.preview img{max-width:100%;width:220px;border-radius:6px;border:1px solid var(--line)}
+.preview > div{flex:1 1 14rem}
+.band{border:1px solid var(--line);border-radius:8px;background:var(--surface);margin:.3rem 0;padding:.35rem .7rem}
+.band summary{display:flex;justify-content:space-between;gap:.6rem;font-weight:600;color:var(--ink)}
+.band ul{margin:.3rem 0 .2rem;padding-left:1.1rem} .band li{margin:.2rem 0;font-size:.95rem}
+.band .n{color:var(--muted);font-weight:400}
+.divwrap{border:1px solid var(--line);border-radius:10px;background:var(--surface);margin:.5rem 0;overflow-x:auto}
+.divwrap svg{display:block;min-width:980px;width:100%;height:auto}
+.dv-node rect{fill:var(--paper);stroke:var(--line);stroke-width:1.2}
+.dv-node text{fill:var(--ink);font:400 12.5px "Source Sans 3",system-ui,sans-serif}
+.dv-node text.sub{fill:var(--muted);font-size:11px}
+.dv-node[data-kind="service"] rect{stroke:var(--sea);stroke-width:1.8}
+.dv-node[data-kind="need"] rect,.dv-node[data-kind="use"] rect{fill:var(--sea-soft);stroke:var(--sea)}
+.dv-node[data-where="out"] rect{stroke-dasharray:2 3;stroke:var(--sea)}
+.dv-node[data-gap="1"] rect{stroke:var(--marker);stroke-dasharray:5 3;stroke-width:1.8}
+.dv-node{cursor:pointer} .dv-node:focus{outline:none} .dv-node:focus rect{stroke:var(--marker);stroke-width:2.5}
+.dv-edge{fill:none;stroke-width:1.6;opacity:.8}
+.dv-edge[data-c="high"]{stroke:var(--ok)} .dv-edge[data-c="medium"]{stroke:var(--mid)} .dv-edge[data-c="low"]{stroke:var(--low)}
+.dv-edge[data-c="decl"]{stroke:var(--sea);stroke-dasharray:7 3}
+.dv-edge[data-c="gap"]{stroke:var(--marker);stroke-dasharray:5 3} .dv-edge[data-c="info"]{stroke:var(--muted);stroke-dasharray:2 3}
+.dv-dim{opacity:.13 !important}
+.dv-head rect{fill:var(--sea-soft);stroke:var(--sea);stroke-width:1} .dv-head text{fill:var(--sea);font:700 13.5px "Bricolage Grotesque",system-ui,sans-serif}
+.dv-lane{fill:none;stroke:var(--line);stroke-width:1}
+.legend{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.88rem;color:var(--muted);margin:.3rem 0}
+.proto{background:var(--surface);border:1.5px solid var(--sea);border-radius:12px;padding:1rem;margin:.8rem 0}
+.proto .fig{background:#fff;border:1px solid var(--line);border-radius:8px;padding:.3rem;display:inline-block;max-width:100%}
+.proto img{display:block;max-width:100%;height:auto;border-radius:6px}
+.proto ol.steps{padding-left:1.3rem;margin:.3rem 0}
+.proto ol.steps li{margin:.55rem 0}
+.b-interp{background:transparent;color:var(--marker);border:1.5px solid var(--marker)}
+.dv-node text.cue{fill:var(--sea);font-size:11px;font-weight:600}
+table.tbl{border-collapse:collapse;width:100%;min-width:760px;font-size:.93rem}
+.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:.4rem .5rem;text-align:left;vertical-align:top}
+.tbl thead th{color:var(--muted);font-weight:600;font-size:.85rem}
+.tbl tbody th{background:var(--sea-soft);color:var(--ink);font-weight:600}
+.tbl td.mono{font-size:.8rem}
+.tbl button{white-space:nowrap}
+.legend i{display:inline-block;width:1.6rem;border-top:2.5px solid;vertical-align:middle;margin-right:.3rem}
+button.info{width:1.9rem;height:1.9rem;padding:0;border-radius:50%;font:700 1rem "Source Serif 4",Georgia,serif;font-style:italic}
+[hidden]{display:none !important}
+@media (prefers-reduced-motion:no-preference){.fade{animation:f .25s ease-out}@keyframes f{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<main>
+  <h1>What do you need to know about the Earth?</h1>
+  <p class="lede">Describe your need in your own words, in any language. The navigator places it in the EARSC taxonomy of Earth observation services, lists the matching layers of the DestinE Data Lake with a confidence level, then tells you how to get the data and how to process them. It can also point to existing e-shape pilot services and judge their fitness for your need.</p>
+  <p class="note" id="snap"></p>
+
+  <section class="step" id="s1" data-on="1">
+    <div class="num">1</div><h2>Your need</h2>
+    <div class="body">
+      <textarea id="need" aria-label="Describe your need" placeholder="Example: we want to know which districts of Marseille lack tree cover and overheat in summer"></textarea>
+      <div class="chips" id="examples" aria-label="Examples"></div>
+      <label class="opt"><input type="checkbox" id="optPilots" checked>
+        <span>Also look for existing services I could reuse: the e-shape pilots, with their fitness for my need, what to adapt and who to contact</span></label>
+      <div class="row">
+        <button id="go">Find matching data</button>
+        <button id="stop" class="ghost" hidden>Stop</button>
+        <button id="reset" class="ghost">Reset</button>
+        <span id="status" class="note" role="status" aria-live="polite"></span>
+      </div>
+      <details style="margin-top:.8rem"><summary>Choose a service yourself</summary>
+        <div class="row"><select id="manual" aria-label="EARSC service"></select><button id="manualGo" class="ghost">Show layers</button></div>
+      </details>
+    </div>
+  </section>
+
+  <section class="step" id="s2" hidden>
+    <div class="num">2</div><h2>A few questions to place your need</h2>
+    <div class="body">
+      <p id="understood" class="note"></p>
+      <div id="questions"></div>
+      <div class="row"><button id="answer">Use these answers</button><button id="skip" class="ghost">Skip, show layers now</button></div>
+    </div>
+  </section>
+
+  <section class="step" id="sdiv" hidden>
+    <div class="num">3</div><h2>From your need to the data: the Data-Information-Value view</h2>
+    <div class="body">
+      <p id="summary"></p>
+      <p class="note">This is the Data-Information-Value framework of the DestinE co-design toolkit (template 2.0.1), filled in from your request and read from left to right: the value you seek depends on information, which depends on data, which depend on an infrastructure. Select a box to see what it depends on.</p>
+      <p id="anastatus" class="note" role="status" aria-live="polite"></p>
+      <div id="regs"></div>
+      <div class="divwrap" id="divgraph"></div>
+      <div class="legend" id="divlegend"></div>
+      <div id="protoPick" hidden>
+        <h3>Prototypes on demand: from data to information, one ingredient at a time</h3>
+        <p class="note">Select an ingredient, here or in the right-hand lane of “Valuable information” in the graph. For a known recipe, the page prepares the plan of a prototype for your area and period, and the local app generates it. For any other ingredient, Claude can draft a method. In both cases every step states its nature: documented method, choice, or interpretation that has not been validated.</p>
+        <div class="chips" id="protoChips"></div>
+      </div>
+      <div id="proto" class="proto" hidden></div>
+      <div id="assembly" hidden>
+        <h3>The data to assemble</h3>
+        <p class="note">One line per ingredient and dataset: what is in the DestinE Data Lake, what exists elsewhere, what is missing. It summarises the analysis above, so it is a proposal to check, not a validated specification.</p>
+        <div class="scroll"><table class="tbl" id="asmTable"></table></div>
+        <div class="row"><button id="asmCopy" class="ghost small" type="button">Copy table</button><button id="asmSave" class="ghost small" type="button" hidden>Save as CSV</button><span id="asmMsg" class="note" role="status"></span></div>
+        <div id="asmPanel" class="panel" hidden></div>
+      </div>
+
+      <h3>Reword the view in your own words</h3>
+      <p class="note">The two left columns, the expected information and its ingredients are yours. Correct them and the tool places your need again and recomputes the data and infrastructure columns. If a text contains several distinct elements, put one per line: each becomes its own box. The information is a proposal by Claude; the EARSC category under it only classifies it.</p>
+      <div id="divedit">
+        <div class="cols">
+          <div><label for="ctxEco">Usage ecosystem: who you are, your context and constraints</label>
+            <textarea id="ctxEco" placeholder="Example: green spaces department of a metropolitan area; we work with QGIS; results are needed every spring"></textarea></div>
+          <div><label for="ctxUse">Value-embedding usage: what you will do with the information</label>
+            <textarea id="ctxUse" placeholder="Example: rank districts for the tree-planting plan and justify the budget to elected officials"></textarea></div>
+          <div><label for="ctxInfo">Valuable information: what you expect to receive, and how precise, how often, how fast</label>
+            <textarea id="ctxInfo" placeholder="Example: tree canopy share per district, updated every spring, comparable from year to year"></textarea></div>
+          <div><label for="ctxIngr">Ingredients: what must be known to produce that information</label>
+            <textarea id="ctxIngr" placeholder="Example: surface model of buildings for shadows; tree canopy; footprints of public buildings"></textarea></div>
+        </div>
+        <div class="row"><button id="ctxGo">Update the view</button><span id="divstatus" class="note" role="status" aria-live="polite"></span></div>
+        <p id="divchange" class="warn" hidden role="status"></p>
+      </div>
+
+      <h3>Co-design workshops to ask for, by level of uncertainty</h3>
+      <p class="note">The view above shows what is known; this list addresses what is not. It follows the DestinE co-design toolkit, which uses the framework to reveal unknowns and to choose workshops accordingly. The workshops are run with a service provider: this tells you what to ask for, in which order, and what to bring.</p>
+      <div id="workshops"></div>
+    </div>
+  </section>
+
+  <section class="step" id="s3" hidden>
+    <div class="num">4</div><h2>Matching services and data layers</h2>
+    <div class="body">
+      <div id="results"></div>
+    </div>
+  </section>
+
+  <section class="step" id="s4" hidden>
+    <div class="num">5</div><h2>Existing services you could reuse: e-shape pilots</h2>
+    <div class="body">
+      <p id="pstatus" class="note" role="status" aria-live="polite"></p>
+      <div id="pilots"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Taxonomy: EARSC portal. Sensor to variable ratings, sensor resolution and revisit: WMO OSCAR. The resolution of a collection is read from the catalogue text when it states one, otherwise it is the sensor's best case on its OSCAR page; nothing is filled from memory, and many collections state none. The tables that link variables, instruments and product families to services are proposals that have not been validated; treat every layer as a lead to check. A layer is “ready-to-use” when the collection carries the information itself, and “needs processing” when it is one input among others. Processing resources are listed only where a link was verified; other services show none. Page built on <span id="built"></span>.</p>
+    <p>Data-Information-Value framework: DestinE co-design toolkit, worksheet 2.0 and template 2.0.1 (<a href="https://doi.org/10.5281/zenodo.20793534" target="_blank" rel="noopener">doi:10.5281/zenodo.20793534</a>, CC BY 4.0). Workshop recommendations paraphrase worksheets 2.0, 3.1 to 3.4, 4.0 and 4.1 of the same toolkit; the uncertainty levels are computed by simple rules from the confidence scores and gaps of the view.</p>
+    <p>e-shape pilots: webservice-energy catalogue records (snapshot of <span id="psnap"></span>) and the project's compiled Data Management Plans (self-declared, sprints 2021–2023). Compliance levels are those targeted for the end of sprint 2, not a verified current status. Contacts may have changed. Input data and infrastructure are detected by keyword in the pilots' own texts; the link from a pilot to an EARSC service was assigned by hand and is not validated. The fit, “why” and “to check” texts are Claude's reading; compliance, adaptation flags and contacts come from the source files.</p>
+  </footer>
+</main>
+
+<script>
+const DATA = /*__DATA__*/null;
+const MAPDATA = /*__MAP__*/null;
+const HDA = "https://hda.data.destination-earth.eu";
+const $ = id => document.getElementById(id);
+function h(tag, attrs, ...kids){
+  const e = document.createElement(tag);
+  for (const k in (attrs||{})){
+    const v = attrs[k];
+    if (v == null || v === false) continue;
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat(Infinity)){ if (c == null || c === "") continue; e.append(c.nodeType ? c : document.createTextNode(String(c))); }
+  return e;
+}
+const SVC = Object.fromEntries(DATA.S.map(s => [s.n, s]));
+const state = { need:"", round:0, qa:[], result:null, params:{}, busy:false, ctl:null, run:0, pctl:null, ctx:{ eco:"", use:"", info:"", ingr:"" }, change:"", prev:null, rewording:false };
+const PBY = Object.fromEntries(DATA.P.map(p => [p.code, p]));
+let sample = null, downloads = null, apiMode = false;
+const diag = { runtime:"starting", path:"", err:"", sampleErr:"" };
+const diagText = () => ` [diagnostic: ${diag.runtime}; path: ${diag.path || "none"}${diag.err ? "; error: " + diag.err : ""}${diag.sampleErr ? "; sample: " + diag.sampleErr : ""}]`;
+function parseReply(out){
+  const a = out.indexOf("{"), z = out.lastIndexOf("}");
+  if (a < 0 || z <= a) throw Object.assign(new Error("no json"), { code:"bad_reply" });
+  try { return JSON.parse(out.slice(a, z + 1)); } catch(e){ throw Object.assign(new Error("bad json"), { code:"bad_reply" }); }
+}
+
+// ---------- capabilities (design for absence)
+(async () => {
+  try { sample = window.claude && typeof window.claude.use === "function" ? await window.claude.use("sample") : null; } catch(e){ sample = null; diag.sampleErr = String((e && (e.code || e.message)) || e); }
+  diag.runtime = sample ? "published page" : (window.claude ? (typeof window.claude.complete === "function" ? "chat preview (window.claude.complete present)" : "window.claude present, no sample") : "no window.claude");
+  try { downloads = window.claude ? await window.claude.use("downloads") : null; } catch(e){ downloads = null; }
+  if (!sample) apiMode = true;      // chat preview (or a local copy): talk to the Anthropic API directly
+})();
+
+// ---------- static UI
+$("built").textContent = DATA.built; $("psnap").textContent = DATA.psnap;
+$("snap").textContent = "This page works on copies, it does not query the sources live. Copies read on: " + DATA.snap.map(x => `${x[0]}, ${x[1]}`).join(" · ") + ".";
+["Which districts of Marseille lack tree cover and overheat in summer?",
+ "Where to build a solar farm in southern Spain, and how much sun over the last 10 years?",
+ "Flood extent in the Ahr valley in July 2021",
+ "Suivre la qualité de l'air autour de Lyon cet hiver"].forEach(t =>
+  $("examples").append(h("button",{class:"chip",type:"button",text:t,onclick:()=>{ $("need").value=t; $("need").focus(); }})));
+(() => {
+  const groups = {};
+  $("manual").append(h("option",{value:"",text:"Select a service…"}));
+  DATA.S.forEach(s => (groups[s.d] = groups[s.d] || []).push(s));
+  for (const d in groups){
+    const og = h("optgroup",{label:d});
+    groups[d].forEach(s => og.append(h("option",{value:s.n,text:`${s.n} (${(DATA.L[s.n]||[]).length})`})));
+    $("manual").append(og);
+  }
+})();
+
+// ---------- one way to ask Claude, two runtimes: published page (sample capability) or chat preview (Anthropic API, with web search)
+async function llmJSON(text, opts){
+  opts = opts || {};
+  if (sample){
+    if (opts.search) throw Object.assign(new Error("no web here"), { code:"no_web" });
+    diag.path = "sample"; diag.err = "";
+    try { return await sample.json(text, { signal: opts.signal, modelTier: "default" }); }
+    catch(e){ diag.err = String((e && (e.code || e.message)) || e); throw e; }
+  }
+  const complete = window.claude && typeof window.claude.complete === "function" ? window.claude.complete.bind(window.claude) : null;
+  const body = { model:"claude-sonnet-4-6", max_tokens:1000, messages:[{ role:"user", content:text }] };
+  if (opts.search) body.tools = [{ type:"web_search_20250305", name:"web_search" }];
+  let res = null;
+  diag.path = "Anthropic API from the page"; diag.err = "";
+  try { res = await fetch("https://api.anthropic.com/v1/messages", { method:"POST", headers:{ "Content-Type":"application/json" }, body:JSON.stringify(body), signal:opts.signal }); }
+  catch(e){
+    if (e && e.name === "AbortError") throw Object.assign(new Error("cancelled"), { code:"cancelled" });
+    diag.err = "fetch blocked (" + String((e && e.message) || e) + ")";
+  }
+  if (res && !res.ok){ diag.err = "HTTP " + res.status; if (res.status === 429 && !complete) throw Object.assign(new Error("429"), { code:"rate_limited" }); res = null; }
+  if (res){
+    const data = await res.json();
+    return parseReply((data.content || []).filter(b => b.type === "text").map(b => b.text).join("\n"));
+  }
+  // second route in the chat preview: the built-in completion function (no web search)
+  if (complete && !opts.search){
+    diag.path += ", then window.claude.complete";
+    try { return parseReply(String(await complete(text))); }
+    catch(e){ if (e && e.code === "bad_reply") throw e; diag.err += "; complete: " + String((e && e.message) || e); }
+  }
+  throw Object.assign(new Error("unreachable"), { code: opts.search ? "no_web" : "unreachable" });
+}
+
+// ---------- plans, laws and regulations cited in the need: identify, read, and surface the other needs they imply
+const okUrl = u => typeof u === "string" && /^https?:\/\//i.test(u);
+function regPrompt(reg, pasted){
+  const p = state.params || {};
+  const src = pasted
+    ? `Here is the text the user pasted. Use ONLY this text; do not add anything from memory.\n"""${pasted.slice(0, 12000)}"""`
+    : `Search the web to identify this document and read what it says. Use ONLY what you find in the pages you read; if you cannot identify the document with confidence, set "identified" to false and say why in "caveat".`;
+  return `A user described a need for Earth observation data. Their words: """${state.need}"""${p.place ? "\nPlace: " + p.place : ""}
+They refer to: "${reg.mention}"${reg.guess ? ` (possibly: ${reg.guess}${reg.issuer ? ", " + reg.issuer : ""})` : ""}.
+
+${src}
+
+Goal: understand what the document requires, and find what ELSE it asks for beyond the user's stated need, so the need can be framed better.
+
+Reply with ONLY one JSON object, no prose around it. Write the texts in the language of the user's words. At most 4 items per list, each item under 25 words:
+{"identified":true,"title":"official title","issuer":"who adopted it","date":"adoption date or period","summary":"two sentences on its scope","obligations":["what it requires that relates to the need"],"related_needs":[{"need":"another need the document implies","why":"where it comes from in the document"}],"sources":[{"title":"page title","url":"https://..."}],"caveat":"what remains uncertain"}`;
+}
+async function readReg(i, pasted){
+  const reg = state.regs[i]; if (!reg || reg.busy) return;
+  reg.busy = true; reg.error = ""; renderRegs();
+  const run = state.run, ctl = new AbortController(); state.rctl = ctl;
+  try {
+    const out = await llmJSON(regPrompt(reg, pasted), { signal: ctl.signal, search: !pasted });
+    if (run !== state.run) return;
+    const arr = (v, f) => (Array.isArray(v) ? v : []).map(f).filter(Boolean).slice(0, 4);
+    reg.result = { identified: out.identified !== false, title:String(out.title||""), issuer:String(out.issuer||""), date:String(out.date||""), summary:String(out.summary||""),
+      obligations: arr(out.obligations, x => String(x||"")), related: arr(out.related_needs, x => x && x.need ? { need:String(x.need), why:String(x.why||"") } : null),
+      sources: arr(out.sources, x => x && okUrl(x.url) ? { title:String(x.title||x.url), url:x.url } : null), caveat:String(out.caveat||""),
+      how: pasted ? "text pasted by you" : "read on the web by Claude on " + new Date().toISOString().slice(0,10) };
+    reg.picked = [];
+  } catch(e){
+    if (run !== state.run) return;
+    reg.error = e && e.code === "no_web" ? "Reading the web is not available in this view: paste the text instead." + diagText()
+      : e && e.code === "cancelled" ? "Stopped." : e && e.code === "bad_reply" ? "Claude's reply could not be read. Try again."
+      : (ERR[e && e.code] || "The reading failed. Try again, or paste the text.") + diagText();
+  } finally { reg.busy = false; if (run === state.run) renderRegs(); }
+}
+function applyReg(i){
+  const reg = state.regs[i]; if (!reg || !reg.result || state.busy) return;
+  reg.applied = true; state.lastWasReg = true;
+  state.prev = divCands(state.result).map(c => c.service);
+  state.round = 2; state.rewording = false; state.change = ""; renderDIV(); renderRegs(); state.rewording = true; state.regApply = true;
+  $("divgraph").scrollIntoView({ behavior:"smooth", block:"start" });
+  ask($("divstatus"));
+}
+function regContext(){
+  const done = (state.regs || []).filter(r => r.applied && r.result);
+  if (!done.length) return "";
+  return "\n\nRegulatory or planning context accepted by the user:\n" + done.map(r => `- ${r.result.title || r.mention}${r.result.issuer ? " (" + r.result.issuer + ")" : ""}: ${r.result.obligations.join("; ")}` +
+    ((r.picked || []).length ? `\n  Additional needs the user added from this document: ${r.picked.map(k => r.result.related[k].need).join("; ")}` : "")).join("\n") +
+    "\nTake these additional needs into account when choosing services (up to 3) and writing the expected information.";
+}
+function renderRegs(){
+  const box = $("regs"); box.replaceChildren();
+  (state.regs || []).forEach((reg, i) => {
+    const card = h("article",{class:"svc"});
+    card.append(h("header",{}, h("h3",{text:`Your request refers to “${reg.mention}”`}), h("span",{class:"badge b-kind",text:"Plan or regulation"})));
+    card.append(h("p",{}, reg.guess ? [h("span",{class:"note",text:"Claude's guess, not verified: "}), reg.guess + (reg.issuer ? ", " + reg.issuer : "") + "."] : h("span",{class:"note",text:"Claude could not tell which document is meant."}),
+      " Reading it shows what else it requires, so the need can be framed better."));
+    const ta = h("textarea",{placeholder:"Paste here the relevant excerpt or table of contents of the document","aria-label":"Text of the document",oninput:ev=>{ reg.draft = ev.currentTarget.value; }});
+    ta.value = reg.draft || "";
+    const info = h("p",{class:"warn",hidden:true,text:"In the published page, Claude cannot browse the web. Paste the text of the document, or open this prototype in the Claude chat preview, where web reading is available."});
+    card.append(h("div",{class:"row"},
+      h("button",{type:"button",class:"small",disabled: reg.busy || !apiMode,text: reg.busy ? "Reading…" : "Read it on the web",onclick:()=>readReg(i, "")}),
+      !apiMode ? h("button",{class:"ghost info",type:"button","aria-label":"Why web reading is not available",text:"i",onclick:()=>{ info.hidden = !info.hidden; }}) : null,
+      h("span",{class:"note",role:"status",text: reg.busy ? "This can take up to a minute." : (reg.error || "")})), info);
+    card.append(h("details",{open: !!reg.draft && !reg.result}, h("summary",{text:"Or paste the text yourself"}), ta,
+      h("div",{class:"row"}, h("button",{type:"button",class:"ghost small",disabled:reg.busy,text:"Analyse this text",onclick:()=>{ const t = ta.value.trim(); if (t) readReg(i, t); }}))));
+    const r = reg.result;
+    if (r){
+      if (!r.identified) card.append(h("p",{class:"warn",text:"The document could not be identified with confidence. " + r.caveat}));
+      else {
+        card.append(h("p",{}, h("strong",{text:r.title || reg.mention}), [r.issuer, r.date].filter(Boolean).length ? h("span",{class:"note",text:" " + [r.issuer, r.date].filter(Boolean).join(", ")}) : null));
+        if (r.summary) card.append(h("p",{text:r.summary}));
+        if (r.obligations.length) card.append(h("p",{class:"note",text:"What it requires, related to your need"}), h("ul",{class:"res"}, r.obligations.map(t => h("li",{text:t}))));
+        if (r.related.length){
+          card.append(h("p",{class:"note",text:"Other needs this document implies. Select those that are yours:"}));
+          card.append(h("div",{class:"chips"}, r.related.map((x, k) => h("button",{class:"chip",type:"button","aria-pressed":String((reg.picked||[]).includes(k)),title:x.why,text:x.need,
+            onclick:ev=>{ const on = !(reg.picked||[]).includes(k); reg.picked = on ? [...(reg.picked||[]), k] : reg.picked.filter(v => v !== k); ev.currentTarget.setAttribute("aria-pressed", String(on)); }}))));
+        }
+        card.append(h("p",{class:"note"}, `Source: ${r.how}. `, r.sources.map((s, k) => [k ? " · " : "", h("a",{href:s.url,target:"_blank",rel:"noopener",text:s.title})]), r.sources.length ? ". Check the sources before relying on this." : ""));
+        if (r.caveat) card.append(h("p",{class:"note",text:"Uncertain: " + r.caveat}));
+        card.append(h("div",{class:"row"}, h("button",{type:"button",text: reg.applied ? "Update again with this context" : "Use this context and update the view",onclick:()=>applyReg(i)})));
+      }
+    }
+    box.append(card);
+  });
+}
+
+// ---------- asking Claude
+function prompt(){
+  const list = DATA.S.map(s => `- ${s.n} [${s.d} / ${s.a}]: ${s.x.slice(0,230)}`).join("\n");
+  const qa = state.qa.length ? "\n\nClarifications already given by the user:\n" + state.qa.map(x=>`Q: ${x.q}\nA: ${x.a}`).join("\n") : "";
+  const ctx = (state.ctx.eco || state.ctx.use || state.ctx.info) ? `\n\nThe user has reworded their context in the Data-Information-Value view. Treat it as authoritative, position the need again accordingly, and keep the user's own words in "actors" and "usages":\nUsage ecosystem (who they are, their context and constraints): ${state.ctx.eco || "(not stated)"}\nValue-embedding usage (what they will do with the information): ${state.ctx.use || "(not stated)"}${state.ctx.info ? "\nValuable information they expect to receive, in their own words (use it for the \"information\" fields): " + state.ctx.info : ""}` : "";
+  const noq = state.round >= 2 ? "\nDo not ask any further question: return an empty questions array." : "";
+  return `You position a user need in a closed taxonomy of Earth observation services (EARSC).
+
+User need: """${state.need}"""${qa}${ctx}${regContext()}
+
+Taxonomy (service name [domain / area]: description):
+${list}
+
+Rules:
+- Pick 1 to 3 services, using the EXACT service names above. Never invent a name. If nothing fits, return an empty candidates array.
+- confidence is a number between 0 and 1 for how well the service matches the need.
+- For each candidate, "information" states precisely the information the user expects to receive (what, for which unit of analysis), in one short sentence in the user's own terms. The service name only classifies it. Also give its requirements when they can be inferred, otherwise "": "resolution" (the spatial detail needed, with a figure in metres or kilometres whenever you can, e.g. "district level, about 10 to 30 m"), "frequency" (e.g. "once a year, in spring"), "delay" (e.g. "within days of the event").
+- Ask 0 to 3 questions ONLY if the answer would change which service fits, or is needed to fetch data (place, period). Each question has 2 to 4 short options.${noq}
+- Extract parameters when stated or obvious: place name, an approximate bounding box [west, south, east, north] in degrees for that place (null if unknown), start and end dates as YYYY-MM-DD (null if unknown), scale (local, regional, global or null), and whether the user wants a ready product, raw data, or either.
+- "actors": 1 to 3 distinct actors (who the user is, and other parties named), each a few words; empty array if not stated. "usages": 1 to 3 distinct uses of the information (the decision or action it serves), each {"text":"one short sentence","needs":[positions in the candidates array of the information this use depends on, starting at 0]}.
+- Split disjoint elements: if the need, or the user's reworded text, contains several distinct actors, uses or expected information items, make them separate items instead of merging them. Two different pieces of information are two candidates, even under the same service. When the user has reworded a text, keep their own words and only split them.
+- "references": if the need cites a plan, law, regulation, directive or strategy, list each one as {"mention":"the user's words for it","guess":"the document you think is meant, or empty","issuer":"who adopted it, or empty"}. Otherwise an empty array. Never present a guess as a fact.
+- Write every text field and the questions in the language of the user need. Keep each text short: under 20 words.
+
+Reply with only one JSON object, for example:
+{"understanding":"one sentence","actors":["city planning department"],"usages":[{"text":"decide where to plant trees first","needs":[0]}],"references":[],"candidates":[{"service":"Map and assess flooding","confidence":0.85,"reason":"one sentence","information":"extent of the flooded area, street by street","resolution":"about 10 to 20 m","frequency":"once, for the event","delay":"within days of the event"}],"questions":[{"question":"...","options":["...","..."]}],"params":{"place":"Ahr valley, Germany","bbox":[6.8,50.3,7.3,50.6],"start":"2021-07-10","end":"2021-07-25","scale":"local","wants":"either"}}`;
+}
+const ERR = { unreachable:"Claude could not be reached from this view. If you opened the file outside Claude, choose a service yourself below.", api_error:"Claude returned an error. Try again in a moment.", bad_reply:"Claude's reply could not be read. Try again.", not_granted:"You declined the request to Claude; choose a service yourself below.",
+  rate_limited:"Too many requests just now. Wait a minute and try again.", cancelled:"Stopped." };
+async function ask(statusEl){
+  statusEl = statusEl || $("status");
+  if (state.busy) return;
+  state.busy = true; state.ctl = new AbortController(); const run = state.run;
+  $("go").disabled = true; $("answer").disabled = true; $("ctxGo").disabled = true; $("stop").hidden = false;
+  statusEl.textContent = state.regApply ? "The plan or regulation is added on the left. Claude is now placing your need again with this context; this can take up to a minute."
+    : state.rewording ? "Your wording is applied on the left. Claude is now recomputing the information and data columns; this can take up to a minute." : "Thinking… this can take up to a minute.";
+  state.regApply = false;
+  try {
+    const out = await llmJSON(prompt(), { signal: state.ctl.signal });
+    if (run !== state.run) return;
+    handle(out);
+    statusEl.textContent = "";
+  } catch(e){
+    if (run === state.run){ statusEl.textContent = (state.rewording ? "Your wording is kept on the left, but the recomputation failed: " : "") + (ERR[e && e.code] || "The request failed. Try again, or choose a service yourself below.") + ((e && e.code) === "cancelled" ? "" : diagText()); state.rewording = false; }
+  } finally {
+    state.busy = false; $("go").disabled = false; $("answer").disabled = false; $("ctxGo").disabled = false; $("ctxGo").textContent = "Update the view"; $("stop").hidden = true;
+  }
+}
+function handle(out){
+  out = out && typeof out === "object" ? out : {};
+  const cands = (Array.isArray(out.candidates) ? out.candidates : []).map((c, i) => c && typeof c === "object" ? Object.assign({}, c, { _i:i }) : null)
+    .filter(c => c && SVC[c.service]).map(c => ({ _i:c._i, service:c.service, confidence:Math.max(0,Math.min(1,Number(c.confidence)||0)), reason:String(c.reason||""),
+      info:String(c.information||""), res:String(c.resolution||""), freq:String(c.frequency||""), delay:String(c.delay||"") }))
+    .sort((a,b)=>b.confidence-a.confidence).slice(0,3);
+  const qs = (Array.isArray(out.questions) ? out.questions : [])
+    .filter(q => q && q.question && Array.isArray(q.options) && q.options.length >= 2).slice(0,3);
+  const p = out.params && typeof out.params === "object" ? out.params : {};
+  const bbox = Array.isArray(p.bbox) && p.bbox.length === 4 && p.bbox.every(v => typeof v === "number" && isFinite(v)) ? p.bbox : null;
+  const d = v => (typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v)) ? v : "";
+  state.params = { place: typeof p.place === "string" ? p.place : "", bbox, start:d(p.start), end:d(p.end),
+                   scale: typeof p.scale === "string" ? p.scale : "", wants: typeof p.wants === "string" ? p.wants : "" };
+  const actors = (Array.isArray(out.actors) ? out.actors : [out.actor]).map(x => String(x||"").trim()).filter(Boolean).slice(0, 3);
+  const usages = (Array.isArray(out.usages) ? out.usages : [{ text: out.usage }]).map(u => typeof u === "string" ? { text:u } : u).filter(u => u && u.text)
+    .slice(0, 3).map(u => ({ text:String(u.text), needs:(Array.isArray(u.needs) ? u.needs : []).map(Number).filter(n => Number.isInteger(n)) }));
+  // the user's own wording wins: keep Claude's split only if it stays faithful to the words the user wrote
+  const words = t => (String(t).toLowerCase().match(/[\p{L}\p{N}]{4,}/gu) || []);
+  const faithful = (items, mine) => { const w = new Set(words(mine)); return items.length > 0 && items.every(t => { const x = words(t); return x.length && x.filter(k => w.has(k)).length / x.length >= 0.6; }); };
+  const localSplit = t => t.split(/\n|;/).map(x => x.trim()).filter(Boolean).slice(0, 3);
+  if (state.ctx.eco && !faithful(actors, state.ctx.eco)) actors.splice(0, actors.length, ...localSplit(state.ctx.eco));
+  if (state.ctx.use && !faithful(usages.map(u => u.text), state.ctx.use)){ const mine = localSplit(state.ctx.use); const keep = mine.length === usages.length ? usages.map(u => u.needs) : [];
+    usages.splice(0, usages.length, ...mine.map((t, k) => ({ text:t, needs: keep[k] || [] }))); }
+  const before = state.result;
+  state.result = { understanding:String(out.understanding||""), actors, usages, actor:actors.join("; "), usage:usages.map(u => u.text).join("\n"), cands };
+  if (before) cands.forEach(c => { const o = before.cands.find(x => x.ingr && x.service === c.service && x.info === c.info && x.res === c.res); if (o) c.ingr = o.ingr; });
+  const refs = (Array.isArray(out.references) ? out.references : []).filter(x => x && x.mention).slice(0, 2)
+    .map(x => ({ mention:String(x.mention), guess:String(x.guess||""), issuer:String(x.issuer||"") }));
+  if (!state.regs) state.regs = [];
+  refs.forEach(x => { if (!state.regs.some(r => r.mention.toLowerCase() === x.mention.toLowerCase())) state.regs.push(x); });
+  if (qs.length && state.round < 2){ showQuestions(qs); } else { $("s2").hidden = true; showResults(); }
+}
+function showQuestions(qs){
+  $("s2").hidden = false; $("s2").dataset.on = "1"; $("s3").hidden = true;
+  $("understood").textContent = state.result.understanding;
+  const box = $("questions"); box.replaceChildren();
+  qs.forEach((q,i) => {
+    const chips = h("div",{class:"chips"});
+    const other = h("input",{type:"text",placeholder:"Or type your own answer","aria-label":"Your own answer"});
+    q.options.slice(0,4).forEach(o => chips.append(h("button",{class:"chip",type:"button","aria-pressed":"false",text:String(o),
+      onclick:ev=>{ chips.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false")); ev.currentTarget.setAttribute("aria-pressed","true"); other.value=""; }})));
+    box.append(h("div",{class:"q fade","data-q":String(q.question)}, h("strong",{text:String(q.question)}), chips, other));
+  });
+  $("s2").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function collectAnswers(){
+  document.querySelectorAll("#questions .q").forEach(el => {
+    const typed = el.querySelector("input").value.trim();
+    const picked = el.querySelector('.chip[aria-pressed="true"]');
+    const a = typed || (picked ? picked.textContent : "");
+    if (a) state.qa.push({ q: el.dataset.q, a });
+  });
+}
+function clearOutputs(){
+  state.run += 1;
+  if (state.ctl) state.ctl.abort(); if (state.pctl) state.pctl.abort();
+  state.round = 0; state.qa = []; state.result = null; state.params = {};
+  ["s2","sdiv","s3","s4"].forEach(id => { $(id).hidden = true; });
+  if (state.actl) state.actl.abort(); $("anastatus").textContent = ""; $("ctxIngr").value = ""; state.lastIngr = "";
+  state.pilots = null; state.regs = []; if (state.rctl) state.rctl.abort(); $("regs").replaceChildren(); state.ctx = { eco:"", use:"", info:"", ingr:"" }; state.change = ""; state.prev = null; state.rewording = false;
+  $("divstatus").textContent = ""; $("workshops").replaceChildren(); $("divchange").hidden = true; $("ctxGo").textContent = "Update the view"; $("ctxEco").value = ""; $("ctxUse").value = ""; $("ctxInfo").value = ""; state.lastEco = ""; state.lastUse = ""; state.lastInfo = "";
+  ["questions","results","pilots","divgraph","divlegend","asmPanel","asmTable"].forEach(id => $(id).replaceChildren());
+  $("assembly").hidden = true; $("asmPanel").hidden = true; $("asmMsg").textContent = "";
+  state.protoName = null; if (state.dctl) state.dctl.abort(); $("proto").hidden = true; $("proto").replaceChildren(); $("protoPick").hidden = true;
+  $("summary").textContent = ""; $("understood").textContent = ""; $("pstatus").textContent = ""; $("status").textContent = "";
+}
+$("reset").onclick = () => { clearOutputs(); $("need").value = ""; state.need = ""; $("manual").selectedIndex = 0;
+  document.querySelectorAll("#s1 details").forEach(d => { d.open = false; }); $("optPilots").checked = true;
+  window.scrollTo({ top:0 }); $("need").focus(); };
+$("go").onclick = () => { const t = $("need").value.trim(); if (!t){ $("status").textContent = "Describe your need first."; return; }
+  clearOutputs(); state.need = t; ask(); };
+$("answer").onclick = () => { collectAnswers(); state.round += 1; ask(); };
+$("skip").onclick = () => { $("s2").hidden = true; showResults(); };
+$("stop").onclick = () => { if (state.actl) state.actl.abort(); if (state.ctl) state.ctl.abort(); if (state.pctl) state.pctl.abort(); if (state.rctl) state.rctl.abort(); if (state.dctl) state.dctl.abort(); };
+$("manualGo").onclick = () => { if (!$("manual").value){ $("status").textContent = "Select a service in the list first."; return; } clearOutputs(); state.need = $("need").value.trim(); state.result = { understanding:"", actors:[], usages:[], actor:"", usage:"", cands:[{ _i:0, service:$("manual").value, confidence:1, reason:"Chosen by you.", info:"", res:"", freq:"", delay:"" }], manual:true };
+  if (!state.params) state.params = {}; $("s2").hidden = true; showResults(); };
+
+// ---------- results
+const LINKW = { h:0.9, m:0.6 };
+function level(x){ return x >= 0.6 ? "high" : x >= 0.35 ? "medium" : "low"; }
+// a layer's confidence = how well the service matches the need x how strong the link to the layer is (0.9 or 0.6):
+// "high" needs both a good match and a strong link, so a medium link never shows as high
+function layerLevel(x){ return x >= 0.75 ? "high" : x >= 0.4 ? "medium" : "low"; }
+function badge(lv, text){ return h("span",{class:"badge b-"+lv,text: text || (lv[0].toUpperCase()+lv.slice(1)+" confidence")}); }
+function showResults(){
+  const r = state.result; if (!r) return;
+  $("s3").hidden = false; $("s3").dataset.on = "1";
+  const p = state.params || {};
+  const bits = [r.understanding, p.place ? `Place: ${p.place}.` : "", (p.start||p.end) ? `Period: ${p.start||"…"} to ${p.end||"…"}.` : ""].filter(Boolean);
+  $("summary").textContent = bits.join(" ");
+  const box = $("results"); box.replaceChildren();
+  if (!r.cands.length){
+    box.append(h("div",{class:"warn",text:"No service of the taxonomy matches this need. Rephrase it, or choose a service yourself in step 1."}));
+  }
+  r.cands.forEach(c => box.append(serviceCard(c, p)));
+  const wasRewording = state.rewording;
+  changeNote();            // only a new positioning result may report "updated with your wording"
+  renderDIV(); renderRegs();
+  (wasRewording ? $("divgraph") : $("sdiv")).scrollIntoView({behavior:"smooth",block:"start"});
+  findPilots();
+  analyse();
+}
+
+// ---------- e-shape pilots: fitness for purpose (from the e-shape pilot finder)
+const PCATALOG = DATA.P.map(p => `${p.code} | ${p.title} | ${p.showcase} | ${p.org||"n/a"} | demonstrated in: ${(p.places||[]).join(", ")||"n/a"} | DMP: ${p.hasDMP?"yes":"no"} | keywords: ${(p.kw||[]).join(", ")} | summary: ${p.short}`).join("\n");
+function pilotPrompt(need){
+  return `You are helping someone find which e-shape pilot services (Horizon 2020 project, GEO / Copernicus Earth-observation services) could address their need.
+
+Use ONLY the pilots listed below. Never invent a pilot, a capability or a figure. Judge fitness for purpose strictly: separate what a pilot actually delivers (e.g. forecasting vs mapping, spatial resolution, sector, demonstrated geography) from a mere topical overlap. If nothing really fits, say so and return weak or no matches.
+
+<user_need>
+${need}
+</user_need>
+
+Pilots (code | title | showcase | lead organisation | demonstrated in | DMP available | keywords | summary):
+${PCATALOG}
+
+Reply with ONLY a JSON object, no prose. Write the texts in the language of the user need:
+{"overall":"1-2 sentences: is there a good fit overall, and what no pilot covers","matches":[{"code":"S7P2","fit":"strong|partial|weak","why":"max 40 words on what the pilot delivers for this need","gaps":"max 40 words on what the user must verify or adapt (geography, scale, data access, maturity)"}]}
+Return at most 4 matches, best first. Return an empty matches array if none is relevant.`;
+}
+async function findPilots(){
+  const box = $("pilots"); box.replaceChildren(); $("pstatus").textContent = "";
+  if (!$("optPilots").checked){ $("s4").hidden = true; return; }
+  $("s4").hidden = false; $("s4").dataset.on = "1";
+  const finder = () => h("p",{class:"note"}, "Each pilot above carries its catalogue record and its Data Management Plan. To browse all 37 pilots: ", h("a",{href:DATA.finder,target:"_blank",rel:"noopener",text:"e-shape pilot finder"}), " (which still uses the earlier version of the plans).");
+  const r = state.result || { cands:[] };
+  const svc = r.cands.map(c => c.service).join("; ");
+  const qa = state.qa.map(x => `${x.q} ${x.a}`).join(" ");
+  const need = [state.need, qa, state.params && state.params.place ? "Place: "+state.params.place : "", svc ? "Related Earth observation services: "+svc : ""].filter(Boolean).join("\n");
+  if (!need.trim()){ $("s4").hidden = true; return; }
+  const run = state.run; state.pctl = new AbortController();
+  $("pstatus").textContent = `Comparing your need with the ${DATA.P.length} e-shape pilots… this usually takes 10 to 40 seconds.`;
+  try {
+    const out = await llmJSON(pilotPrompt(need), { signal: state.pctl.signal });
+    if (run !== state.run) return;
+    const ms = (Array.isArray(out && out.matches) ? out.matches : []).map(m => ({ p: PBY[String(m && m.code).toUpperCase().replace(/[^A-Z0-9]/g,"")], fit: /^(strong|partial|weak)$/.test(m && m.fit) ? m.fit : "weak",
+      why: String((m && m.why) || ""), gaps: String((m && m.gaps) || "") })).filter(m => m.p).slice(0,4);
+    $("pstatus").textContent = String((out && out.overall) || "");
+    if (!ms.length) box.append(h("div",{class:"warn",text:"No e-shape pilot is relevant to this need."}));
+    ms.forEach(m => box.append(pilotCard(m)));
+    box.append(finder());
+    state.pilots = ms; renderDIV();
+  } catch(e){
+    if (run !== state.run) return;
+    $("pstatus").textContent = (e && e.code === "cancelled") ? "Stopped." : (ERR[e && e.code] || "The pilot comparison failed this time.");
+    box.append(finder());
+  }
+}
+const CATALOG = "https://geocatalog.webservice-energy.org/geonetwork/srv/eng/catalog.search#/metadata/";
+function field(label, value){ return value ? h("p",{}, h("span",{class:"note",text:label + ": "}), value) : null; }
+function catalogueBlock(p){
+  const d = h("details",{class:"band"}, h("summary",{}, "Catalogue record (webservice-energy)", h("span",{class:"n",text: p.snaps.length ? `${p.snaps.length} record${p.snaps.length > 1 ? "s" : ""}` : "none"})));
+  if (!p.snaps.length){ d.append(h("p",{class:"note",text:"This pilot has no record in the webservice-energy catalogue."})); return d; }
+  p.snaps.forEach(s => {
+    d.append(h("p",{class:"note"}, "Read from the webservice-energy GeoNetwork catalogue on 1 October 2026. ", h("a",{href:CATALOG + s.uuid,target:"_blank",rel:"noopener",text:"Open the live record"})));
+    if (p.snaps.length > 1) d.append(h("p",{}, h("strong",{text:s.title})));
+    d.append(h("p",{text:s.abstract || ""}),
+      field("Status", s.status), field("Created", s.created), field("Updated", s.updated), field("Access constraints", s.access),
+      field("Format", s.format), field("Service type", s.stype), field("Bounding box (W, S, E, N)", Array.isArray(s.bbox) ? s.bbox.join(", ") : s.bbox),
+      (s.kw || []).length ? h("div",{class:"tags"}, s.kw.map(k => h("span",{class:"tag",text:k}))) : null);
+    if ((s.links || []).length) d.append(h("p",{class:"note",text:"Online resources"}), h("ul",{class:"res"}, s.links.map(l => h("li",{},
+      /^https?:/i.test(l.url || "") ? h("a",{href:l.url,target:"_blank",rel:"noopener",text:l.name || l.url}) : (l.name || l.url || ""), l.description ? h("span",{class:"note",text:" " + l.description}) : null))));
+    if ((s.contacts || []).length) d.append(h("p",{class:"note",text:"Contacts in the record"}), h("ul",{class:"res"}, s.contacts.map(c => h("li",{text:[c.individual, c.position, c.organisation, c.email, c.role].filter(Boolean).join(", ")}))));
+  });
+  return d;
+}
+function lvl(v){ return v == null ? "not reported" : `${v} · ${LVTXT[v]}`; }
+function dmpBlock(p){
+  const d = h("details",{class:"band"}, h("summary",{}, "Data Management Plan", h("span",{class:"n",text: p.dmp ? `version ${p.dmp.version || "n/a"}, compiled file of 2 October 2026` : "not available"})));
+  if (!p.dmp){ d.append(h("p",{class:"note",text: p.code === "S6P4" ? "The sheet of this pilot in the compiled file is identical to that of S1P2, so it is not shown." : "No Data Management Plan was received for this pilot."})); return d; }
+  d.append(h("p",{class:"note",text:"Self-declared by the pilot. Levels: 0 not applicable, 1 not started, 2 partly implemented, 3 fully compliant. “Sprint 2” is the level expected at the end of sprint 2 (2023)."}));
+  d.append(h("p",{}, h("strong",{text:"GEO data management principles"})));
+  p.dmp.geo.forEach(g => d.append(h("div",{class:"layer"},
+    h("div",{class:"ttl",text:`${g.p} ${g.name}`}), h("div",{class:"why",text:`End of sprint 1: ${lvl(g.s1)}. End of sprint 2: ${lvl(g.s2)}.`}),
+    g.det ? h("p",{text:g.det}) : h("p",{class:"note",text:"No details given."}),
+    g.exc ? h("p",{}, h("span",{class:"note",text:"Exception: "}), g.exc, g.why ? h("span",{class:"note",text:" (" + g.why + ")"}) : null) : null)));
+  if (p.dmp.fair.length){
+    d.append(h("p",{}, h("strong",{text:"FAIR principles"})));
+    p.dmp.fair.forEach(f => d.append(h("div",{class:"layer"}, h("div",{class:"ttl",text:f.q}),
+      h("div",{class:"why",text:`End of sprint 1: ${lvl(f.s1)}. End of sprint 2: ${lvl(f.s2)}.`}), f.det ? h("p",{text:f.det}) : null)));
+  }
+  return d;
+}
+const FITLV = { strong:"high", partial:"medium", weak:"low" };
+const LVTXT = ["not applicable","not started","partly implemented","fully compliant"];
+function pilotCard(m){
+  const p = m.p, card = h("article",{class:"svc fade"});
+  card.append(h("header",{}, h("h3",{text:`${p.code} · ${p.title}`}), badge(FITLV[m.fit], m.fit[0].toUpperCase()+m.fit.slice(1)+" fit")));
+  card.append(h("div",{class:"crumb",text:[p.showcase, p.org].filter(Boolean).join(" · ")}));
+  if (m.why) card.append(h("p",{}, h("strong",{text:"Why it fits: "}), m.why));
+  if (m.gaps) card.append(h("p",{}, h("strong",{text:"To check or adapt for your case: "}), m.gaps));
+  const left = h("div",{}, h("h3",{text:"Declared compliance (GEO data management principles)"}));
+  if (p.geo.length){
+    left.append(h("div",{class:"strip"}, p.geo.map((g,i) => h("span",{class:"dot","data-l":g[2]==null?"":String(g[2]),title:`${g[0]} ${g[1]}: ${g[2]==null?"not reported":LVTXT[g[2]]}`,
+      "aria-label":`${g[1]}: ${g[2]==null?"not reported":LVTXT[g[2]]}`,text:String(i+1)}))));
+    left.append(h("p",{class:"note",text:"Filled green: fully compliant. Ochre: partly. Outlined: not started. Grey: not applicable or not reported."}));
+  } else left.append(h("p",{class:"note",text:"No Data Management Plan compiled for this pilot."}));
+  const tags = [...p.comp, ...p.stds];
+  if (tags.length) left.append(h("div",{class:"tags"}, tags.map(t => h("span",{class:"tag",text:t}))));
+  const right = h("div",{}, h("h3",{text:"To adapt"}),
+    p.adapt.length ? h("div",{class:"tags"}, p.adapt.map(t => h("span",{class:"tag adapt",text:t}))) : h("p",{class:"note",text:"Nothing flagged."}));
+  card.append(h("div",{class:"cols"}, left, right));
+  const chain = [["Information delivered (EARSC service, assigned by hand)", p.info || []],
+    ["Input data named by the pilot", (p.data || []).map(d => `${d.l} (${d.dl ? "in the Data Lake" : "outside the Data Lake"}; source: ${d.from})`)],
+    ["Infrastructure and formats declared", p.infra || []]];
+  card.append(h("h3",{text:"What the pilot declares, in Data-Information-Value terms"}));
+  chain.forEach(([t, items]) => card.append(h("p",{}, h("span",{class:"note",text:t + ": "}), items.length ? items.join("; ") : "not found in the catalogue record or the Data Management Plan")));
+  card.append(catalogueBlock(p), dmpBlock(p));
+  card.append(h("h3",{text:"Contacts"}));
+  card.append(p.contacts.length ? h("ul",{class:"res"}, p.contacts.map(c => h("li",{}, c.individual ? c.individual+", " : "",
+      c.email ? h("a",{href:"mailto:"+c.email,text:c.email}) : "no email listed",
+      h("span",{class:"note",text:" "+[c.position,c.organisation].filter(Boolean).join(", ")+(c.src ? " ("+c.src+")" : "")}))))
+    : h("p",{class:"note",text:"No contact available."}));
+  if (p.uuids.length) card.append(h("p",{class:"note"}, p.uuids.map((u,i) => [i ? " · " : "", h("a",{href:"https://geocatalog.webservice-energy.org/geonetwork/srv/eng/catalog.search#/metadata/"+u,target:"_blank",rel:"noopener",text: p.uuids.length>1 ? "Catalogue record "+(i+1) : "Catalogue record"})])));
+  return card;
+}
+function serviceCard(c, p){
+  const s = SVC[c.service];
+  const need = needOf(c);
+  const links = (DATA.L[c.service] || []).map(l => { const col = DATA.C[l[0]], off = offArea(col), coarse = off ? "" : coarseNote(col, l[3], need, l[4]);
+    if (off) return { ci:l[0], col, direct:l[1]==="d", linkConf:l[2], path:l[3], coarse:"", off, full:0, score:0 };
+    return { ci:l[0], col, direct:l[1]==="d", linkConf:l[2], path:l[3], coarse, full:c.confidence*LINKW[l[2]], score:c.confidence*LINKW[l[2]]*(coarse ? 0.5 : 1) }; });
+  c._rows = {};
+  const wantsRaw = /raw/i.test(p.wants||"");
+  links.sort((a,b) => (b.score-a.score) || ((wantsRaw ? a.direct-b.direct : b.direct-a.direct)) || a.col.id.localeCompare(b.col.id));
+  const card = h("article",{class:"svc fade"});
+  card.append(h("header",{}, h("h3",{text:s.n}), r_match(c)));
+  card.append(h("div",{class:"crumb",text:`${s.d} › ${s.a}`}));
+  if (c.info) card.append(h("p",{}, h("strong",{text:"Expected information: "}), c.info, [c.res, c.freq, c.delay].filter(Boolean).length ? h("span",{class:"note",text:" Requirements: " + [c.res, c.freq, c.delay].filter(Boolean).join("; ") + "."}) : null));
+  if (c.reason) card.append(h("p",{text:c.reason}));
+  card.append(h("details",{}, h("summary",{text:"What this service covers"}), h("p",{text:s.x}),
+    s.m && s.m.length ? h("p",{class:"note",text:"Markets: "+s.m.join("; ")}) : null,
+    h("p",{class:"note"}, s.w ? h("a",{href:s.w,target:"_blank",rel:"noopener",text:"EARSC wiki page"}) : null,
+      s.w && s.b ? " · " : null, s.b ? h("a",{href:"https://bok.eo4geo.eu/"+s.b,target:"_blank",rel:"noopener",text:"EO4GEO BoK "+s.b}) : null)));
+
+  card.append(h("h3",{text:"What it takes to produce this information"}), h("div",{"data-ingr":String(divCands(state.result).indexOf(c))}));
+  card.append(h("h3",{text:`Data layers in the DestinE Data Lake for this category (${links.length})`}));
+  if (!links.length) card.append(h("p",{class:"note",text:"No layer of the catalogue is linked to this service yet."}));
+  if (need && links.length) card.append(h("p",{class:"note",text:`Ranked for a detail of about ${fmtRes(need)}${metres(c.res) ? "" : " (assumed, because the need is local)"}. A layer that does not resolve it is moved down and its confidence halved, unless the analysis above shows that it serves an ingredient that does not need that detail.`}));
+  const list = h("div"); card.append(list);
+  const SHOW = 6;
+  links.forEach((l,i) => { const row = layerRow(l, p); c._rows[l.ci] = { row, l }; if (i >= SHOW) row.hidden = true; list.append(row); });
+  if (links.length > SHOW){
+    const more = h("button",{class:"ghost small",type:"button",text:`Show all ${links.length} layers`,onclick:()=>{ list.querySelectorAll(".layer").forEach(x=>x.hidden=false); more.remove(); }});
+    card.append(h("div",{class:"row"},more));
+  }
+  card.append(h("h3",{text:"How to process the data"}));
+  const g = DATA.G[c.service];
+  if (g){
+    const kinds = { service:"Existing services that already deliver this information", toolbox:"Toolboxes and step-by-step workflows", reference:"Scientific references" };
+    for (const k in kinds){
+      const items = g.filter(x => x.k === k); if (!items.length) continue;
+      card.append(h("p",{class:"note",text:kinds[k]}));
+      card.append(h("ul",{class:"res"}, items.map(x => h("li",{}, h("a",{href:x.u,target:"_blank",rel:"noopener",text:x.t}), x.note ? h("span",{class:"note",text:" "+x.note}) : null))));
+    }
+    if (!g.some(x=>x.k==="reference")) card.append(h("p",{class:"note",text:"No scientific reference has been verified for this service yet."}));
+  } else {
+    card.append(h("p",{class:"note",text:"No verified processing resource is recorded for this service yet. For layers marked “needs processing”, the line under each layer names the technique involved."}));
+  }
+  return card;
+}
+function r_match(c){ return c.reason === "Chosen by you." ? h("span",{class:"badge b-kind",text:"Chosen by you"}) : badge(level(c.confidence), `Match: ${level(c.confidence)} (${c.confidence.toFixed(2)})`); }
+function layerRow(l, p){
+  const row = h("div",{class:"layer"});
+  const panel = h("div",{class:"panel",hidden:true});
+  let built = false;
+  const btn = h("button",{class:"ghost small",type:"button",text:"How to get it","aria-expanded":"false",onclick:()=>{
+    if (!built){ buildAccess(panel, l.col, p); built = true; }
+    panel.hidden = !panel.hidden; btn.setAttribute("aria-expanded", String(!panel.hidden)); }});
+  row.append(h("div",{class:"top"}, h("div",{class:"ttl",text:l.col.t}), h("span",{"data-role":"conf"}, badge(layerLevel(l.score))), btn));
+  row.append(h("div",{class:"mono",text:l.col.id}));
+  const period = l.col.s ? ` Coverage: ${l.col.s} to ${l.col.e || "present"}.` : "";
+  if (l.off) row.append(h("div",{class:"why"}, h("span",{class:"badge b-medium",text:"Does not cover your area"}), " " + l.off));
+  row.append(h("div",{class:"why","data-role":"scale",hidden:!l.coarse}, h("span",{class:"badge b-medium",text:"Does not resolve your detail"}), " " + (l.coarse ? l.coarse[0].toUpperCase() + l.coarse.slice(1) + "." : "")));
+  row.append(h("div",{class:"why","data-role":"serves",hidden:true}));
+  row.append(h("div",{class:"why",title:l.col.rt || ""}, l.col.r != null
+    ? `Resolution: ${fmtRes(l.col.r)}${/OSCAR/.test(l.col.rs) ? " at best (sensor characteristics, WMO OSCAR)" : (l.col.rb ? " at best, several values stated (" : " (") + l.col.rs + ")"}.`
+    : "Resolution: not stated in the catalogue.", l.col.rv ? " Revisit: " + l.col.rv + "." : ""));
+  row.append(h("div",{class:"why"}, h("span",{class:"badge b-kind",text:l.direct ? "Ready-to-use product" : "Needs processing"}), " ",
+    `Why: ${l.path.replace(/\.$/, "")}.${period} ${l.col.o ? "On-demand dataset (order)." : "Archive (search and download)."}`));
+  row.append(panel);
+  return row;
+}
+
+// ---------- Data-Information-Value view (DestinE co-design toolkit, template 2.0.1), filled from the request
+const SVGNS = "http://www.w3.org/2000/svg";
+function sv(tag, attrs, ...kids){
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in (attrs||{})){ const v = attrs[k]; if (v == null || v === false) continue;
+    if (k === "text") e.textContent = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v); }
+  for (const c of kids.flat()) if (c != null) e.append(c);
+  return e;
+}
+function wrapText(str, n, maxLines){
+  const words = String(str||"").split(/\s+/).filter(Boolean), lines = []; let cur = "";
+  for (const w of words){
+    if ((cur + " " + w).trim().length > n && cur){ lines.push(cur); cur = w; } else cur = (cur + " " + w).trim();
+    if (lines.length === maxLines) break;
+  }
+  if (lines.length < maxLines && cur) lines.push(cur);
+  if (lines.length === maxLines && words.join(" ").length > lines.join(" ").length) lines[maxLines-1] = lines[maxLines-1].replace(/.{0,2}$/, "") + "…";
+  return lines.map(l => l.length > n+3 ? l.slice(0, n+2) + "…" : l);
+}
+const short = (t, n) => { t = String(t||""); return t.length > n ? t.slice(0, n-1) + "…" : t; };
+const FINE = /^(C-SAR|MSI|TM|ETM\+|OLI|MSS|TIRS)\b/, MEDIUM = /^(OLCI|SLSTR)\b/;
+function localNeed(){ const p = state.params || {}; return /local/i.test(p.scale || "") || (state.result ? state.result.cands : []).some(c => /\b\d{1,2} ?m\b|district|street|parcel|building|neighbou?rhood|quartier|rue|parcelle/i.test(c.res + " " + c.info)); }
+// "" when the collection covers the user's area or when nothing can be said; otherwise why it does not
+function offArea(col){ const b = (state.params || {}).bbox, c = col.bb; if (!b || !c) return "";
+  return (b[2] < c[0] || b[0] > c[2] || b[3] < c[1] || b[1] > c[3]) ? `Its catalogue record covers longitudes ${c[0]} to ${c[2]} and latitudes ${c[1]} to ${c[3]}, which leaves your area out.` : ""; }
+function resLabel(col){ return col.r == null ? "" : fmtRes(col.r) + (col.rb ? " at best" : ""); }
+function fmtRes(m){ return m < 1000 ? `${Math.round(m)} m` : m < 10000 ? `${(m/1000).toFixed(1).replace(/\.0$/, "")} km` : `${Math.round(m/1000)} km`; }
+// spatial detail a candidate asks for, in metres: from its stated requirement, else 100 m when the need is said to be local
+function needOf(c){ const n = metres(c && c.res); return n || (localNeed() ? 100 : null); }
+// why a layer is too coarse for `need` metres ("" when it is not, or when nothing can be said)
+function coarseNote(col, path, need, channel){
+  if (!need) return "";
+  if (col.r != null) return col.r > 3*need ? `${fmtRes(col.r)} at best, for a need of about ${fmtRes(need)}` : "";
+  return need <= 100 && channel !== "C" && tooCoarse(path) ? "sensor of kilometre scale or coarser, for a local need" : "";
+}
+function tooCoarse(path){ const m = path.split(" | ")[0].match(/^([^→:]+?)\s*(→|:)/); if (!m) return false; const i = m[1].trim(); return !FINE.test(i) && !MEDIUM.test(i); }
+function divCands(r){ const c = r.cands.filter((x,i) => i === 0 || x.confidence >= 0.35).slice(0, 3); return c; }
+function divModel(){
+  const r = state.result, p = state.params || {}, nodes = [], edges = [], byId = {};
+  const N = (id, lane, label, o) => { if (!byId[id]){ byId[id] = Object.assign({ id, lane, label, sub:"", kind:"", gap:0 }, o||{}); nodes.push(byId[id]); } return id; };
+  const E = (a, b, c) => { if (!edges.some(e => e.a === a && e.b === b)) edges.push({ a, b, c }); };
+  // 1. usage ecosystem
+  const where = [p.place, (p.start||p.end) ? `${p.start||"…"} to ${p.end||"…"}` : ""].filter(Boolean).join(" · ");
+  const actors = (r.actors && r.actors.length) ? r.actors : [r.manual ? "You (service chosen by hand)" : "You"];
+  const needIds = actors.map((a, k) => N(k ? "need" + k : "need", 0, a, { kind:"need", sub: k ? "" : where }));
+  const regIds = (state.regs || []).filter(x => x.applied && x.result).map((x, k) => N("reg:" + k, 0, x.result.title || x.mention, { kind:"market", sub:"plan or regulation · " + (x.result.how.startsWith("text") ? "pasted text" : "read on the web") }));
+  // 2. value-embedding usage
+  const top = divCands(r);
+  const usages = (r.usages && r.usages.length) ? r.usages : [{ text: r.understanding || state.need || "Use of the information", needs:[] }];
+  const useIds = usages.map((u, k) => { const id = N(k ? "use" + k : "use", 1, u.text, { kind:"use" }); needIds.forEach(n => E(n, id, "high")); regIds.forEach(g => E(g, id, "info")); return id; });
+  const knownActor = !!(r.actors && r.actors.length);
+  const usesOf = c => { const ids = useIds.filter((id, k) => !usages[k].needs.length || usages[k].needs.includes(c._i)); return ids.length ? ids : useIds; };
+  const sectorSize = {}; DATA.S.forEach(x => (x.m||[]).forEach(m => sectorSize[m] = (sectorSize[m]||0) + 1));
+  let markets = 0;
+  top.forEach((c, si) => {
+    const s = SVC[c.service], sid = "s" + si, lv = r.manual ? "high" : level(c.confidence);
+    N(sid, 2, c.info || s.n, { kind:"service", sub: c.info ? "EARSC: " + s.n : (r.manual ? "EARSC category, chosen by you" : `EARSC category · match ${c.confidence.toFixed(2)}`),
+      sub2: c.info ? [c.res, c.freq, c.delay].filter(Boolean).join(" · ") || `proposed by Claude · match ${c.confidence.toFixed(2)}` : "" }); usesOf(c).forEach(u => E(u, sid, lv));
+    if (!knownActor) (s.m || []).filter(m => sectorSize[m] <= 20).sort((a,b) => sectorSize[a]-sectorSize[b]).slice(0, 2).forEach(m => { if (markets >= 3) return; markets++;
+      E(N("m:" + m, 0, m.split(" / ").pop(), { kind:"market", sub:"typical users (EARSC)" }), sid, "info"); });
+    // existing products and access points found outside the Data Lake: they are data or infrastructure, never a usage
+    (DATA.G[c.service] || []).filter(g => g.k === "service" && g.col).slice(0, 3).forEach(g => {
+      if (g.col === "data") E(sid, N("x:" + g.u, 4, short(g.t, 60), { kind:"data", sub:"outside the Data Lake", where:"out" }), "info");
+      else E(sid, N("x:" + g.u, 5, short(g.t, 60), { kind:"infra", sub:"access point outside the Data Lake", where:"out" }), "info"); });
+    const links = (DATA.L[c.service] || []).map(l => ({ col:DATA.C[l[0]], direct:l[1] === "d", lc:l[2], path:l[3], ch:l[4], score:c.confidence*LINKW[l[2]] })).filter(l => !offArea(l.col))
+      .sort((a,b) => (b.score-a.score) || (b.direct-a.direct) || a.col.id.localeCompare(b.col.id));
+    if (c.ingr && c.ingr.length){
+      const access = col => N(col.o ? "i:order" : "i:search", 5, col.o ? "DestinE Data Lake, on-demand order" : "DestinE Data Lake, archive search", { kind:"infra", sub:"HDA API, DestinE account" });
+      let proc = [];
+      c.ingr.forEach((g, gi) => {
+        const iid = N("g:" + g.name.toLowerCase(), 3, g.name, { kind:"variable", sub: g.other ? "ingredient · local data" : "ingredient · " + (g.variable || (g.service ? "EARSC: " + g.service : "not in the taxonomy")), sub2: g.res, ingr:g, sub3: g.other ? "" : recipeFor(g) ? "▸ prototype on demand" : "▸ method to draft" });
+        E(sid, iid, "medium");
+        if (g.other){ E(iid, N("o:" + g.name.toLowerCase(), 4, g.name, { kind:"data", sub:"local or administrative data", where:"out" }), "info"); return; }
+        (g.out || []).forEach(x => E(iid, N("x:" + x.u, 4, short(x.t, 60), { kind:"data", sub:"outside the Data Lake", where:"out" }), "info"));
+        if (!g.data.length){ E(iid, N("gap:g:" + si + ":" + gi, 4, g.fine ? "No suitable layer at this scale" : "No layer in the Data Lake", { gap:1, sub:"gap for “" + short(g.name, 22) + "”" }), "gap"); return; }
+        g.data.forEach(d => { const cid = N("c:" + d.col.id, 4, short(d.col.t, 62), { kind:"data", sub: (d.direct ? "ready-to-use" : "needs processing") + (d.col.r != null ? " · " + resLabel(d.col) : ""), sub2: d.coarse ? "coarser than needed" : "" });
+          E(iid, cid, d.coarse ? "low" : d.conf === "h" ? "high" : "medium"); E(cid, access(d.col), "high"); if (!d.direct) proc.push(cid); });
+      });
+      links.filter(l => l.direct && l.lc === "h").slice(0, 2).forEach(l => { const cid = N("c:" + l.col.id, 4, short(l.col.t, 62), { kind:"data", sub:"ready-to-use" + (l.col.r != null ? " · " + resLabel(l.col) : "") }); E(sid, cid, "high"); E(cid, access(l.col), "high"); });
+      if (proc.length){
+        const tb = (DATA.G[c.service] || []).filter(g => g.k === "toolbox").slice(0, 2);
+        const targets = tb.length ? tb.map(g => N("tb:" + g.u, 5, short(g.t, 62), { kind:"infra", sub:"toolbox or workflow" })) : [N("gap:proc:" + si, 5, "Processing chain to build", { gap:1, sub:"no verified resource" })];
+        proc.forEach(cid => targets.forEach(t => E(cid, t, tb.length ? "medium" : "gap")));
+      }
+      return;
+    }
+    if (!links.length){
+      const gid = N("gap:data:" + si, 4, "No layer in the Data Lake", { gap:1, sub:"gap" });
+      const vs = (DATA.SV[c.service] || []).slice(0, 3);
+      if (vs.length) vs.forEach(vn => { const vid = N("v:" + vn, 3, vn, { kind:"variable", sub:"variable needed" }); E(sid, vid, "medium"); E(vid, gid, "gap"); });
+      else E(sid, gid, "gap");
+      return; }
+    let needProc = false;
+    links.slice(0, 4).forEach(l => {
+      const cid = N("c:" + l.col.id, 4, short(l.col.t, 62), { kind:"data", sub: (l.direct ? "ready-to-use" : "needs processing") + (l.col.r != null ? " · " + resLabel(l.col) : "") });
+      const first = l.path.split(" | ")[0], lv2 = l.lc === "h" ? "high" : "medium";
+      let m;
+      if (l.ch !== "C" && (m = first.match(/^(.+?) → (.+?) \(/))){ const vid = N("v:" + m[2], 3, m[2], { kind:"variable", sub:"variable (WMO OSCAR)" }); E(sid, vid, lv2); E(vid, cid, lv2); }
+      else if (l.ch !== "C" && (m = first.match(/^([^:\/→]+): (.+)$/))){ const vid = N("t:" + m[1] + m[2], 3, m[2], { kind:"technique", sub:"detection · " + m[1] }); E(sid, vid, lv2); E(vid, cid, lv2); }
+      else E(sid, cid, lv2);
+      E(cid, N(l.col.o ? "i:order" : "i:search", 5, l.col.o ? "DestinE Data Lake, on-demand order" : "DestinE Data Lake, archive search", { kind:"infra", sub:"HDA API, DestinE account" }), "high");
+      if (!l.direct){ needProc = true; byId[cid].proc = sid; }
+    });
+    if (links.length > 4) N("more:" + si, 4, `+ ${links.length - 4} more layers`, { kind:"more", sub:"see step 4" }), E(sid, "more:" + si, "info");
+    if (needProc){
+      const tb = (DATA.G[c.service] || []).filter(g => g.k === "toolbox").slice(0, 2);
+      const targets = tb.length ? tb.map(g => N("tb:" + g.u, 5, short(g.t, 62), { kind:"infra", sub:"toolbox or workflow" }))
+                                : [N("gap:proc:" + si, 5, "Processing chain to build", { gap:1, sub:"no verified resource" })];
+      nodes.filter(n => n.proc === sid).forEach(n => targets.forEach(t => E(n.id, t, tb.length ? "medium" : "gap")));
+    }
+  });
+  (state.pilots || []).filter(m => m.fit !== "weak").slice(0, 3).forEach(m => {
+    const p = m.p, pid = N("p:" + p.code, 1, `e-shape ${p.code}: ${short(p.title, 44)}`, { kind:"existing", sub: m.fit + " fit · existing pilot" });
+    E("need", pid, FITLV[m.fit]);
+    const svcIds = (p.info || []).slice(0, 2).map(name => {
+      const ti = top.findIndex(c => c.service === name), hit = ti >= 0 ? byId["s" + ti] : nodes.find(n => n.lane === 2 && n.label === name);
+      const id = hit ? hit.id : N("ps:" + name, 2, name, { kind:"service", sub:"delivered by " + p.code, where:"out" });
+      E(pid, id, "decl"); return id; });
+    const from = svcIds[0] || pid;
+    const dataIds = (p.data || []).slice(0, 4).map(d => { const id = N("d:" + d.l, 4, d.l, { kind:"data", where: d.dl ? "" : "out",
+        sub: d.dl ? `in the Data Lake · ${d.dl} collection${d.dl > 1 ? "s" : ""}` : "outside the Data Lake" }); E(from, id, "decl"); return id; });
+    if ((p.infra || []).length){
+      const iid = N("pi:" + p.code, 5, `${p.code}: ${p.infra.slice(0, 3).join(", ")}`, { kind:"infra", sub:"declared by the pilot", where:"out" });
+      (dataIds.length ? dataIds : [from]).forEach(d => E(d, iid, "decl"));
+    } });
+  return { nodes, edges, byId };
+}
+function renderDIV(){
+  const r = state.result; if (!r) return;
+  $("sdiv").hidden = false; $("sdiv").dataset.on = "1";
+  fillEdit(); renderWorkshops(); renderIngredients(); renderAssembly(); renderProtoPick();
+  const { nodes, edges, byId } = divModel();
+  const LW = 160, GAP = 18, X0 = 10, HEAD = 46, laneX = i => X0 + i*(LW + GAP);
+  const lanes = [0,1,2,3,4,5].map(i => nodes.filter(n => n.lane === i));
+  nodes.forEach(n => { n.lines = wrapText(n.label, 25, /^(service|use|need)$/.test(n.kind) ? 4 : 3); n.h = 14 + n.lines.length*15 + (n.sub ? 14 : 0) + (n.sub2 ? 14 : 0) + (n.sub3 ? 14 : 0); });
+  // order each lane by the average position of the boxes it depends on, so that links cross less
+  const at = {};
+  for (let i = 0; i < 6; i++){
+    if (i > 0){
+      lanes[i].forEach((n, k) => { const ps = edges.filter(e => e.b === n.id && at[e.a] != null).map(e => at[e.a]); n._bc = ps.length ? ps.reduce((a,b) => a + b, 0)/ps.length : null; n._k = k; });
+      const placed = lanes[i].filter(n => n._bc != null).sort((a,b) => (a._bc - b._bc) || (a._k - b._k));
+      lanes[i] = placed.concat(lanes[i].filter(n => n._bc == null));
+    }
+    let y0 = 0; lanes[i].forEach(n => { at[n.id] = y0 + n.h/2; y0 += n.h + 10; });
+  }
+  const laneH = lanes.map(l => l.reduce((a,n) => a + n.h + 10, 0));
+  const Hc = Math.max(160, ...laneH) + 24, W = laneX(6) - GAP + X0, Ht = HEAD + Hc + 8;
+  lanes.forEach((l, i) => { let y = HEAD + 12 + (Hc - 24 - laneH[i])/2; l.forEach(n => { n.x = laneX(i); n.y = y; y += n.h + 10; }); });
+  const svg = sv("svg",{viewBox:`0 0 ${W} ${Ht}`,role:"group","aria-label":"Dependency graph from the need to the data"});
+  const heads = [["Usage ecosystem",0,1],["Value-embedding usage",1,1],["Valuable information",2,2],["Data",4,1],["Digital infrastructure",5,1]];
+  heads.forEach(([t,i,span]) => { const x = laneX(i) - 6, w = span*LW + (span-1)*GAP + 12;
+    svg.append(sv("rect",{class:"dv-lane",x,y:6,width:w,height:Ht-12,rx:8}));
+    svg.append(sv("g",{class:"dv-head"}, sv("rect",{x,y:6,width:w,height:30,rx:8}), sv("text",{x:x+w/2,y:26,"text-anchor":"middle",text:t}))); });
+  const eg = sv("g"), ng = sv("g"); svg.append(eg, ng);
+  const eEls = edges.map(e => { const a = byId[e.a], b = byId[e.b]; if (!a || !b) return null;
+    const x1 = a.x + LW, y1 = a.y + a.h/2, x2 = b.x, y2 = b.y + b.h/2, dx = Math.max(30, (x2-x1)/2);
+    const el = sv("path",{class:"dv-edge","data-c":e.c,d:`M${x1},${y1} C${x1+dx},${y1} ${x2-dx},${y2} ${x2},${y2}`}); eg.append(el); return { e, el }; }).filter(Boolean);
+  let locked = null;
+  const related = id => { const set = new Set([id]); let grew = true;
+    const walk = (dir) => { let fr = [id]; while (fr.length){ const nx = []; edges.forEach(e => { const from = dir ? e.a : e.b, to = dir ? e.b : e.a; if (fr.includes(from) && !set.has(to)){ set.add(to); nx.push(to); } }); fr = nx; } };
+    walk(true); walk(false); return set; };
+  const show = id => { const set = id ? related(id) : null;
+    nEls.forEach(({ n, el }) => el.classList.toggle("dv-dim", !!set && !set.has(n.id)));
+    eEls.forEach(({ e, el }) => el.classList.toggle("dv-dim", !!set && !(set.has(e.a) && set.has(e.b)))); };
+  const nEls = nodes.map(n => {
+    const g = sv("g",{class:"dv-node","data-kind":n.kind,"data-gap":n.gap ? "1" : null,"data-where":n.where || null,tabindex:"0",role:"button","aria-label":`${n.label}${n.sub ? " ("+n.sub+")" : ""}`,
+      onmouseenter:()=>{ if (!locked) show(n.id); }, onmouseleave:()=>{ if (!locked) show(null); },
+      onfocus:()=>{ if (!locked) show(n.id); }, onblur:()=>{ if (!locked) show(null); },
+      onclick:()=>{ locked = locked === n.id ? null : n.id; show(locked); if (n.ingr && locked === n.id) showProto(n.ingr); },
+      onkeydown:ev=>{ if (ev.key === "Enter" || ev.key === " "){ ev.preventDefault(); locked = locked === n.id ? null : n.id; show(locked); if (n.ingr && locked === n.id) showProto(n.ingr); } }});
+    g.append(sv("title",{text:n.label + (n.sub ? " — " + n.sub : "") + (n.sub2 ? " — " + n.sub2 : "")}), sv("rect",{x:n.x,y:n.y,width:LW,height:n.h,rx:7}));
+    n.lines.forEach((l,i) => g.append(sv("text",{x:n.x+8,y:n.y+18+i*15,text:l})));
+    if (n.sub) g.append(sv("text",{class:"sub",x:n.x+8,y:n.y+18+n.lines.length*15,text:short(n.sub, 30)}));
+    if (n.sub2) g.append(sv("text",{class:"sub",x:n.x+8,y:n.y+32+n.lines.length*15,text:short(n.sub2, 30)}));
+    if (n.sub3) g.append(sv("text",{class:"cue",x:n.x+8,y:n.y+(n.sub2 ? 46 : 32)+n.lines.length*15,text:n.sub3}));
+    ng.append(g); return { n, el:g }; });
+  $("divgraph").replaceChildren(svg);
+  const lg = (c, t) => h("span",{}, h("i",{style:`border-color:var(${c});${t.includes("gap") ? "border-top-style:dashed" : ""}`}), t);
+  $("divlegend").replaceChildren(lg("--ok","high confidence"), lg("--mid","medium confidence"), lg("--low","low confidence"), lg("--marker","gap: missing link"), lg("--muted","context (plans, typical users, products and access points elsewhere)"), lg("--sea","declared by an e-shape pilot"),
+    h("span",{text:"Dotted box: outside the DestinE Data Lake. Dashed orange box: missing."}));
+}
+
+// ---------- analysis: what must be known to produce each expected information (ingredients), then the data of each ingredient
+let VARCOLS = null;
+function varCols(){
+  if (VARCOLS) return VARCOLS;
+  VARCOLS = {};
+  for (const svc in DATA.L) for (const l of DATA.L[svc]) for (const seg of l[3].split(" | ")){
+    if (l[4] === "C") continue;
+    const m = seg.match(/^(.+?) → (.+?) \(/); if (!m) continue;
+    const arr = VARCOLS[m[2]] || (VARCOLS[m[2]] = []);
+    if (!arr.some(x => x.ci === l[0])) arr.push({ ci:l[0], direct:l[1] === "d", conf:l[2], path:seg });
+  }
+  return VARCOLS;
+}
+const VARNAMES = [...new Set(Object.values(DATA.SV).flat())].sort();
+function metres(t){ const m = String(t || "").match(/(\d+(?:[.,]\d+)?)\s*(km|kilom[eè]tres?|m|m[eè]t(?:er|re)s?)(?![a-zà-ÿ])/i); if (!m) return null; const v = parseFloat(m[1].replace(",", ".")); return /^k/i.test(m[2]) ? v*1000 : v; }
+function instOf(path){ const m = path.match(/^([^→:]+?)\s*(→|:)/); return m ? m[1].trim() : ""; }
+function ingredientData(g){
+  // candidate collections for one ingredient: through its variable, then through its EARSC service.
+  // Ready products and high confidence first; the scale check follows the ingredient's own requirement
+  // (a cloud mask does not need a 10 m sensor), using the resolution stated for each collection when known.
+  const need = metres(g.res), fine = need != null && need <= 100; g.fine = fine;
+  const out = [], seen = new Set();
+  const push = (ci, direct, conf, path, viaSvc, ch) => { if (seen.has(ci)) return; seen.add(ci); if (offArea(DATA.C[ci])) return;
+    const col = DATA.C[ci];
+    if (fine && col.r == null && ch !== "C" && tooCoarse(path)) return;        // unknown resolution, kilometre-scale sensor
+    const coarse = need && col.r != null && col.r > 3*need ? `${fmtRes(col.r)} at best, coarser than the ${fmtRes(need)} needed` : "";
+    out.push({ col, direct, conf, path, coarse, rank:(direct ? 2 : 0) + (conf === "h" ? 1 : 0) + (viaSvc ? 0.5 : 0) - (coarse ? 4 : 0) }); };
+  if (g.variable) (varCols()[g.variable] || []).forEach(x => push(x.ci, x.direct, x.conf, x.path, false, "A"));
+  if (g.service) (DATA.L[g.service] || []).forEach(l => push(l[0], l[1] === "d", l[2], l[3].split(" | ")[0], true, l[4]));
+  const ok = out.filter(d => !d.coarse);
+  return (ok.length ? ok : out).sort((a,b) => (b.rank - a.rank) || ((a.col.r || 1e9) - (b.col.r || 1e9)) || a.col.id.localeCompare(b.col.id)).slice(0, 2);
+}
+// existing products known outside the Data Lake for the EARSC service an ingredient is attached to
+function ingredientOutside(g){ return g.service ? (DATA.G[g.service] || []).filter(x => x.col === "data").slice(0, 2) : []; }
+function analysisPrompt(){
+  const r = state.result, top = divCands(r);
+  const infos = top.map((c, i) => `${i}. ${c.info || c.service} [EARSC: ${c.service}]${[c.res, c.freq, c.delay].filter(Boolean).length ? " (requirements: " + [c.res, c.freq, c.delay].filter(Boolean).join("; ") + ")" : ""}`).join("\n");
+  const fix = state.ctx.ingr ? `\n\nThe user corrected the ingredients in their own words. Keep theirs, split disjoint elements into separate ingredients, and add one only if something essential is missing:\n"""${state.ctx.ingr}"""` : "";
+  return `You are an Earth observation engineer. A user needs the information items below. For each one, think through how it would actually be produced, and list its ingredients: every distinct thing that must be known or measured to produce it. Be realistic and complete rather than generic: include the geometry, masks, reference layers and ancillary data that a real processing chain needs, not only the headline measurement. Example: solar potential per roof needs solar irradiance, a surface model of buildings and terrain for slope, orientation and cast shadows, tree canopy for shading, and the footprints of the buildings concerned.
+
+User need: """${state.need}"""
+Use of the information: ${(r.usages || []).map(u => u.text).join(" | ") || r.usage || "not stated"}
+
+Information items:
+${infos}${fix}
+
+For each ingredient give:
+- "name": short name in the user's language.
+- "role": why it is needed, under 15 words.
+- "kind": "eo" if it can come from Earth observation or models, "other" if it is local or administrative data (registers, cadastre, sensors on site, statistics).
+- "variable": the closest name from this list, copied exactly, or "": ${VARNAMES.join("; ")}
+- "service": the closest EARSC service from this list, copied exactly, or "": ${DATA.S.map(s => s.n).join("; ")}
+- "resolution": the spatial detail this ingredient needs, with a figure in metres or kilometres when it matters (e.g. "about 1 m"), or "" when any resolution would do.
+Never invent a name for "variable" or "service". 3 to 5 ingredients per information item, the most decisive ones first. Keep "name" under 8 words.
+
+Reply with ONLY one JSON object:
+{"analysis":[{"information":0,"ingredients":[{"name":"...","role":"...","kind":"eo","variable":"","service":"","resolution":""}]}]}`;
+}
+async function analyse(){
+  const r = state.result; if (!r) return;
+  const top = divCands(r); if (!top.length) return;
+  if (top.every(c => c.ingr)){ r.analysed = true; return; }
+  const run = state.run, ctl = new AbortController(); state.actl = ctl;
+  r.analysing = true; $("anastatus").textContent = "Analysing what each information requires… this can take up to a minute.";
+  try {
+    const out = await llmJSON(analysisPrompt(), { signal: ctl.signal });
+    if (run !== state.run || state.result !== r) return;
+    (Array.isArray(out && out.analysis) ? out.analysis : []).forEach(a => {
+      const c = top[Number(a && a.information)]; if (!c || !Array.isArray(a.ingredients)) return;
+      c.ingr = a.ingredients.filter(g => g && g.name).slice(0, 5).map(g => ({ name:String(g.name), role:String(g.role||""), other: g.kind === "other",
+        variable: VARNAMES.includes(g.variable) ? g.variable : "", service: SVC[g.service] ? g.service : "", res:String(g.resolution||"") }));
+      c.ingr.forEach(g => { g.data = g.other ? [] : ingredientData(g); g.out = g.other ? [] : ingredientOutside(g); });
+    });
+    r.analysed = true; $("anastatus").textContent = "";
+  } catch(e){
+    if (run !== state.run || state.result !== r) return;
+    $("anastatus").textContent = (e && e.code) === "cancelled" ? "" : "The analysis of the information could not be completed: " + (ERR[e && e.code] || "the request failed.") + diagText();
+  } finally {
+    if (run === state.run && state.result === r){ r.analysing = false; renderDIV(); renderIngredients(); }
+  }
+}
+function renderIngredients(){
+  const r = state.result; if (!r) return;
+  divCands(r).forEach((c, si) => {
+    const host = document.querySelector(`[data-ingr="${si}"]`); if (!host) return;
+    host.replaceChildren();
+    if (!c.ingr){ if (r.analysing) host.append(h("p",{class:"note",text:"Being analysed…"})); return; }
+    host.append(h("ul",{class:"res"}, c.ingr.map(g => h("li",{}, h("strong",{text:g.name}), g.role ? " — " + g.role : "", g.res ? h("span",{class:"note",text:" (" + g.res + ")"}) : null, h("br"),
+      g.other ? h("span",{class:"badge b-kind",text:"Local or administrative data, not Earth observation"})
+        : g.data.length ? h("span",{class:"note",text:"In the Data Lake: " + g.data.map(d => d.col.t + " (" + [d.col.r != null ? resLabel(d.col) : "", d.coarse ? "coarser than needed" : "", d.direct ? "ready-to-use" : "needs processing"].filter(Boolean).join(", ") + ")").join("; ")})
+        : h("span",{class:"badge b-medium",text: g.fine ? "No suitable layer found in the Data Lake at this scale" : "No layer found in the Data Lake"}),
+      (g.out || []).length ? [h("br"), h("span",{class:"note"}, "Outside the Data Lake: ", g.out.map((x, k) => [k ? "; " : "", h("a",{href:x.u,target:"_blank",rel:"noopener",text:x.t})]))] : null))));
+    host.append(h("p",{class:"note",text:"Proposed by Claude from general knowledge of processing chains; not validated. Correct it in the “Reword” block of step 3."}));
+    // a layer that serves an ingredient at an adequate scale is no longer flagged in the list below
+    const serves = {};
+    c.ingr.forEach(g => (g.data || []).forEach(d => { if (!d.coarse) (serves[DATA.C.indexOf(d.col)] = serves[DATA.C.indexOf(d.col)] || []).push(g.name); }));
+    for (const ci in (c._rows || {})){
+      const { row, l } = c._rows[ci], names = serves[ci];
+      const sv = row.querySelector('[data-role="serves"]'), sc = row.querySelector('[data-role="scale"]'), cf = row.querySelector('[data-role="conf"]');
+      if (!sv || !sc || !cf) continue;
+      sv.hidden = !names; sv.replaceChildren();
+      if (names){ sv.append(h("span",{class:"badge b-high",text:"Serves an ingredient"}), " " + names.join("; ") + "."); sc.hidden = true; cf.replaceChildren(badge(layerLevel(l.full))); }
+      else { sc.hidden = !l.coarse; cf.replaceChildren(badge(layerLevel(l.score))); }
+    }
+  });
+}
+
+// ---------- prototypes on demand: the page prepares the plan, the local app generates the result on the user's area
+const HOW = { documented:["Documented method","b-high","documented"], choice:["Choice","b-medium","chosen"], interpretation:["Interpretation, not validated","b-interp","interpreted without validation"],
+  service:["Existing service, not reprocessed","b-kind","taken from an existing service"], named:["Method named by Claude, reference to verify","b-kind","named by Claude, to verify"] };
+function recipeFor(g){
+  if (!g || g.other) return null;
+  const R = DATA.PR.items;
+  return R.find(r => g.variable && r.vars.includes(g.variable)) || R.find(r => new RegExp(r.rx, "i").test(g.name) && !(r.not && new RegExp(r.not, "i").test(g.name))) || R.find(r => g.service && r.svcs.includes(g.service)) || null;
+}
+function protoIngredients(){ const r = state.result, all = []; if (r) divCands(r).forEach(c => (c.ingr || []).forEach(g => { if (!all.some(x => x.name === g.name)) all.push(Object.assign(g, { _info: c.info || c.service })); })); return all; }
+function renderProtoPick(){
+  const all = protoIngredients();
+  $("protoPick").hidden = !all.length;
+  if (!all.length || (state.protoName && !all.some(g => g.name === state.protoName))){ state.protoName = null; $("proto").hidden = true; }
+  $("protoChips").replaceChildren(...all.map(g => h("button",{class:"chip",type:"button","aria-pressed":String(state.protoName === g.name),
+    text:(recipeFor(g) ? "▸ " : "") + g.name, title: recipeFor(g) ? "A prototype can be generated" : "No recipe yet: Claude can draft a method", onclick:()=>showProto(g)})));
+}
+function protoPlan(g, rc, draft){
+  const p = state.params || {};
+  const plan = { prototype_plan:1, made_by:"Earth data navigator", made_on:new Date().toISOString().slice(0,10), ingredient:g.name, information:g._info || "", variable:g.variable || "", service:g.service || "",
+    place:p.place || "", need:g.res || "", recipe: rc ? rc.key : null, params:{} };
+  if (p.bbox) plan.bbox = p.bbox;
+  if (p.start) plan.start = p.start; if (p.end) plan.end = p.end;
+  if (draft) plan.draft = draft;
+  return plan;
+}
+function draftPrompt(g){
+  const p = state.params || {};
+  const ds = (g.data || []).map(d => `- ${d.col.id} — ${d.col.t} — ${d.col.r != null ? resLabel(d.col) : "resolution not stated"} — ${d.direct ? "ready to use" : "needs processing"}`).join("\n") || "(none found)";
+  const out = (g.out || []).map(x => "- " + x.t).join("\n") || "(none known)";
+  return `You design a small prototype that turns Earth observation data into ONE ingredient of information. Be concrete and modest: a first prototype, not a product.
+
+Ingredient: "${g.name}"${g.role ? " (" + g.role + ")" : ""}
+It is needed to produce: "${g._info || ""}"
+User need: """${state.need}"""
+Area: ${p.place || "not stated"}. Detail needed: ${g.res || "not stated"}.
+
+Datasets the navigator found for this ingredient in the DestinE Data Lake (id — title — resolution — status):
+${ds}
+Products known outside the Data Lake:
+${out}
+
+Reply with ONLY one JSON object. Write the texts in the language of the ingredient:
+{"title":"short title of the prototype","feasible":"yes|partly|no","steps":[{"text":"what is done, under 25 words","nature":"named|choice|interpretation"}],"data":["dataset id copied exactly from the list above"],"output":"what the user would see, one sentence","missing":["what is missing or uncertain, under 20 words"]}
+
+Rules:
+- 4 to 7 steps, in order.
+- nature "named": the step follows a published or official method that you name in plain words in the text. NEVER give a citation, an author and year, a DOI or a URL: references must be checked by a person.
+- nature "choice": a parameter, threshold, date or shortcut that you choose.
+- nature "interpretation": any reading of the result that would need validation before being trusted.
+- Use only datasets from the list. If they cannot produce the ingredient at the detail needed, say so in "feasible" and in "missing". Never pretend.`;
+}
+async function draftProto(g, host){
+  if (g._drafting) return; g._drafting = true; g._draftErr = ""; showProto(g, true);
+  const run = state.run, ctl = new AbortController(); state.dctl = ctl;
+  try {
+    const out = await llmJSON(draftPrompt(g), { signal: ctl.signal });
+    if (run !== state.run) return;
+    const ids = new Set((g.data || []).map(d => d.col.id));
+    g._draft = { title:String(out.title || ""), feasible: /^(yes|partly|no)$/.test(out.feasible) ? out.feasible : "partly",
+      steps:(Array.isArray(out.steps) ? out.steps : []).filter(x => x && x.text).slice(0, 7).map(x => ({ t:String(x.text), how: /^(named|choice|interpretation)$/.test(x.nature) ? x.nature : "interpretation" })),
+      data:(Array.isArray(out.data) ? out.data : []).map(String).filter(x => ids.has(x)), output:String(out.output || ""),
+      missing:(Array.isArray(out.missing) ? out.missing : []).map(String).slice(0, 6), on:new Date().toISOString().slice(0,10) };
+  } catch(e){ if (run !== state.run) return; g._draftErr = (e && e.code) === "cancelled" ? "Stopped." : (ERR[e && e.code] || "The draft could not be produced. Try again.") + diagText(); }
+  finally { g._drafting = false; if (run === state.run && state.protoName === g.name) showProto(g, true); }
+}
+function showProto(g, keep){
+  state.protoName = g.name; renderProtoPick();
+  const box = $("proto"), rc = recipeFor(g), p = state.params || {}; box.hidden = false; box.replaceChildren();
+  const msg = h("span",{class:"note",role:"status"});
+  box.append(h("header",{style:"display:flex;gap:.6rem;justify-content:space-between;align-items:baseline;flex-wrap:wrap"},
+    h("h3",{style:"margin:0",text:`Prototype for the ingredient “${g.name}”`}),
+    h("button",{class:"ghost small",type:"button",text:"Close",onclick:()=>{ box.hidden = true; state.protoName = null; renderProtoPick(); }})));
+  const whyNot = h("p",{class:"warn",hidden:true,text:"A prototype needs data, and this page cannot fetch any: a published page may not contact other sites. The page therefore prepares the plan; the local app (hda_app.py, tab “Prototypes · on demand”) reads the data for your area and period, runs the steps and shows the result with its trace, usually in less than a minute."});
+  const saveBtn = (plan, label) => downloads ? h("button",{type:"button",text:label,onclick:async()=>{
+      try { await downloads.save({ filename:"prototype_plan_" + g.name.toLowerCase().replace(/[^a-z0-9]+/g,"_").slice(0,40) + ".json", data:JSON.stringify(plan, null, 1) });
+        msg.textContent = "Saved. Load this file in the local app (sidebar), then open the tab “Prototypes · on demand”."; }
+      catch(e){ msg.textContent = e && e.code === "declined" ? "Save cancelled." : "Saving is not available here: use “Copy the plan”."; } }}) : null;
+  const copyBtn = plan => h("button",{class:"ghost small",type:"button",text:"Copy the plan",onclick:async()=>{ try { await navigator.clipboard.writeText(JSON.stringify(plan, null, 1)); msg.textContent = "Copied."; } catch(e){ msg.textContent = "Copying is not available here."; } }});
+  const infoBtn = h("button",{class:"ghost info",type:"button","aria-label":"Why the result is not generated on this page",text:"i",onclick:()=>{ whyNot.hidden = !whyNot.hidden; }});
+  const where = () => h("ul",{class:"res"},
+    h("li",{}, h("span",{class:"note",text:"Area: "}), p.bbox ? `${p.place ? p.place + " — " : ""}longitudes ${p.bbox[0]} to ${p.bbox[2]}, latitudes ${p.bbox[1]} to ${p.bbox[3]}` : "not set: the local app will use the box of its sidebar"),
+    h("li",{}, h("span",{class:"note",text:"Period: "}), (p.start || p.end) ? `${p.start || "…"} to ${p.end || "…"}` : "not set: the local app will use the dates of its sidebar"),
+    h("li",{}, h("span",{class:"note",text:"Detail needed: "}), g.res || "not stated"));
+  if (g.other){
+    box.append(h("p",{text:"This ingredient is local or administrative data. Nothing can be computed for it from Earth observation: it has to be supplied by you or a partner, then combined with the other ingredients."}));
+    box.append(h("h3",{text:"What is missing"}), h("ul",{class:"res"}, h("li",{text:"The dataset itself, its owner and its conditions of use."}), h("li",{text:"A common geometry with the other ingredients (same area, compatible detail)."})));
+    if (!keep) box.scrollIntoView({ behavior:"smooth", block:"start" }); return;
+  }
+  if (rc){
+    box.append(h("p",{}, h("strong",{text:rc.title})), h("p",{class:"note",text:"This prototype is generated on demand, for your area and period. Nothing is precomputed: the plan below is what will run."}));
+    const need = metres(g.res);
+    if (need && rc.res_m > 3*need) box.append(h("p",{class:"warn",text:`You asked for a detail of about ${fmtRes(need)}; this prototype resolves ${fmtRes(rc.res_m)} at best. It will show the principle, not the answer.`}));
+    box.append(h("h3",{text:"Where and when"}), where());
+    const tally = {}; rc.outline.forEach(x => { tally[x[1]] = (tally[x[1]] || 0) + 1; });
+    box.append(h("h3",{text:"What will be done, step by step"}),
+      h("p",{class:"note",text:"Of " + rc.outline.length + " steps: " + Object.keys(HOW).filter(k => tally[k]).map(k => `${tally[k]} ${HOW[k][2]}`).join("; ") + ". The generated result repeats each step with the values actually used and its source."}),
+      h("ol",{class:"steps"}, rc.outline.map(x => h("li",{}, h("span",{class:"badge " + HOW[x[1]][1],style:"white-space:normal",text:HOW[x[1]][0]}), " ", x[0]))));
+    box.append(h("h3",{text:"Data it reads"}), h("ul",{class:"res"}, rc.lake.map(id => h("li",{}, h("span",{class:"mono",text:id}), h("span",{class:"note",text:" in the DestinE Data Lake"}))),
+      h("li",{class:"note",text:"Today the local app reads public copies of these datasets, which it has been tested on. Reading them through the DestinE API is not written yet."})));
+    box.append(h("h3",{text:"What it will not tell you"}), h("ul",{class:"res"}, rc.gaps.map(t => h("li",{text:t}))));
+    const plan = protoPlan(g, rc);
+    box.append(h("div",{class:"row"}, saveBtn(plan, "Save the plan and generate it in the local app"), copyBtn(plan), infoBtn, msg), whyNot);
+  } else {
+    box.append(h("p",{class:"warn",text:"No tested recipe exists yet for this ingredient. Nothing is computed rather than something invented."}));
+    const L = [];
+    (g.data || []).forEach(d => L.push(h("li",{}, d.col.t, " ", h("span",{class:"mono",text:d.col.id}), h("span",{class:"note",text:" · " + [d.col.r != null ? resLabel(d.col) : "resolution not stated", d.coarse ? "coarser than needed" : "", d.direct ? "ready to use" : "needs processing"].filter(Boolean).join(" · ")}))));
+    (g.out || []).forEach(x => L.push(h("li",{}, h("a",{href:x.u,target:"_blank",rel:"noopener",text:x.t}), h("span",{class:"note",text:" · outside the Data Lake"}))));
+    box.append(h("h3",{text:"What the navigator found for it"}), L.length ? h("ul",{class:"res"}, L) : h("p",{class:"note",text:"No dataset identified, in the Data Lake or elsewhere."}));
+    const d = g._draft;
+    if (!d){
+      box.append(h("div",{class:"row"}, h("button",{type:"button",disabled:!!g._drafting,text: g._drafting ? "Drafting…" : "Ask Claude to draft a method",onclick:()=>draftProto(g)}),
+        h("span",{class:"note",role:"status",text: g._drafting ? "This can take up to a minute." : (g._draftErr || "Claude proposes the steps of a first prototype. Nothing is computed.")})));
+    } else {
+      box.append(h("p",{}, h("strong",{text:d.title || "Draft method"}), " ", h("span",{class:"badge " + (d.feasible === "yes" ? "b-high" : d.feasible === "no" ? "b-interp" : "b-medium"),text: d.feasible === "yes" ? "Feasible with the data found" : d.feasible === "no" ? "Not feasible with the data found" : "Partly feasible with the data found"})));
+      box.append(h("p",{class:"warn",text:`Drafted by Claude on ${d.on}, on demand. Nothing was computed, no step was run and no reference was verified: it is a starting point for a developer, to be reviewed.`}));
+      if (d.output) box.append(h("p",{}, h("span",{class:"note",text:"What you would see: "}), d.output));
+      box.append(h("h3",{text:"Proposed steps"}), h("ol",{class:"steps"}, d.steps.map(x => h("li",{}, h("span",{class:"badge " + HOW[x.how][1],style:"white-space:normal",text: x.how === "choice" ? "Choice made by Claude" : x.how === "interpretation" ? "Claude's interpretation, not validated" : HOW[x.how][0]}), " ", x.t))));
+      if (d.data.length) box.append(h("h3",{text:"Data it would read"}), h("ul",{class:"res"}, d.data.map(id => h("li",{}, h("span",{class:"mono",text:id})))));
+      box.append(h("h3",{text:"What is missing"}), h("ul",{class:"res"}, d.missing.map(t => h("li",{text:t})), h("li",{text:"An implementation, a run on your area and a check of the result."})));
+      const plan = protoPlan(g, null, d);
+      box.append(h("div",{class:"row"}, saveBtn(plan, "Save this draft"), copyBtn(plan), h("button",{class:"ghost small",type:"button",text:"Draft again",onclick:()=>{ g._draft = null; draftProto(g); }}), msg));
+    }
+  }
+  if (!keep) box.scrollIntoView({ behavior:"smooth", block:"start" });
+}
+
+// ---------- the data to assemble: one line per ingredient and dataset (ids, resolution, status)
+function assemblyRows(){
+  const r = state.result, rows = [];
+  if (!r) return rows;
+  divCands(r).forEach(c => {
+    if (!c.ingr) return;
+    const info = c.info || c.service, seen = new Set();
+    c.ingr.forEach(g => {
+      const base = { info, ingr:g.name, need:g.res || "" };
+      if (g.other){ rows.push(Object.assign({ ds:"Local or administrative data, to be supplied by you or a partner", id:"", res:"", status:"local data", access:"" }, base)); return; }
+      (g.data || []).forEach(d => { seen.add(d.col.id); rows.push(Object.assign({ ds:d.col.t, id:d.col.id, col:d.col, res: d.col.r != null ? resLabel(d.col) : "not stated",
+        status: d.coarse ? "in the Data Lake, coarser than needed" : d.direct ? "in the Data Lake, ready to use" : "in the Data Lake, needs processing",
+        access: d.col.o ? "on-demand order" : "archive search" }, base)); });
+      (g.out || []).forEach(x => rows.push(Object.assign({ ds:x.t, id:x.u, url:x.u, res:"", status:"outside the Data Lake", access:"see the link" }, base)));
+      if (!(g.data || []).length && !(g.out || []).length) rows.push(Object.assign({ ds:"No source identified", id:"", res:"", status:"missing", access:"" }, base));
+    });
+    // products that may deliver the information outright (same rule as in the graph)
+    (DATA.L[c.service] || []).filter(l => l[1] === "d" && l[2] === "h").map(l => DATA.C[l[0]]).filter(col => !seen.has(col.id) && !offArea(col)).slice(0, 2).forEach(col =>
+      rows.push({ info, ingr:"(the information itself)", need:c.res || "", ds:col.t, id:col.id, col, res: col.r != null ? resLabel(col) : "not stated",
+        status:"in the Data Lake, ready to use", access: col.o ? "on-demand order" : "archive search" }));
+  });
+  return rows;
+}
+function renderAssembly(){
+  const rows = assemblyRows(), box = $("assembly");
+  box.hidden = !rows.length; if (!rows.length) return;
+  const tb = $("asmTable"); tb.replaceChildren();
+  tb.append(h("thead",{}, h("tr",{}, ["Ingredient","Detail needed","Dataset","Collection id or link","Resolution","Status","Access"].map(t => h("th",{scope:"col",text:t})))));
+  const body = h("tbody"); tb.append(body);
+  let last = null;
+  const cls = st => /ready/.test(st) ? "b-high" : /missing|coarser/.test(st) ? "b-medium" : /needs processing/.test(st) ? "b-low" : "b-kind";
+  rows.forEach(x => {
+    if (x.info !== last){ last = x.info; body.append(h("tr",{}, h("th",{colspan:"7",scope:"colgroup",text:"For: " + x.info}))); }
+    body.append(h("tr",{}, h("td",{text:x.ingr}), h("td",{text:x.need}), h("td",{text:x.ds}),
+      h("td",{class:"mono"}, x.url ? h("a",{href:x.url,target:"_blank",rel:"noopener",text:x.url}) : x.id),
+      h("td",{text:x.res}), h("td",{}, h("span",{class:"badge " + cls(x.status),style:"white-space:normal",text:x.status})),
+      h("td",{}, x.col ? h("button",{class:"ghost small",type:"button",text:"Get it","aria-label":"How to get " + x.ds,onclick:()=>{ const p = $("asmPanel");
+        p.replaceChildren(h("p",{}, h("strong",{text:x.ds}), h("span",{class:"mono",text:"  " + x.id}))); buildAccess(p, x.col, state.params || {}); p.hidden = false;
+        p.scrollIntoView({ behavior:"smooth", block:"nearest" }); }}) : (x.access || ""))));
+  });
+  $("asmSave").hidden = !downloads;
+}
+function assemblyText(sep){
+  const head = ["Information","Ingredient","Detail needed","Dataset","Collection id or link","Resolution","Status","Access"];
+  const cell = v => { v = String(v == null ? "" : v).replace(/\s+/g, " "); return sep !== "\t" && /[",;]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+  return [head].concat(assemblyRows().map(x => [x.info, x.ingr, x.need, x.ds, x.id, x.res, x.status, x.access])).map(r => r.map(cell).join(sep)).join("\n");
+}
+$("asmCopy").onclick = async () => { try { await navigator.clipboard.writeText(assemblyText("\t")); $("asmMsg").textContent = "Copied: paste it into a spreadsheet."; }
+  catch(e){ $("asmMsg").textContent = "Copying is not available here."; } };
+$("asmSave").onclick = async () => {
+  const sep = (1.1).toLocaleString().includes(",") ? ";" : ",";       // spreadsheets expect a semicolon where the decimal mark is a comma
+  try { await downloads.save({ filename:"data_to_assemble.csv", data:"\ufeff" + assemblyText(sep) }); $("asmMsg").textContent = "Saved."; }
+  catch(e){ $("asmMsg").textContent = e && e.code === "declined" ? "Save cancelled." : "Saving is not available here: use “Copy table”."; } };
+
+// ---------- rewording the left side of the view (usage ecosystem, value-embedding usage)
+function fillEdit(){
+  const r = state.result; if (!r) return;
+  const eco = state.ctx.eco || r.actor || "", use = state.ctx.use || r.usage || "";
+  if ($("ctxEco").value === (state.lastEco || "")){ $("ctxEco").value = eco; state.lastEco = eco; }
+  if ($("ctxUse").value === (state.lastUse || "")){ $("ctxUse").value = use; state.lastUse = use; }
+  const inf = state.ctx.info || divCands(r).map(c => [c.info, c.res, c.freq, c.delay].filter(Boolean).join("; ")).filter(Boolean).join("\n");
+  if ($("ctxInfo").value === (state.lastInfo || "")){ $("ctxInfo").value = inf; state.lastInfo = inf; }
+  const ing = divCands(r).filter(c => c.ingr).map(c => c.ingr.map(g => g.name).join("; ")).join("\n");
+  if (ing && $("ctxIngr").value === (state.lastIngr || "")){ $("ctxIngr").value = ing; state.lastIngr = ing; }
+  $("divchange").textContent = state.change || ""; $("divchange").hidden = !state.change;
+}
+$("ctxGo").onclick = () => {
+  const r = state.result; if (!r || state.busy) return;
+  const eco = $("ctxEco").value.trim(), use = $("ctxUse").value.trim(), inf = $("ctxInfo").value.trim(), ing = $("ctxIngr").value.trim();
+  const sameLeft = eco === (state.ctx.eco || r.actor || "") && use === (state.ctx.use || r.usage || "") && inf === (state.lastInfo || "").trim();
+  const sameIngr = ing === (state.lastIngr || "").trim();
+  if (sameLeft && sameIngr){ $("divstatus").textContent = "Change one of the texts first."; return; }
+  if (!sameIngr){ state.ctx.ingr = ing; state.lastIngr = $("ctxIngr").value; }
+  if (sameLeft){                                   // only the ingredients changed: redo the analysis, keep the rest
+    if (state.actl) state.actl.abort(); divCands(r).forEach(c => { delete c.ingr; }); renderDIV(); renderIngredients();
+    $("divgraph").scrollIntoView({ behavior:"smooth", block:"start" }); analyse(); return; }
+  const split = t => t.split(/\n|;/).map(x => x.trim()).filter(Boolean).slice(0, 3);
+  r.actors = split(eco); r.usages = split(use).map(t => ({ text:t, needs:[] }));
+  state.prev = divCands(r).map(c => c.service);
+  state.ctx = { eco, use, info: inf === (state.lastInfo || "").trim() ? state.ctx.info : inf, ingr: state.ctx.ingr }; state.lastEco = eco; state.lastUse = use; state.lastInfo = $("ctxInfo").value; state.round = 2; state.rewording = false;
+  if (!state.need) state.need = [eco, use, inf].filter(Boolean).join(". ");
+  state.change = ""; renderDIV();                       // the left columns change at once, before Claude answers
+  state.rewording = true;
+  $("ctxGo").textContent = "Updating…";
+  $("divgraph").scrollIntoView({ behavior:"smooth", block:"start" });
+  ask($("divstatus"));
+};
+function changeNote(){
+  if (!state.rewording) return; state.rewording = false;
+  const now = divCands(state.result).map(c => c.service), before = state.prev || [];
+  const add = now.filter(x => !before.includes(x)), del = before.filter(x => !now.includes(x));
+  state.change = (add.length || del.length)
+    ? (state.lastWasReg ? "Updated with the plan or regulation. " : "Updated with your wording. ") + (add.length ? "Added: " + add.join("; ") + ". " : "") + (del.length ? "Removed: " + del.join("; ") + "." : "")
+    : (state.lastWasReg ? "Updated with the plan or regulation. " : "Updated with your wording. ") + "The same services are retained; confidence levels and the left side of the view were refreshed.";
+  state.lastWasReg = false;
+}
+
+// ---------- co-design workshops recommended from the uncertainty left in the view (DestinE co-design toolkit)
+const TK = d => "https://doi.org/10.5281/zenodo." + d;
+const TKL = { ws31:["Worksheet 3.1, Usefulness workshops", TK(20797732)], t311:["Template 3.1.1, user profile", TK(20799401)], t312:["Template 3.1.2, use scenario", TK(20799506)],
+  t313:["Template 3.1.3, user needs expansion", TK(20799622)], ws32:["Worksheet 3.2, Operability workshops", TK(20797890)], ws33:["Worksheet 3.3, Usability workshops", TK(20798307)],
+  t331:["Template 3.3.1, user feedback form", TK(20798944)], ws34:["Worksheet 3.4, Data-Use-Need matrix", TK(20798465)], t341:["Template 3.4.1, Data-Need matrix", TK(20798603)],
+  ws40:["Worksheet 4.0, Outcomes diagram", TK(20794021)], t401:["Template 4.0.1, outcomes diagram", TK(20796375)], ws41:["Worksheet 4.1, Sustainability canvas", TK(20797278)], t411:["Template 4.1.1, sustainability canvas", TK(20797503)] };
+const ULV = { 3:["High uncertainty","high"], 2:["Medium uncertainty","medium"], 1:["Low uncertainty","low"], 0:["Not assessed by this tool","kind"] };
+function workshops(){
+  const opIngr = [], localIngr = [];
+  const outIngr = [];
+  (state.result ? divCands(state.result) : []).forEach(c => (c.ingr || []).forEach(g => {
+    const bad = !g.other && (!g.data.length || g.data.every(d => d.coarse));
+    if (g.other) localIngr.push(g.name);
+    else if (bad && (g.out || []).length) outIngr.push(g.name);
+    else if (bad) opIngr.push(g.name + (g.data.length ? " (only coarser data)" : "")); }));
+  const r = state.result, p = state.params || {}, top = divCands(r), out = [];
+  // --- usefulness (left side of the view)
+  let lv, why = [];
+  if (!top.length){ lv = 3; why.push("No service of the taxonomy matches your need."); }
+  else if (r.manual && !state.need){ lv = 2; why.push("You chose the service by hand: your need itself was not analysed."); }
+  else { const c = top[0].confidence; lv = c >= 0.75 ? 1 : c >= 0.5 ? 2 : 3; why.push(`Best match with the taxonomy: ${c.toFixed(2)} (“${top[0].service}”).`);
+    if (top.length > 1){ why.push(`${top.length} distinct pieces of information are expected: the need covers several things.`); lv = Math.max(lv, 2); } }
+  if (!(state.ctx.eco || r.actor)){ why.push("Who will use the information is not stated."); lv = Math.min(3, lv + 1); }
+  if (!(state.ctx.use || r.usage)){ why.push("What the information will be used for is not stated."); lv = Math.min(3, lv + 1); }
+  const usefulLv = lv;
+  const U = { 3:{ name:"Needs definition workshop", because:"Your need is not yet clear enough to be placed with confidence. For users who do not yet know which needs could be addressed, the toolkit recommends a workshop that shows what Earth observation could bring and helps to formulate specific needs.",
+      who:"You and colleagues in different roles (those who decide, those who operate, those who inform), a facilitator, and at least one person from a service provider's team.",
+      bring:"Your daily challenges, the decisions you take, the information you trust today and where it falls short.", get:"User profiles, usage scenarios and a first list of needs.", links:["ws31","t311","t312"] },
+    2:{ name:"Needs precision workshop", because:"Your need is placed, with some doubt left. The toolkit's precision workshops expand the first needs and look at how the information would fit into your processes.",
+      who:"The same group: a panel of users with different roles, a facilitator, someone from the provider's team who can turn needs into requirements.",
+      bring:"The view above, corrected in your own words, and the constraints the information must respect (scale, frequency, deadlines).", get:"Expanded needs and the integration challenges, ready to be written as requirements.", links:["ws31","t313"] },
+    1:{ name:"Validation of the specification sheet", because:"Your need is clearly placed. When users know which needs are to be addressed, the toolkit recommends going straight to establishing clear requirements.",
+      who:"You, a facilitator and the service provider.", bring:"The view above and your success criteria.", get:"A specification sheet agreed with the provider: requirements, adoption conditions, success indicators.", links:["ws31"] } }[lv];
+  out.push(Object.assign({ key:"Usefulness", q:"Is this the right information for you?", lv, why }, U));
+  // --- operability (right side of the view)
+  why = []; let noData = false, noProc = false, proc = false, weak = false, order = false;
+  [...new Set(top.map(c => c.service))].map(n => ({ service:n })).forEach(c => { const L = DATA.L[c.service] || [];
+    if (!L.length){ noData = true; why.push(`No data layer of the Data Lake is linked to “${c.service}”.`); return; }
+    if (!L.some(l => l[1] === "d")){ proc = true; why.push(`“${c.service}” has no ready-to-use product: the data need processing.`);
+      if (!(DATA.G[c.service] || []).some(g => g.k === "toolbox")){ noProc = true; why.push(`No verified processing resource is recorded for “${c.service}”.`); } }
+    if (!L.some(l => l[2] === "h")){ weak = true; why.push(`Every link between “${c.service}” and the data is of medium confidence.`); }
+    if (L.some(l => DATA.C[l[0]].o)) order = true; });
+  if (order) why.push("Some datasets are produced on demand, with order parameters to set.");
+  if (opIngr.length) why.push("Ingredients with no suitable source identified: " + opIngr.join("; ") + ".");
+  if (outIngr.length) why.push("Ingredients not in the Data Lake at the right scale, but for which a product is known elsewhere: " + outIngr.join("; ") + ".");
+  if (localIngr.length) why.push("Ingredients that are local or administrative data, to be supplied by you or a partner: " + localIngr.join("; ") + ".");
+  why.push("The links between information and data are proposals that have not been validated.");
+  lv = !top.length ? 0 : (noData || noProc || opIngr.length) ? 3 : (proc || weak || localIngr.length || outIngr.length) ? 2 : 1;
+  const O = { 3:{ name:"Operability workshop with the platform: dataset and infrastructure review", because:"Part of what your need requires is missing, either in the Data Lake or as a processing chain. When the needed data or services are not available on the platform, the toolkit recommends a workshop with the platform manager to explore how to integrate them.",
+      who:"A service provider, data providers, technical specialists, a platform representative, and you as user representative.", bring:"The dashed boxes of the view above, and the precision you need (resolution, update frequency, period).",
+      get:"A data-need matrix showing the gaps and how to mitigate them, and a first development roadmap.", links:["ws32","ws34","t341"] },
+    2:{ name:"Operability workshop with the data managers: dataset and infrastructure review", because:"Data exist but need processing, or their link to your need is uncertain. When existing datasets or services can serve the need, the toolkit recommends meeting their managers to understand how to access and adapt them.",
+      who:"A service provider, the managers of the datasets listed in the view, technical specialists, and you as user representative.", bring:"The data layers proposed in step 4 and what you expect from them.",
+      get:"A data-need matrix with the relevance, availability and maturity of each component, and a first roadmap.", links:["ws32","ws34","t341"] },
+    1:{ name:"No workshop needed before a first trial", because:"A ready-to-use product is linked to your need with high confidence. Try the data first (step 4). The toolkit's governance and roadmap discussion can wait until you decide to rely on the data.",
+      who:"", bring:"", get:"", links:["ws32"] },
+    0:{ name:"Nothing to assess yet", because:"No service was retained, so the data side cannot be assessed.", who:"", bring:"", get:"", links:["ws32"] } }[lv];
+  out.push(Object.assign({ key:"Operability", q:"Can the information be produced from the available data?", lv, why,
+    note: usefulLv >= 2 && lv >= 2 ? "The toolkit places operability workshops after the need has been specified: run the usefulness workshop first." : "" }, O));
+  // --- usability
+  const tools = ((state.ctx.eco || "") + " " + (r.actor || "")).match(/\b(q?gis|arcgis|python|excel|dashboard|power ?bi|script\w*|notebook\w*)\b/gi);
+  why = [tools ? `You mentioned your tools (${[...new Set(tools.map(t => t.toLowerCase()))].join(", ")}): the result should plug into them.`
+               : "This tool has no information on your tools and skills (GIS, dashboards, scripting)."];
+  why.push("Access to the data currently runs from a Python script.");
+  if (proc) why.push("Some layers need processing before anyone can use them.");
+  out.push({ key:"Usability", q:"Will your team be able to use the result?", lv:0, why, name:"Usability workshop, once a first prototype or data extract exists",
+    because:"The toolkit's usability workshops test whether a service can be understood, adopted and integrated into real workflows. They are most effective once a prototype or demonstrator is available." + (tools ? " For users who already work with digital or GIS tools, the toolkit suggests focusing on how the service interfaces with those tools." : ""),
+    who:"The people who will use the result in their daily work, a facilitator and the provider.", bring:"Your current tools and the tasks the information should support.",
+    get:"Structured feedback, prioritised improvements and the conditions for adoption.", links:["ws33","t331"] });
+  // --- scalability
+  why = ["Only one place and one use were described: whether other users share the need is unknown."];
+  if (p.scale) why.push(`Scale stated: ${p.scale}.`);
+  out.push({ key:"Scalability", q:"Could the same service serve others, or other places?", lv:0, why, name:"Data-Use-Need matrix with other potential users",
+    because:"The toolkit's matrix sets needs against technical components and separates a common technical foundation from specialised parts, which shows what could be reused elsewhere.",
+    who:"You, other organisations with a similar need, and the provider.", bring:"Your requirements, and contacts of peers facing the same question.", get:"A view of what is common and what is specific, and a design path.", links:["ws34","t341"] });
+  // --- sustainability
+  why = ["Who maintains the service, who pays for it and for how long are not addressed by this tool."];
+  if (state.pilots && state.pilots.length) why.push("The e-shape pilots found are research-grade services; their compliance was self-declared in 2021–2023.");
+  out.push({ key:"Sustainability", q:"Will the service still be there, and maintained, in a few years?", lv:0, why, name:"Outcomes diagram and sustainability canvas, at the end of the workshops",
+    because:"The toolkit closes the process with two tools: the outcomes diagram sets next steps at short, mid and long term, and the sustainability canvas checks value, technical solution, working model and economics together.",
+    who:"You as a long-term partner, the provider, and whoever would fund or operate the service.", bring:"What you could commit to: data, staff time, a budget line, a contract.", get:"A shared plan of what happens next, and the conditions for the service to last.", links:["ws40","t401","ws41","t411"] });
+  const rank = { 3:0, 2:1, 0:2, 1:3 };
+  return out.map((x,i) => [x,i]).sort((a,b) => (rank[a[0].lv]-rank[b[0].lv]) || (a[1]-b[1])).map(x => x[0]);
+}
+function renderWorkshops(){
+  const box = $("workshops"); box.replaceChildren();
+  workshops().forEach((w, i) => {
+    const card = h("article",{class:"svc"});
+    card.append(h("header",{}, h("h3",{text:`${i+1}. ${w.key}: ${w.q}`}), h("span",{class:"badge b-" + ULV[w.lv][1],text:ULV[w.lv][0]})));
+    card.append(h("p",{class:"note",text:"What is uncertain"}), h("ul",{class:"res"}, w.why.map(t => h("li",{text:t}))));
+    card.append(h("p",{}, h("strong",{text:"Recommended: "}), w.name));
+    card.append(h("p",{text:w.because}));
+    if (w.note) card.append(h("p",{class:"warn",text:w.note}));
+    if (w.who) card.append(h("div",{class:"cols"},
+      h("div",{}, h("p",{class:"note",text:"Who should be at the table"}), h("p",{text:w.who})),
+      h("div",{}, h("p",{class:"note",text:"What you bring"}), h("p",{text:w.bring})),
+      h("div",{}, h("p",{class:"note",text:"What you leave with"}), h("p",{text:w.get}))));
+    card.append(h("p",{class:"note"}, "Toolkit: ", w.links.map((k,j) => [j ? " · " : "", h("a",{href:TKL[k][1],target:"_blank",rel:"noopener",text:TKL[k][0]})])));
+    box.append(card);
+  });
+}
+
+// ---------- small map to set the bounding box (self-contained: Natural Earth coast, borders, cities)
+const BM = {};
+function bmLayer(name){ return BM[name] || (BM[name] = MAPDATA[name].map(decodeLine)); }
+function landRings(){ return bmLayer("land"); }
+function decodeLine(f){
+  {
+    const n = f.length/2, xs = new Float32Array(n), ys = new Float32Array(n);
+    let x = f[0], y = f[1], a = x, b = x, c = y, d = y; xs[0] = x/100; ys[0] = y/100;
+    for (let i = 1; i < n; i++){ x += f[2*i]; y += f[2*i+1]; xs[i] = x/100; ys[i] = y/100; if (x<a) a=x; if (x>b) b=x; if (y<c) c=y; if (y>d) d=y; }
+    return { xs, ys, b:[a/100, c/100, b/100, d/100] };
+  }
+}
+const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+function makeMap(box, onChange){
+  // box = [west, south, east, north]
+  const cv = h("canvas",{role:"img","aria-label":"Map of the selected area. Drag the box or its corners to change it; the four fields below hold the same values."});
+  const drawBtn = h("button",{type:"button","aria-pressed":"false",text:"Draw new box"});
+  const wrap = h("div",{class:"map"}, cv, h("div",{class:"tools"},
+    h("button",{type:"button","aria-label":"Zoom in",text:"+",onclick:()=>zoom(1.6)}),
+    h("button",{type:"button","aria-label":"Zoom out",text:"−",onclick:()=>zoom(1/1.6)}),
+    h("button",{type:"button",text:"Fit box",onclick:()=>fit()}), drawBtn));
+  const ctx = cv.getContext ? cv.getContext("2d") : null;
+  const v = { cx:0, cy:0, k:4 }; let W = 600, H = 280, drag = null, drawMode = false;
+  drawBtn.onclick = () => { drawMode = !drawMode; drawBtn.setAttribute("aria-pressed", String(drawMode)); cv.style.cursor = drawMode ? "crosshair" : "grab"; };
+  const kx = () => v.k * Math.max(0.2, Math.cos(v.cy*Math.PI/180));
+  const X = lon => (lon - v.cx)*kx() + W/2, Y = lat => (v.cy - lat)*v.k + H/2;
+  const LON = x => (x - W/2)/kx() + v.cx, LAT = y => v.cy - (y - H/2)/v.k;
+  function fit(){
+    const [w,s,e,n] = box; v.cx = (w+e)/2; v.cy = clamp((s+n)/2, -80, 80);
+    const c = Math.max(0.2, Math.cos(v.cy*Math.PI/180));
+    v.k = clamp(Math.min(W/(Math.max(e-w,0.02)*c), H/Math.max(n-s,0.02))/2.6, 1.2, 4000); draw();
+  }
+  function zoom(f){ v.k = clamp(v.k*f, 1.2, 4000); draw(); }
+  function draw(){
+    if (!ctx) return;
+    const cw = cv.clientWidth || 600, ch = cv.clientHeight || 280, dpr = window.devicePixelRatio || 1;
+    W = cw; H = ch;
+    if (cv.width !== Math.round(cw*dpr) || cv.height !== Math.round(ch*dpr)){ cv.width = Math.round(cw*dpr); cv.height = Math.round(ch*dpr); }
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    const css = getComputedStyle(document.documentElement), col = n => css.getPropertyValue(n).trim() || "#888";
+    ctx.fillStyle = col("--sea-soft"); ctx.fillRect(0,0,W,H);
+    const vw = LON(0), ve = LON(W), vn = LAT(0), vs = LAT(H), degPx = 1/v.k;
+    const step = Math.max(1, Math.floor(degPx/0.012));
+    const lp = new Path2D();
+    for (const r of landRings()){
+      const b = r.b; if (b[2] < vw || b[0] > ve || b[3] < vs || b[1] > vn) continue;
+      if ((b[2]-b[0]) < degPx && (b[3]-b[1]) < degPx) continue;
+      const n = r.xs.length; lp.moveTo(X(r.xs[0]), Y(r.ys[0]));
+      for (let i = step; i < n; i += step) lp.lineTo(X(r.xs[i]), Y(r.ys[i]));
+      lp.closePath();
+    }
+    ctx.fillStyle = col("--surface"); ctx.fill(lp);
+    const trace = (name, closed, st) => { ctx.beginPath();
+      for (const r of bmLayer(name)){ const b = r.b; if (b[2] < vw || b[0] > ve || b[3] < vs || b[1] > vn) continue;
+        if (closed && (b[2]-b[0]) < degPx && (b[3]-b[1]) < degPx) continue;
+        const n = r.xs.length; ctx.moveTo(X(r.xs[0]), Y(r.ys[0]));
+        for (let i = st; i < n; i += st) ctx.lineTo(X(r.xs[i]), Y(r.ys[i]));
+        if (!closed && (n-1) % st) ctx.lineTo(X(r.xs[n-1]), Y(r.ys[n-1]));
+        if (closed) ctx.closePath(); } };
+    const st2 = Math.max(1, Math.floor(degPx/0.03));
+    if (v.k > 9){ ctx.save(); ctx.clip(lp); trace("urban", true, st2); ctx.fillStyle = col("--urban"); ctx.fill(); ctx.restore(); }
+    ctx.strokeStyle = col("--muted"); ctx.lineWidth = 0.8; ctx.stroke(lp);
+    if (v.k > 3){ trace("lakes", true, st2); ctx.fillStyle = col("--sea-soft"); ctx.fill(); ctx.strokeStyle = col("--water"); ctx.lineWidth = 0.7; ctx.stroke();
+                  trace("rivers", false, st2); ctx.strokeStyle = col("--water"); ctx.lineWidth = v.k > 40 ? 1.3 : 0.8; ctx.stroke(); }
+    if (v.k > 14){ trace("roads", false, 1); ctx.strokeStyle = col("--road"); ctx.lineWidth = v.k > 60 ? 1.5 : 0.9; ctx.stroke(); }
+    ctx.beginPath(); ctx.setLineDash([4,3]);
+    for (const l of MAPDATA.borders){
+      let on = false;
+      for (let i = 0; i < l.length; i += 2){ const lon = l[i], lat = l[i+1];
+        if (lon < vw-2 || lon > ve+2 || lat < vs-2 || lat > vn+2){ on = false; continue; }
+        if (on) ctx.lineTo(X(lon), Y(lat)); else { ctx.moveTo(X(lon), Y(lat)); on = true; } }
+    }
+    ctx.strokeStyle = col("--muted"); ctx.lineWidth = 0.7; ctx.stroke(); ctx.setLineDash([]);
+    if (v.k > 6){
+      const maxRank = v.k < 14 ? 1 : v.k < 40 ? 3 : v.k < 120 ? 6 : 10; let shown = 0;
+      ctx.font = "12px 'Source Sans 3', system-ui, sans-serif"; ctx.fillStyle = col("--ink");
+      for (const c of MAPDATA.cities){
+        if (c[3] > maxRank) break; if (c[1] < vw || c[1] > ve || c[2] < vs || c[2] > vn) continue;
+        const x = X(c[1]), y = Y(c[2]); ctx.beginPath(); ctx.arc(x, y, 2.2, 0, 6.3); ctx.fill(); ctx.fillText(c[0], x+5, y+4);
+        if (++shown >= 28) break;
+      }
+    }
+    const [w,s,e,n] = box, x0 = X(w), x1 = X(e), y0 = Y(n), y1 = Y(s), mk = col("--marker");
+    ctx.globalAlpha = 0.16; ctx.fillStyle = mk; ctx.fillRect(x0, y0, x1-x0, y1-y0); ctx.globalAlpha = 1;
+    ctx.strokeStyle = mk; ctx.lineWidth = 2; ctx.strokeRect(x0, y0, x1-x0, y1-y0);
+    ctx.fillStyle = mk; [[x0,y0],[x1,y0],[x0,y1],[x1,y1]].forEach(p => ctx.fillRect(p[0]-5, p[1]-5, 10, 10));
+  }
+  const pos = ev => { const r = cv.getBoundingClientRect(); return [ev.clientX - r.left, ev.clientY - r.top]; };
+  function hit(px, py){
+    const [w,s,e,n] = box, xs = [X(w), X(e)], ys = [Y(n), Y(s)];
+    for (let i = 0; i < 2; i++) for (let j = 0; j < 2; j++) if (Math.abs(px-xs[i]) < 13 && Math.abs(py-ys[j]) < 13) return { mode:"resize", i, j };
+    if (px > xs[0] && px < xs[1] && py > ys[0] && py < ys[1]) return { mode:"move" };
+    return { mode:"pan" };
+  }
+  function commit(live){
+    let [w,s,e,n] = box; if (w > e) [w,e] = [e,w]; if (s > n) [s,n] = [n,s];
+    const r = x => Math.round(x*1000)/1000;
+    box = [r(clamp(w,-180,180)), r(clamp(s,-90,90)), r(clamp(e,-180,180)), r(clamp(n,-90,90))];
+    onChange(box.slice(), live);
+  }
+  cv.addEventListener("pointerdown", ev => {
+    const [px,py] = pos(ev); const hgt = drawMode ? { mode:"draw" } : hit(px,py);
+    drag = { ...hgt, px, py, lon:LON(px), lat:LAT(py), box:box.slice(), cx:v.cx, cy:v.cy };
+    if (drag.mode === "draw") box = [drag.lon, drag.lat, drag.lon, drag.lat];
+    try { cv.setPointerCapture(ev.pointerId); } catch(e){}
+    cv.style.cursor = drag.mode === "pan" ? "grabbing" : cv.style.cursor; ev.preventDefault();
+  });
+  cv.addEventListener("pointermove", ev => {
+    if (!drag) return; const [px,py] = pos(ev), lon = LON(px), lat = LAT(py);
+    if (drag.mode === "pan"){ v.cx = drag.cx - (px-drag.px)/kx(); v.cy = clamp(drag.cy + (py-drag.py)/v.k, -85, 85); }
+    else if (drag.mode === "move"){ const dx = lon-drag.lon, dy = lat-drag.lat, b = drag.box; box = [b[0]+dx, b[1]+dy, b[2]+dx, b[3]+dy]; }
+    else if (drag.mode === "resize"){ const b = drag.box.slice(); b[drag.i ? 2 : 0] = lon; b[drag.j ? 1 : 3] = lat; box = b; }
+    else if (drag.mode === "draw"){ box = [drag.lon, drag.lat, lon, lat]; }
+    draw();
+  });
+  const end = () => { if (!drag) return; const m = drag.mode; drag = null; cv.style.cursor = drawMode ? "crosshair" : "grab";
+    if (m !== "pan"){ commit(false); if (m === "draw"){ drawMode = false; drawBtn.setAttribute("aria-pressed","false"); cv.style.cursor = "grab"; } draw(); } };
+  cv.addEventListener("pointerup", end); cv.addEventListener("pointercancel", end);
+  cv.addEventListener("dblclick", ev => { const [px,py] = pos(ev); v.cx = LON(px); v.cy = clamp(LAT(py), -85, 85); zoom(1.8); });
+  if (window.ResizeObserver) new ResizeObserver(() => { if (cv.clientWidth) (wrap.dataset.fitted ? draw() : (wrap.dataset.fitted = "1", fit())); }).observe(cv);
+  return { el:wrap, fit, draw, setBox(b){ box = b.slice(); draw(); } };
+}
+const WMS = "https://view.eumetsat.int/geoserver/ows";
+function wmsUrl(layer, bb){
+  let [w,s,e,n] = bb; const cx = (w+e)/2, cy = (s+n)/2, dx = Math.max(e-w, 8)/2, dy = Math.max(n-s, 5)/2;
+  w = clamp(cx-dx,-180,180); e = clamp(cx+dx,-180,180); s = clamp(cy-dy,-90,90); n = clamp(cy+dy,-90,90);
+  const width = 900, height = clamp(Math.round(width*(n-s)/((e-w)*Math.max(0.3, Math.cos(cy*Math.PI/180)))), 300, 900);
+  return `${WMS}?service=WMS&version=1.3.0&request=GetMap&layers=backgrounds:ne_background,${layer},backgrounds:ne_10m_coastline,backgrounds:ne_boundary_lines_land&styles=&crs=EPSG:4326&bbox=${s.toFixed(3)},${w.toFixed(3)},${n.toFixed(3)},${e.toFixed(3)}&width=${width}&height=${height}&format=image/jpeg`;
+}
+
+// ---------- access instructions and script
+function buildAccess(panel, col, p){
+  const bb = p.bbox || [2.0, 49.5, 4.5, 51.5];
+  const mk = (lab, val, type) => { const i = h("input",{type:type||"text",value:val}); return [h("div",{}, h("label",{},lab,i)), i]; };
+  const [wW,iW] = mk("West", bb[0]), [wS,iS] = mk("South", bb[1]), [wE,iE] = mk("East", bb[2]), [wN,iN] = mk("North", bb[3]);
+  const [wA,iA] = mk("Start", p.start || "2024-07-01", "date"), [wB,iB] = mk("End", p.end || "2024-07-07", "date");
+  const pre = h("pre",{tabindex:"0","aria-label":"Download script"});
+  const infoTxt = h("p",{class:"warn",hidden:true,text:"“Run request” is not available on this page. A published page cannot contact the DestinE Data Lake or any other site, and it must not hold your DestinE password. To run the request: save it for the local app, then load the file in hda_app.py on your machine, which logs in to DestinE and runs search, order and download. Or copy the script and run it yourself."});
+  const infoBtn = h("button",{class:"ghost info",type:"button","aria-label":"Why “Run request” is not available","aria-expanded":"false",text:"i",
+    onclick:()=>{ infoTxt.hidden = !infoTxt.hidden; infoBtn.setAttribute("aria-expanded", String(!infoTxt.hidden)); }});
+  const msg = h("span",{class:"note",role:"status"});
+  const cur = () => [iW,iS,iE,iN].map(i => Number(i.value));
+  const live = col.w ? h("a",{target:"_blank",rel:"noopener",text:"Open a live image of this layer around your area (EUMETSAT view service, new tab)"}) : null;
+  const render = () => { pre.textContent = script(col, cur(), iA.value, iB.value); if (live) live.href = wmsUrl(col.w, cur()); };
+  const map = makeMap(bb.slice(), b => { iW.value = b[0]; iS.value = b[1]; iE.value = b[2]; iN.value = b[3]; render(); });
+  [iW,iS,iE,iN].forEach(i => i.addEventListener("input", () => { if (cur().every(isFinite)) map.setBox(cur()); render(); }));
+  [iA,iB].forEach(i => i.addEventListener("input", render));
+  const thumb = col.th != null ? h("img",{src:DATA.T[col.th],alt:"Illustration of the dataset from the catalogue",loading:"lazy"}) : null;
+  const preview = (thumb || live) ? h("div",{class:"preview"}, thumb,
+    h("div",{}, thumb ? h("p",{class:"note",text:"Illustration provided with the catalogue record. It shows what the data look like, not your area or period."}) : null,
+      live ? h("p",{}, live) : null,
+      live ? h("p",{class:"note",text:"Latest available image from the public OGC web map service, widened to at least 8° so that the picture is readable. Where the data layer is empty (clouds, no recent overpass) only the background map shows. The image cannot be displayed inside this page."}) : null,
+      !live ? h("p",{class:"note",text:"No public map service is recorded for this layer: the script below saves a quicklook of the first item when the archive provides one."}) : null)) : null;
+  panel.append(
+    h("p",{}, col.o
+      ? "This dataset is produced on demand: you send an order, wait, then download the result."
+      : "This dataset is an archive: you search for items over your area and period, then download their files."),
+    h("p",{class:"note",text: p.bbox ? "The area below was estimated from your request; check it before running." : "Set your area and period; the values below are placeholders."}),
+    map.el,
+    h("p",{class:"note",text:"Drag the box or its corners, or use “Draw new box”. Drag the map to move it. The map is schematic: coastline, borders, rivers, lakes, main roads, built-up areas and cities from Natural Earth. Street maps such as OpenStreetMap cannot be loaded in a published page."}),
+    h("div",{class:"grid4"}, wW,wS,wE,wN,wA,wB),
+    preview,
+    h("div",{class:"row"},
+      h("button",{class:"small",type:"button",text:"Copy script",onclick:async()=>{ try{ await navigator.clipboard.writeText(pre.textContent); msg.textContent="Copied."; }
+        catch(e){ const r=document.createRange(); r.selectNodeContents(pre); const s=getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent="Script selected: copy it with Ctrl or Cmd + C."; } }}),
+      downloads ? h("button",{class:"ghost small",type:"button",text:"Save script as text file",onclick:async()=>{
+        try{ await downloads.save({ filename:"hda_download_"+col.id.replace(/[^A-Za-z0-9]+/g,"_")+".txt", data:pre.textContent }); msg.textContent="Saved. Rename the file to .py to run it."; }
+        catch(e){ msg.textContent = e && e.code === "declined" ? "Save cancelled." : "Saving is not available here; copy the script instead."; } }}) : null,
+      downloads ? h("button",{class:"ghost small",type:"button",text:"Save request for the local app",onclick:async()=>{
+        const b = cur(), req = { navigator_request:1, collection:col.id, title:col.t, mode:col.o ? "order" : "search", bbox:{ west:b[0], south:b[1], east:b[2], north:b[3] }, start:iA.value, end:iB.value };
+        try{ await downloads.save({ filename:"navigator_request_"+col.id.replace(/[^A-Za-z0-9]+/g,"_")+".json", data:JSON.stringify(req, null, 1) }); msg.textContent="Saved. Load this file in the local app (hda_app.py) to run it."; }
+        catch(e){ msg.textContent = e && e.code === "declined" ? "Save cancelled." : "Saving is not available here."; } }}) : null,
+      h("button",{class:"ghost small",type:"button",disabled:true,text:"Run request"}),
+      infoBtn, msg),
+    infoTxt,
+    h("div",{class:"scroll"}, pre),
+    h("p",{class:"note"}, "To run it: install Python, then ", h("span",{class:"mono",text:"pip install requests lxml"}), " and ",
+      h("span",{class:"mono",text:"python script.py"}), ". You need a free DestinE account without two-factor login. The script has not been run against the live service with real credentials. ",
+      "With the local test bench (hda_app.py), paste the collection id into the “", col.o ? "ECMWF orders" : "Search items", "” tab instead."),
+    h("p",{class:"note"}, h("a",{href:`${HDA}/stac/v2/collections/${encodeURIComponent(col.id)}`,target:"_blank",rel:"noopener",text:"Collection record in the catalogue (JSON)"})));
+  render();
+}
+function script(col, bb, d0, d1){
+  const [w,s,e,n] = bb.map(v => isFinite(v) ? v : 0);
+  const head = `"""Download from the DestinE Data Lake (HDA API). Generated by the Earth data navigator.
+Collection : ${col.id}
+Needs      : pip install requests lxml ; a DestinE (DESP) account without two-factor login.
+"""
+import getpass, os, time
+from urllib.parse import parse_qs, urlparse
+import requests
+from lxml import html
+
+HDA = "${HDA}"
+STAC = HDA + "/stac/v2"
+COLLECTION = "${col.id}"
+WEST, SOUTH, EAST, NORTH = ${w}, ${s}, ${e}, ${n}
+START, END = "${d0}", "${d1}"
+FOLDER = "hda_downloads"
+
+def get_token(user, pwd):
+    iam = "https://auth.destine.eu/realms/desp/protocol/openid-connect"
+    with requests.Session() as s:
+        page = s.get(iam + "/auth", timeout=60, params={"client_id": "dedl-hda", "redirect_uri": HDA + "/stac",
+                                                         "scope": "openid", "response_type": "code"})
+        page.raise_for_status()
+        action = html.fromstring(page.content.decode()).forms[0].action
+        login = s.post(action, data={"username": user, "password": pwd}, allow_redirects=False, timeout=60)
+        if login.status_code != 302:
+            raise SystemExit("DESP login refused: check username and password")
+        code = parse_qs(urlparse(login.headers["Location"]).query).get("code", [None])[0]
+        if not code:
+            raise SystemExit("No authorization code returned (two-factor login enabled?)")
+        r = s.post(iam + "/token", timeout=60, data={"client_id": "dedl-hda", "redirect_uri": HDA + "/stac",
+                                                     "code": code, "grant_type": "authorization_code", "scope": ""})
+        r.raise_for_status()
+        desp = r.json()["access_token"]
+    r = requests.post("https://identity.data.destination-earth.eu/auth/realms/dedl/protocol/openid-connect/token",
+                      timeout=60, data={"grant_type": "urn:ietf:params:oauth:grant-type:token-exchange",
+                                        "subject_token": desp, "subject_issuer": "desp-oidc",
+                                        "subject_token_type": "urn:ietf:params:oauth:token-type:access_token",
+                                        "client_id": "hda-public", "audience": "hda-public"})
+    r.raise_for_status()
+    return r.json()["access_token"]
+
+def download(href, headers):
+    os.makedirs(FOLDER, exist_ok=True)
+    with requests.get(href, headers=headers, stream=True, timeout=600) as r:
+        r.raise_for_status()
+        cd = r.headers.get("content-disposition", "")
+        name = cd.split("filename=")[-1].strip('"; ') if "filename=" in cd else os.path.basename(urlparse(href).path) or "download.bin"
+        path = os.path.join(FOLDER, name)
+        with open(path, "wb") as f:
+            for chunk in r.iter_content(1 << 20):
+                f.write(chunk)
+    print("saved", path)
+
+token = get_token(input("DESP username: "), getpass.getpass("DESP password: "))
+H = {"Authorization": "Bearer " + token}
+`;
+  const archive = `
+# --- archive: search items over the area and period, then download
+MAX_ITEMS = 3
+body = {"collections": [COLLECTION], "bbox": [WEST, SOUTH, EAST, NORTH],
+        "datetime": START + "T00:00:00Z/" + END + "T23:59:59Z", "limit": 20}
+r = requests.post(STAC + "/search", json=body, headers=H, timeout=120)
+r.raise_for_status()
+items = r.json().get("features", [])
+print(len(items), "items found")
+for it in items[:MAX_ITEMS]:
+    for key in ("quicklook", "thumbnail"):          # small preview image, when the archive provides one
+        if key in it.get("assets", {}):
+            download(it["assets"][key]["href"], H)
+            break
+    assets = {k: a for k, a in it.get("assets", {}).items() if k not in ("thumbnail", "quicklook")}
+    print(it["id"], "->", list(assets))
+    for key, a in assets.items():
+        download(a["href"], H)
+        break   # first data asset only; remove to get them all
+`;
+  const order = `
+# --- on-demand dataset: build the order from the collection's queryables, submit, wait, download
+from datetime import date, timedelta
+q = requests.get(STAC + "/collections/" + COLLECTION + "/queryables", timeout=120).json()
+props, required = q.get("properties", {}), q.get("required", [])
+d0, d1 = date.fromisoformat(START), date.fromisoformat(END)
+days = [d0 + timedelta(n) for n in range((d1 - d0).days + 1)]
+auto = {"year": sorted({str(d.year) for d in days}), "month": sorted({"%02d" % d.month for d in days}),
+        "day": sorted({"%02d" % d.day for d in days}), "time": ["00:00", "12:00"],
+        "area": [NORTH, WEST, SOUTH, EAST], "date": START + "/" + END}
+order = {}
+for name, sch in props.items():
+    short = name.split(":")[-1]
+    enum = sch.get("enum") or sch.get("items", {}).get("enum")
+    if short in auto:
+        order[short] = auto[short]
+    elif name in required:
+        val = sch.get("default") or (enum[0] if enum else None)
+        print("CHECK required parameter", short, "=", val, "| allowed:", (enum or [])[:12])
+        order[short] = val
+print("Order to be sent:", order)
+if input("Send this order? [y/N] ").lower() != "y":
+    raise SystemExit("Edit the 'order' dictionary above, then run again.")
+r = requests.post(STAC + "/collections/" + COLLECTION + "/order", json=order, headers=H, timeout=120)
+r.raise_for_status()
+item = r.json()
+poll = next((l["href"] for l in item.get("links", []) if l.get("rel") == "self"), r.headers.get("Location"))
+while not item.get("assets"):
+    status = item.get("properties", {}).get("order:status")
+    print("status:", status)
+    if status == "failed":
+        raise SystemExit("Order failed")
+    time.sleep(10)
+    item = requests.get(poll, headers=H, timeout=120).json()
+download(next(iter(item["assets"].values()))["href"], H)
+`;
+  return head + (col.o ? order : archive);
+}
+</script>
+</body>
+</html>
